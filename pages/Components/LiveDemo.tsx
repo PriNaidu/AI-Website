@@ -3,8 +3,11 @@ import { Logo } from "./Assets";
 const LiveDemo = () => {
   return (
     <div className="live-demo-container">
+      <div className="wrapper">
+      <div className="heading">
       <h4>Live Demo</h4>
       <p>This chatbot was trained on a document explaining Chatbotbuilder</p>
+      </div>
       <div className="chat-response-box">
         <div className="chat-response-head">
           <Logo/>
@@ -25,6 +28,7 @@ const LiveDemo = () => {
           <textarea name=""></textarea>
           <button>Send</button>
         </div>
+      </div>
       </div>
     </div>
   );

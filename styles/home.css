@@ -1,3 +1,7 @@
+.wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+}
 .banner-section {
   background-image: url(https://res.cloudinary.com/dghqyted6/image/upload/v1682071537/Group_14373_1_jfhoaw.svg);
   background-size: cover;
@@ -6,14 +10,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px auto 0;
-  width: 64%;
+  padding: 18px;
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .navbar-left {
   display: flex;
   align-items: center;
 }
-.navbar-left .heading h1 {
+.navbar-left .logo-txt h3 {
   font-weight: 600;
   font-size: 23.2px;
   line-height: 27px;
@@ -47,9 +56,10 @@
   color: #ffffff;
 }
 .banner-container {
+  margin-top: 30px;
   display: flex;
+  flex-direction: row;
   gap: 100px;
-  padding: 44px 112px 50px 343px;
 }
 .banner-container::before {
   content: "";
@@ -61,12 +71,16 @@
   background-image: url(https://res.cloudinary.com/dghqyted6/image/upload/v1667904577/Frame_2328_z3dg7n.svg);
 }
 .banner-left {
-  width: 81%;
+  width: 50%;
   /* height: auto; */
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.banner-right {
+  width: 50%;
+  padding-bottom: 30px;
 }
 .banner-details-cont {
   display: flex;
@@ -161,8 +175,13 @@
 
 /* UseChatbot */
 .chatbot_builder {
-  padding: 90px 0;
-  background: linear-gradient( 256.88deg, #fff3f4 1.94%, rgba(255, 245, 246, 0.17) 98.72% );
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: linear-gradient(
+    256.88deg,
+    #fff3f4 1.94%,
+    rgba(255, 245, 246, 0.17) 98.72%
+  );
 }
 .chatbot_builder h2 {
   font-family: "Rubik";
@@ -190,7 +209,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  width: 68%;
   margin: 0 auto;
 }
 .chatbot_builder-box {
@@ -225,9 +243,12 @@
 }
 /* Example Chatbots css */
 .example_chatbots-container {
-  padding: 80px 340px;
+  padding: 80px 20px;
 }
-.example_chatbots-container h4 {
+.heading {
+  margin-bottom: 60px;
+}
+.heading > h4 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -236,10 +257,20 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: #282828;
-  margin-bottom: 60px;
+}
+.heading > p {
+  margin-top: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #666666;
 }
 .example-chatbot-box {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 .example-chatbot-box .img-card {
@@ -630,14 +661,21 @@ input:checked + .toggle-switch:before {
 .launchbot-list {
   width: 100%;
 }
-.launchbot-list li {
+.faq-ques{
+  /* border: 1px solid red; */
+  cursor: pointer;
+  
+}
+.faq-ques {
   display: flex;
   gap: 10px;
   flex-direction: column;
   border-bottom: 1px solid #d9d9d9;
-  padding: 30px 0;
+  padding-top: 30px;
+  height: 85px;
+  transition: height 0.3s ease-in-out;
 }
-.launchbot-list li span {
+.faq-ques span {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -649,7 +687,13 @@ input:checked + .toggle-switch:before {
   text-transform: capitalize;
   color: #444444;
 }
-.launchbot-list li p {
+.active-ques{
+  color: #FB5F66!important;
+  transition: color 0.3s ease-in-out;
+}
+.faq-ques p {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -757,4 +801,147 @@ p.rights-reserved {
   color: #8c8c8c;
   margin-top: 20px;
 }
-/* Media queries */
+
+@media (max-width: 1360px) and (min-width: 1024px) {
+  .banner-container {
+    padding: 0 20px;
+  }
+  .chatbox_builder_container {
+    width: 80%;
+  }
+  .launchbot-options{
+    width: unset;
+  }
+}
+@media (max-width: 1023px) and (min-width: 660px) {
+  .banner-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .banner-left {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-right {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .no-card-credit-signup {
+    width: 70%;
+    margin: 30px auto;
+  }
+  .credit-free-trial {
+    justify-content: center;
+  }
+  .chatbox_builder_container {
+    width: 100%;
+    padding: 30px;
+  }
+  .example-chatbot-box .img-card .img-details .img-details-left h3 {
+    font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 2px;
+  padding: 0px;
+  }
+  .chat-response-box{
+    width: 90%;
+  }
+  .launchbot-container{
+    width: 100%;
+  }
+  
+}
+@media (max-width: 659px) and (min-width: 350px){
+  .logo-txt{
+    display: none;
+  }
+  .navbar-right button {
+    width: unset;
+    height: unset;
+    padding: 10px 20px;
+  }
+  .no-card-credit-signup{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px;
+  }
+  .banner-left {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-right {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .chatbox_builder_container{
+    grid-template-columns: 1fr ;
+    
+  }
+  .example-chatbot-box{
+    flex-wrap: wrap;
+
+  }
+  .live-demo-container{
+    padding: 20px;
+  }
+  .chat-response-box{
+    width: unset;
+  }
+  
+  .credit-free-trial {
+    justify-content: center;
+  }
+  .chatbox_builder_container {
+    width: 100%;
+    padding: 30px;
+  }
+  .example-chatbot-box .img-card .img-details .img-details-left h3 {
+    font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 2px;
+  padding: 0px;
+  }
+  .launchbot-container{
+    width: 100%;
+  }
+  .launchbot-head{
+    padding: 80px 0;
+  }
+  .pricing-container{
+    margin-top: 50px;
+    padding: 0;
+  }
+  .pricing-flex{
+    gap: 0;
+  }
+  .pricing-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px 30px;
+    margin: 20px;
+  }
+  .launchbot-options{
+    width: 100%;
+    padding: 0 15px;
+  }
+  .faq-ques span{
+    font-size: 16px;
+  }
+}

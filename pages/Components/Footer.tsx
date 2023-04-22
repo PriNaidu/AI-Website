@@ -57,6 +57,7 @@ const Footer = () => {
             </span>
         </div>
       </div>
+      
       <hr />
       <p className="rights-reserved">©2022, All Rights Reserved</p>
     </footer>

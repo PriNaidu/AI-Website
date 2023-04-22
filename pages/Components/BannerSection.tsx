@@ -1,46 +1,65 @@
 import Link from "next/link";
 import { Logo } from "./Assets";
 import Image from "next/image";
+import { Fragment, useState } from "react";
 const BannerSection = () => {
-  return (
-    <>
-      <div className="banner-section">
-        <div className="navbar">
-          <div className="navbar-left">
-            <Logo />
-            <div className="heading">
-              <h1>Chatbot Builder</h1>
-               </div>
-          </div>
-          <div className="navbar-right">
-            <a href="https://app.chatbotbuilder.net/login"><button>Login</button></a>
+
+  const [userEmail, setUserEmail] = useState<any>()
   
-   
-         
-          <a href="https://app.chatbotbuilder.net/register">  <button>Sign Up</button></a>
+  const url = `https://app.omniengage.co/register?email=${userEmail}`
+
+  const handleSignup = () =>{
+    if(!userEmail){
+      return
+    }
+    window.location.replace(url);
+  }
+  return (
+
+    <Fragment>
+      <div className="banner-section">
+        <div className="wrapper">
+        <div className="navbar">
+          <div className="navbar-inner">
+            <div className="navbar-left">
+              <Logo />
+              <div className="logo-txt">
+                <h3>Chatbot Builder</h3>
+              </div>
+            </div>
+            <div className="navbar-right">
+              <a href="https://app.chatbotbuilder.net/login">
+                <button>Login</button>
+              </a>
+              <a href="https://app.chatbotbuilder.net/register">
+                {" "}
+                <button>Sign Up</button>
+              </a>
+            </div>
           </div>
         </div>
         <div className="banner-container">
           <div className="banner-left">
-            <div className="banner-heading">
+            <h1 className="banner-heading">
               Build your own <span>AI bot</span> for
               <br />
               your <span>business</span>
+            </h1>
+            <div className="banner-details-cont">
+              <div className="banner-details">
+                Love <span>chatGPT?</span>
+                Want to create a <span>chatGPT</span> equivalent to help your
+                sales and <br />
+                support team? Use AI chatbot to build your own AI bot in
+                minutes.
+              </div>
+              <div className="banner-details">
+                We can learn from your support docs, support conversations and
+                from your <br />
+                sales conversations. You can add a <span>PDF</span> or{" "}
+                <span>URL.</span>
+              </div>
             </div>
-         <div className="banner-details-cont">
-         <div className="banner-details">
-              Love <span>chatGPT?</span>
-              Want to create a <span>chatGPT</span> equivalent to help your
-              sales and <br />
-              support team? Use AI chatbot to build your own AI bot in minutes.
-            </div>
-            <div className="banner-details">
-              We can learn from your support docs, support conversations and
-              from your <br />
-              sales conversations. You can add a <span>PDF</span> or{" "}
-              <span>URL.</span>
-            </div>
-         </div>
             <div className="no-card-credit-signup">
               <div className="credit-free-trial">
                 <p>
@@ -88,22 +107,21 @@ const BannerSection = () => {
                   />
                 </svg>
 
-                <input type="email" placeholder="Enter your email" />
-                <button>Sign up free</button>
+                <input type="email" placeholder="Enter your email" onChange={(e)=>setUserEmail(e.target.value)}/>
+                <button onClick={handleSignup}>Sign up free</button>
               </div>
             </div>
           </div>
           <div className="banner-right">
-            <picture>
-              <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1681968982/Omniengage%20Ai%20Website/hero-image_sil9ju.png"
-                alt="banner image"
+            <img
+                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682141891/Group_988_vxnz3y.png"
+                alt="AI-Bot"
               />
-            </picture>
           </div>
         </div>
+        </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 export default BannerSection;
