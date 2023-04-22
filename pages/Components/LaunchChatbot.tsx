@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { FAQs } from "./FAQs";
 
 const LaunchChatbot = () => {
   const [showAns, setShowAns] = useState<any>();
+
   const handleShowFaq = (index: any) => {
     if (showAns === index) {
       setShowAns(null);
@@ -11,7 +12,7 @@ const LaunchChatbot = () => {
     }
   };
   return (
-    <>
+    <Fragment>
       <div className="launchbot-container">
         <div className="wrapper">
           <div className="launchbot-head">
@@ -79,7 +80,7 @@ const LaunchChatbot = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

@@ -942,6 +942,12 @@ p.rights-reserved {
     padding: 0 15px;
   }
   .faq-ques span{
-    font-size: 16px;
+    font-size: 15px;
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+  .footer-left, .footer-right{
+    width: 100%;
   }
 }
