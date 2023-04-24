@@ -12,10 +12,7 @@ cache:
 pages:
   script:
     - npm run-script build && npm run-script export
-    - mkdir .public
-    - cp -r ./* .public
-    - rm -rf public
-    - mv .public public
+     - mv out public
   artifacts:
     paths:
       - public
