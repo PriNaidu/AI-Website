@@ -80,6 +80,10 @@
 }
 .banner-right {
   padding-bottom: 30px;
+  margin-right: -130px;
+}
+.banner-right > img{
+  max-width: unset;
 }
 .banner-details-cont {
   display: flex;
@@ -336,7 +340,7 @@
   background: #ffffff;
   box-shadow: 2.43966px 3.25287px 19.5172px rgba(0, 0, 0, 0.08);
   border-radius: 6.50575px;
-  width: 33%;
+  max-width: 556px;
   margin: 60px auto 0;
 }
 .chat-response-box .chat-response-head {
@@ -800,7 +804,14 @@ p.rights-reserved {
   color: #8c8c8c;
   margin-top: 20px;
 }
-
+@media (max-width: 1600){
+  .banner-right{
+    margin-right: unset;
+  }
+  .banner-right > img{
+    max-width: 100%;
+  }
+}
 @media (max-width: 1360px) and (min-width: 1024px) {
   .banner-container {
     padding: 0 20px;
@@ -810,6 +821,12 @@ p.rights-reserved {
   }
   .launchbot-options{
     width: unset;
+  }
+  .banner-right{
+    margin-right: unset;
+  }
+  .banner-right > img{
+    max-width: 100%;
   }
 }
 @media (max-width: 1023px) and (min-width: 660px) {
@@ -825,6 +842,7 @@ p.rights-reserved {
     align-items: center;
   }
   .banner-right {
+    margin-right: 0px;
     width: 100%;
     display: grid;
     place-items: center;
@@ -851,6 +869,9 @@ p.rights-reserved {
   }
   .launchbot-container{
     width: 100%;
+  }
+  .banner-right > img{
+    max-width: 100%;
   }
   
 }
@@ -880,9 +901,13 @@ p.rights-reserved {
     align-items: center;
   }
   .banner-right {
+    margin-right: 0;
     width: 100%;
     display: grid;
     place-items: center;
+  }
+  .banner-right > img{
+    max-width: 100%;
   }
   .chatbox_builder_container{
     grid-template-columns: 1fr ;
