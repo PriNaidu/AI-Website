@@ -8,17 +8,17 @@ const FAQs = [
   {
     id: 2,
     ques: "Can I use my own OpenAI key?",
-    ans: "All plans you will be able to embed the chatbot anywhere",
+    ans: "Yes on the Advanced plan you can use your openAI key and this allows you to override the limits in a plan.",
   },
   {
     id: 3,
     ques: "Can I get help importing data or setting up the chatbot?",
-    ans: "All plans you will be able to embed the chatbot anywhere",
+    ans: `We try to make it easy to setup and import the data but we would be happy to help you you can reach out to us at questions@chatbotbuilder.net! `,
   },
   {
     id: 4,
     ques: "Which plans allow me to remove the built with Chatbot Builder?",
-    ans: "All plans you will be able to embed the chatbot anywhere",
+    ans: "The Standard and advanced plan allow you to remove the built with chatbot builder logo.",
   },
 ];
 const LaunchChatbot = () => {
@@ -91,7 +91,8 @@ const LaunchChatbot = () => {
                         opacity: `${showAns === index ? "1" : "0"}`,
                       }}
                     >
-                      {faq.ans}
+                      
+                    {faq.ans}
                     </p>
                   </li>
                 );

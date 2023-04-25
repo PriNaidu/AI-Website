@@ -810,12 +810,24 @@ p.rights-reserved {
   color: #8c8c8c;
   margin-top: 20px;
 }
+
 @media (max-width: 1600){
   .banner-right{
     margin-right: unset;
   }
   .banner-right > img{
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 1440px){
+  .banner-right{
+    margin-right: 0;
+  }
+  .banner-container{
+    gap:50px;
+  }
+  .banner-right > img{
+    width: 90%;
   }
 }
 @media (max-width: 1360px) and (min-width: 1024px) {
