@@ -31,11 +31,7 @@ const ExampleChtabots = () => {
         <div className="wrapper">
           <div className="heading">
             <h4>Examples Chatbots</h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-            </p>
+            
           </div>
           <div className="example-chatbot-wrap">
             <div className="example-chatbot-box">
