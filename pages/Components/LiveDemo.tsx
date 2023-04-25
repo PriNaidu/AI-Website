@@ -5,7 +5,7 @@ const LiveDemo = () => {
         <div className="heading">
           <h4>Live Demo</h4>
           <p>
-            This chatbot was trained on a document explaining Chatbotbuilder
+            This chatbot was trained on a document explaining Chatbot builder
           </p>
         </div>
         <div className="chat-response-box">

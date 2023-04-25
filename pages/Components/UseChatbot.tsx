@@ -5,11 +5,7 @@ const UseChatbot = () => {
         <div className="wrapper">
         <div className="heading">
         <h2>Why use Chatbot builder?</h2>
-        <p>
-          Creating a chatbot for Product Hunt by crawling the website and
-          training the AI on its content. I can then embed the
-          <br /> chatbot on the website!
-        </p>
+        
         </div>
         <div className="chatbox_builder_container">
           <div className="chatbot_builder-box">

@@ -17,7 +17,7 @@ export default function Home() {
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <main>
   <Head>
-    <title>Omniengage</title>
+  <title>ChatBot Builder</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Outfit&family=Poppins:ital@0;1&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"

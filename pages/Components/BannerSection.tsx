@@ -71,7 +71,7 @@ const BannerSection = () => {
               </div>
               <div className="navbar-right">
                 <a href="https://app.chatbotbuilder.net/login">
-                  <button>Login</button>
+                  <button className="login-btn">Login</button>
                 </a>
                 <a href="https://app.chatbotbuilder.net/register">
                   {" "}
@@ -160,8 +160,8 @@ const BannerSection = () => {
             </div>
             <div className="banner-right">
               <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682141891/Group_988_vxnz3y.png"
-                alt="AI-Bot"
+                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682401732/Group_14374_ndhqsf.png"
+                alt="Chatbot-builder"
               />
             </div>
           </div>
