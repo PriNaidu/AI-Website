@@ -35,6 +35,7 @@ const pricings = [
 ];
 
 const Pricing = () => {
+  const url = `https://app.chatbotbuilder.net/register`
   const [isChecked, setIsChecked] = useState<any>();
 
   return (
@@ -51,13 +52,13 @@ const Pricing = () => {
       <div className="pricing-flex">
         {pricings.map((price) => {
           return (
-            <div className={`pricing-box ${price.recommeded ? `box-active` : ``}` } key={price.id}>
+            <div className={`pricing-box ${price.recommeded ? `` : ``}` } key={price.id}>
               <h3>{price.plan}</h3>
               <div className="per-month-year">
                 <sup>$</sup>
                 {!isChecked ? price.monthly : price.yearly} <span>/month</span>
               </div>
-              <button>Select plan</button>
+              <button onClick={()=>window.location.replace(url)}>Select plan</button>
               <div className="features-list">
                 <h4>Features</h4>
                 <ul>

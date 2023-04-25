@@ -31,6 +31,7 @@ const LaunchChatbot = () => {
       setShowAns(index);
     }
   };
+  
   return (
     <Fragment>
       <div className="launchbot-container">
@@ -48,9 +49,7 @@ const LaunchChatbot = () => {
                 return (
                   <li
                     className="faq-ques"
-                    style={{
-                      height: `${showAns === index ? "auto" : "85px"}`,
-                    }}
+                    style={{height: `${showAns === index ? `120px`: `85px`}`}}
                     key={faq.id}
                     onClick={() => handleShowFaq(index)}
                   >

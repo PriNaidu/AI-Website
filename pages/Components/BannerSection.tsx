@@ -5,9 +5,10 @@ const BannerSection = () => {
 
   const [userEmail, setUserEmail] = useState<any>()
   
-  const url = `https://app.omniengage.co/register?email=${userEmail}`
+  const url = `https://app.chatbotbuilder.net/register?email=${userEmail}`
 
-  const handleSignup = () =>{
+  const handleSignup = (e:any) =>{
+    e.preventDefault()
     if(!userEmail){
       return
     }
@@ -84,21 +85,18 @@ const BannerSection = () => {
             <div className="banner-left">
               <h1 className="banner-heading">
                 Build your own <span>AI bot</span> for
-                <br />
                 your <span>business</span>
               </h1>
               <div className="banner-details-cont">
                 <div className="banner-details">
-                  Love <span>chatGPT?</span>
-                  Want to create a <span>chatGPT</span> equivalent to help your
-                  sales and <br />
-                  support team? Use AI chatbot to build your own AI bot in
+                  Love <span>chatGPT? </span>
+                   Want to create a <span>chatGPT</span> equivalent to help your
+                  sales and support team? Use AI chatbot to build your own AI bot in
                   minutes.
                 </div>
                 <div className="banner-details">
                   We can learn from your support docs, support conversations and
-                  from your <br />
-                  sales conversations. You can add a <span>PDF</span> or{" "}
+                  from your sales conversations. You can add a <span>PDF</span> or{" "}
                   <span>URL.</span>
                 </div>
               </div>
@@ -148,19 +146,20 @@ const BannerSection = () => {
                       fill="#B9B9B9"
                     />
                   </svg>
-
+                  <form onSubmit={handleSignup}>
                   <input
                     type="email"
                     placeholder="Enter your email"
                     onChange={(e) => setUserEmail(e.target.value)}
                   />
-                  <button onClick={handleSignup}>Sign up free</button>
+                  <button>Sign up free</button>
+                  </form>
                 </div>
               </div>
             </div>
             <div className="banner-right">
               <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682401732/Group_14374_ndhqsf.png"
+                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682420630/Group_14374_2_sja4ye.png"
                 alt="Chatbot-builder"
               />
             </div>
