@@ -89,16 +89,14 @@ const BannerSection = () => {
               </h1>
               <div className="banner-details-cont">
                 <div className="banner-details">
-                  Love <span>chatGPT?</span>
-                  Want to create a <span>chatGPT</span> equivalent to help your
-                  sales and <br />
-                  support team? Use AI chatbot to build your own AI bot in
+                  Love <span>chatGPT? </span>
+                   Want to create a <span>chatGPT</span> equivalent to help your
+                  sales and support team? Use AI chatbot to build your own AI bot in
                   minutes.
                 </div>
                 <div className="banner-details">
                   We can learn from your support docs, support conversations and
-                  from your <br />
-                  sales conversations. You can add a <span>PDF</span> or{" "}
+                  from your sales conversations. You can add a <span>PDF</span> or{" "}
                   <span>URL.</span>
                 </div>
               </div>
