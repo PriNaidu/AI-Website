@@ -111,7 +111,7 @@ const Footer = () => {
       </div>
 
       <hr />
-      <p className="rights-reserved">©2022, All Rights Reserved</p>
+      <p className="rights-reserved">©2023, All Rights Reserved</p>
     </footer>
   );
 };

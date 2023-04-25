@@ -17,7 +17,7 @@ const FAQs = [
   },
   {
     id: 4,
-    ques: "Which plans allow me to remove the built with ChatbotBuilder?",
+    ques: "Which plans allow me to remove the built with Chatbot Builder?",
     ans: "All plans you will be able to embed the chatbot anywhere",
   },
 ];
