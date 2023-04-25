@@ -49,7 +49,7 @@ const LaunchChatbot = () => {
                   <li
                     className="faq-ques"
                     style={{
-                      height: `${showAns === index ? "120px" : "85px"}`,
+                      height: `${showAns === index ? "auto" : "85px"}`,
                     }}
                     key={faq.id}
                     onClick={() => handleShowFaq(index)}
