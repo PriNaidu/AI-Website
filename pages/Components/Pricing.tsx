@@ -12,23 +12,23 @@ const pricings = [
     id: 2,
     plan: "Basic",
     monthly: 22,
-    yearly: 120,
+    yearly: 14,
     features: ["4 bots", "2500 messages", "Size of 27MB"],
     recommeded: true,
   },
   {
     id: 3,
-    plan: "Basic",
+    plan: "Standard",
     monthly: 55,
-    yearly: 400,
+    yearly: 35,
     features: ["18 bots", "4500 messages", "Size of 45 MB"],
     recommeded: false,
   },
   {
     id: 4,
-    plan: "Basic",
+    plan: "Advanced",
     monthly: 115,
-    yearly: 900,
+    yearly: 95,
     features: ["30 bots", "12500 messages", "Size of 55 MB"],
     recommeded: false,
   },
@@ -46,7 +46,7 @@ const Pricing = () => {
           <input type="checkbox" onChange={() => setIsChecked(!isChecked)} />
           <span className="toggle-switch round"></span>
         </label>
-        <span className="yearly-label">Yearly</span>
+        <span className="yearly-label">Annual</span>
       </div>
       <div className="pricing-flex">
         {pricings.map((price) => {
@@ -55,7 +55,7 @@ const Pricing = () => {
               <h3>{price.plan}</h3>
               <div className="per-month-year">
                 <sup>$</sup>
-                {!isChecked ? price.monthly : price.yearly} <span>{!isChecked ? '/month' : '/year'}</span>
+                {!isChecked ? price.monthly : price.yearly} <span>/month</span>
               </div>
               <button>Select plan</button>
               <div className="features-list">
