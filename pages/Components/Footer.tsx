@@ -42,7 +42,7 @@ const Footer = () => {
             Chatbot Builder
           </div>
           <div className="disposal">
-            DISPOSAL, DESTRUCTION AND REDACTION OF DATA 
+            
             <br />
             Chatbot Builder’s Data Retention and Disposal Policy require <br />
             managerial approval for the disposal, destruction and deletion of
