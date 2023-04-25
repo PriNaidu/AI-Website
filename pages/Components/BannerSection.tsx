@@ -29,7 +29,7 @@ const BannerSection = () => {
             </div>
             <div className="navbar-right">
               <a href="https://app.chatbotbuilder.net/login">
-                <button>Login</button>
+                <button className="login-btn">Login</button>
               </a>
               <a href="https://app.chatbotbuilder.net/register">
                 {" "}
