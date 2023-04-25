@@ -31,9 +31,7 @@ const LaunchChatbot = () => {
       setShowAns(index);
     }
   };
-  const faqStyle = {
-    height: `110px`
-  }
+  
   return (
     <Fragment>
       <div className="launchbot-container">

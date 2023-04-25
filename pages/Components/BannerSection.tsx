@@ -5,9 +5,10 @@ const BannerSection = () => {
 
   const [userEmail, setUserEmail] = useState<any>()
   
-  const url = `https://app.omniengage.co/register?email=${userEmail}`
+  const url = `https://app.chatbotbuilder.net/register?email=${userEmail}`
 
-  const handleSignup = () =>{
+  const handleSignup = (e:any) =>{
+    e.preventDefault()
     if(!userEmail){
       return
     }
@@ -145,13 +146,14 @@ const BannerSection = () => {
                       fill="#B9B9B9"
                     />
                   </svg>
-
+                  <form onSubmit={handleSignup}>
                   <input
                     type="email"
                     placeholder="Enter your email"
                     onChange={(e) => setUserEmail(e.target.value)}
                   />
-                  <button onClick={handleSignup}>Sign up free</button>
+                  <button>Sign up free</button>
+                  </form>
                 </div>
               </div>
             </div>
