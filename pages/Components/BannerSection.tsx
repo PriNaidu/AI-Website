@@ -157,7 +157,7 @@ const BannerSection = () => {
             </div>
             <div className="banner-right">
               <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682401732/Group_14374_ndhqsf.png"
+                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682420630/Group_14374_2_sja4ye.png"
                 alt="Chatbot-builder"
               />
             </div>
