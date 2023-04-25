@@ -46,7 +46,7 @@ const Pricing = () => {
           <input type="checkbox" onChange={() => setIsChecked(!isChecked)} />
           <span className="toggle-switch round"></span>
         </label>
-        <span className="yearly-label">Yearly</span>
+        <span className="yearly-label">Annual</span>
       </div>
       <div className="pricing-flex">
         {pricings.map((price) => {
