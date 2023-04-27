@@ -1,17 +1,18 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const Footer = () => {
-  const [userEmail, setUserEmail] = useState<any>()
-  
-  const url = `https://app.chatbotbuilder.net/register?email=${userEmail}`
+  const [userEmail, setUserEmail] = useState<any>();
 
-  const handleSignup = (e:any) =>{
-    e.preventDefault()
-    if(!userEmail){
-      return
+  const url = `https://app.chatbotbuilder.net/register?email=${userEmail}`;
+
+  const handleSignup = (e: any) => {
+    e.preventDefault();
+    if (!userEmail) {
+      return;
     }
     window.location.replace(url);
-  }
+  };
   return (
     <footer>
       <div className="footer-container">
@@ -55,37 +56,37 @@ const Footer = () => {
             Chatbot Builder
           </div>
           <div className="footer-bottom">
-        <div className="sms-box">
-          <svg
-            width="20"
-            height="21"
-            viewBox="0 0 20 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.1666 17.8239H5.83329C3.33329 17.8239 1.66663 16.5739 1.66663 13.6572V7.82389C1.66663 4.90723 3.33329 3.65723 5.83329 3.65723L14.1666 3.65723C16.6666 3.65723 18.3333 4.90723 18.3333 7.82389V13.6572C18.3333 16.5739 16.6666 17.8239 14.1666 17.8239Z"
-              stroke="white"
-              strokeWidth="1.2"
-              strokeMiterlimit="10"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M14.1667 8.24048L11.5584 10.3238C10.7 11.0071 9.2917 11.0071 8.43337 10.3238L5.83337 8.24048"
-              stroke="white"
-              strokeWidth="1.2"
-              strokeMiterlimit="10"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
-        <div className="contact-us">
-          <p>Contact us at</p>
-          <span>questions@chatbotbuilder.net</span>
-        </div>
-      </div>
+            <div className="sms-box">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.1666 17.8239H5.83329C3.33329 17.8239 1.66663 16.5739 1.66663 13.6572V7.82389C1.66663 4.90723 3.33329 3.65723 5.83329 3.65723L14.1666 3.65723C16.6666 3.65723 18.3333 4.90723 18.3333 7.82389V13.6572C18.3333 16.5739 16.6666 17.8239 14.1666 17.8239Z"
+                  stroke="white"
+                  strokeWidth="1.2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M14.1667 8.24048L11.5584 10.3238C10.7 11.0071 9.2917 11.0071 8.43337 10.3238L5.83337 8.24048"
+                  stroke="white"
+                  strokeWidth="1.2"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+            <div className="contact-us">
+              <p>Contact us at</p>
+              <span>questions@chatbotbuilder.net</span>
+            </div>
+          </div>
         </div>
 
         <div className="footer-right">
@@ -108,16 +109,32 @@ const Footer = () => {
               />
             </svg>
             <form onSubmit={handleSignup}>
-            <input type="email" placeholder="Enter your email" onChange={(e)=>setUserEmail(e.target.value)}/>
-            <button onClick={handleSignup}>Sign up free</button>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                onChange={(e) => setUserEmail(e.target.value)}
+              />
+              <button onClick={handleSignup}>Sign up free</button>
             </form>
           </div>
         </div>
       </div>
-      
 
       <hr />
-      <p className="rights-reserved">©2023, All Rights Reserved</p>
+      <div className="footer-bottom-menus">
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link href="/terms&conditions">Terms & Conditions</Link>
+          </li>
+        </ul>
+        <p className="rights-reserved">©2023, All Rights Reserved</p>
+      </div>
     </footer>
   );
 };

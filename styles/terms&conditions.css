@@ -40,3 +40,49 @@
     color: #0093EB;
     font-weight: 500;
 }
+.privacy-policy-container p {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666666CC;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.privacy-policy-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.privacy-policy-heading h1{
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #282828;
+    line-height: 41px;
+    margin: 0px;
+    display: flex;
+
+}
+/* li {
+    list-style: none;
+    font-size: 20px;
+} */
+.privacy-pointers li{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666666CC;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.privacy-pointers li:before {
+    content:"·";
+    font-size:40px;
+    vertical-align:middle;
+    line-height:20px;
+    color: #444444;
+    margin-right: 10px;
+}

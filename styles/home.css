@@ -823,7 +823,28 @@ p.rights-reserved {
   line-height: 17px;
   text-align: center;
   color: #8c8c8c;
+}
+.footer-bottom-menus{
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
+}
+.footer-bottom-menus ul{
+  display: flex;
+  gap: 25px;
+}
+.footer-bottom-menus li{
+  font-family: Rubik, sans-serif;
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.footer-bottom-menus li:hover{
+  color: #fb5f66;
 }
 
 @media (max-width: 1600){
