@@ -295,6 +295,16 @@
   justify-content: center;
   gap: 20px;
 }
+.example-chatbot-box .img-card > picture > img{
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.example-chatbot-box .img-card > picture > img:hover{
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  animation: fadeout .5s ease-in-out;
+}
 .example-chatbot-box .img-card {
   position: relative;
 }
