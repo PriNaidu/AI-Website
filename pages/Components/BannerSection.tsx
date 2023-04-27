@@ -76,13 +76,11 @@ const BannerSection = () => {
                 </a>
                 <a href="https://app.chatbotbuilder.net/register">
                   {" "}
-                  <button>Sign Up</button>
+                  <button className="signup-btn">Sign Up</button>
                 </a>
               </div>
             </div>
           </div>
-          </div>
-          <div className="banner-wrapper">
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">

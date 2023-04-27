@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { AnimatedLogo } from "./Assets";
 
 const Navbar = ({ show }: { show: boolean }) => {
   return (
@@ -57,7 +58,7 @@ const Navbar = ({ show }: { show: boolean }) => {
             </a>
             <a href="https://app.chatbotbuilder.net/register">
               {" "}
-              <button>Sign Up</button>
+              <button className="signup-btn">Sign Up</button>
             </a>
           </div>
         </div>
