@@ -81,6 +81,8 @@ const BannerSection = () => {
               </div>
             </div>
           </div>
+          </div>
+          <div className="banner-wrapper">
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">
@@ -159,12 +161,12 @@ const BannerSection = () => {
             </div>
             <div className="banner-right">
               <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682420630/Group_14374_2_sja4ye.png"
+                src="chatbotbuilder.png"
                 alt="Chatbot-builder"
               />
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </Fragment>
   );

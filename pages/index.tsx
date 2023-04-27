@@ -9,13 +9,36 @@ import LiveDemo from './Components/LiveDemo'
 import Pricing from './Components/Pricing'
 import LaunchChatbot from './Components/LaunchChatbot'
 import Footer from './Components/Footer'
+import { useEffect, useState } from 'react';
+import Navbar from './Components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') { 
+      if (window.scrollY > 100) {
+        setShow(false); 
+      } else {
+        setShow(true);  
+      }
+      setLastScrollY(window.scrollY); 
+    }
+  };
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    <main>
+    <main >
   <Head>
   <title>ChatBot Builder</title>
     <link
@@ -23,6 +46,7 @@ export default function Home() {
       rel="stylesheet"
     />
   </Head>
+  <Navbar show={show}/>
 <BannerSection/>
 <UseChatbot/>
 <ExampleChtabots/>

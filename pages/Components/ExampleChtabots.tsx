@@ -102,7 +102,7 @@ const ExampleChtabots = () => {
                 <div className="img-details">
                   <div className="img-details-left">
                     <h3>Joe Rogan</h3>
-                    <span>Social media influencers</span>
+                    <span>Social media influencer</span>
                   </div>
                   <div className="img-details-right">
                     <ChatIcon />
