@@ -66,18 +66,18 @@ const Footer = () => {
             <path
               d="M14.1666 17.8239H5.83329C3.33329 17.8239 1.66663 16.5739 1.66663 13.6572V7.82389C1.66663 4.90723 3.33329 3.65723 5.83329 3.65723L14.1666 3.65723C16.6666 3.65723 18.3333 4.90723 18.3333 7.82389V13.6572C18.3333 16.5739 16.6666 17.8239 14.1666 17.8239Z"
               stroke="white"
-              stroke-width="1.2"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.2"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M14.1667 8.24048L11.5584 10.3238C10.7 11.0071 9.2917 11.0071 8.43337 10.3238L5.83337 8.24048"
               stroke="white"
-              stroke-width="1.2"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.2"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

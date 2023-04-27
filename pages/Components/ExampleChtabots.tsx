@@ -38,8 +38,8 @@ const ExampleChtabots = () => {
               <div className="img-card">
                 <picture>
                   <img
-                    src="https://res.cloudinary.com/dghqyted6/image/upload/v1681993429/Omniengage%20Ai%20Website/Rectangle_246_tjw6iv.png"
-                    alt=""
+                    src="https://dlvkyia8i4zmz.cloudfront.net/KjkhDoHQQ1eJ8r8DFVDD_Group_14379.png"
+                    alt="chatbotbuilder.net"
                   />
                 </picture>
                 <div className="img-details">
@@ -78,8 +78,8 @@ const ExampleChtabots = () => {
               <div className="img-card">
                 <picture>
                   <img
-                    src="https://res.cloudinary.com/dghqyted6/image/upload/v1681993454/Omniengage%20Ai%20Website/Rectangle_247_mitqiz.png"
-                    alt=""
+                    src="https://dlvkyia8i4zmz.cloudfront.net/zKPiTliSrCCVrcj8BVpu_Group_14380.png"
+                    alt="chatbotbuilder.net"
                   />
                 </picture>
                 <div className="img-details">
@@ -95,14 +95,14 @@ const ExampleChtabots = () => {
               <div className="img-card">
                 <picture>
                   <img
-                    src="https://res.cloudinary.com/dghqyted6/image/upload/v1681993535/Omniengage%20Ai%20Website/Rectangle_248_du6anc.png"
-                    alt=""
+                    src="https://dlvkyia8i4zmz.cloudfront.net/WaVaFrm5TDqsMikwq1Ot_Group_14381.png"
+                    alt="chatbotbuilder.net"
                   />
                 </picture>
                 <div className="img-details">
                   <div className="img-details-left">
                     <h3>Joe Rogan</h3>
-                    <span>Social media influencers</span>
+                    <span>Social media influencer</span>
                   </div>
                   <div className="img-details-right">
                     <ChatIcon />

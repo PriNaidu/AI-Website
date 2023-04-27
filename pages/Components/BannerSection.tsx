@@ -76,7 +76,7 @@ const BannerSection = () => {
                 </a>
                 <a href="https://app.chatbotbuilder.net/register">
                   {" "}
-                  <button>Sign Up</button>
+                  <button className="signup-btn">Sign Up</button>
                 </a>
               </div>
             </div>
@@ -159,12 +159,12 @@ const BannerSection = () => {
             </div>
             <div className="banner-right">
               <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1682420630/Group_14374_2_sja4ye.png"
+                src="chatbotbuilder.png"
                 alt="Chatbot-builder"
               />
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </Fragment>
   );

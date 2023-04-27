@@ -38,16 +38,24 @@ const Pricing = () => {
   const url = `https://app.chatbotbuilder.net/register`
   const [isChecked, setIsChecked] = useState<any>();
 
+  const fontStyle = {
+    color: '#FB5F66',
+    fontWeight: 500
+  }
+  const noStyle = {
+    
+  }
+
   return (
     <div className="pricing-container">
       <h3>Pricing Plan</h3>
       <div className="pricing-toggle">
-        <span className="monthly-label">Monthly</span>
+        <span className="monthly-label" style={!isChecked ? fontStyle: noStyle}>Monthly</span>
         <label className="pricing-toggle-wrapper">
           <input type="checkbox" onChange={() => setIsChecked(!isChecked)} />
           <span className="toggle-switch round"></span>
         </label>
-        <span className="yearly-label">Annual</span>
+        <span className="yearly-label" style={isChecked ? fontStyle: noStyle}>Annual</span>
       </div>
       <div className="pricing-flex">
         {pricings.map((price) => {
