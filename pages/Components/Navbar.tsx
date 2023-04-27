@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { AnimatedLogo } from "./Assets";
 
 const Navbar = ({ show }: { show: boolean }) => {
   return (
