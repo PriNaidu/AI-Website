@@ -15,15 +15,15 @@ import Navbar from './Components/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') { 
       if (window.scrollY > 100) {
-        setShow(false); 
+        setShow(true); 
       } else {
-        setShow(true);  
+        setShow(false);  
       }
       setLastScrollY(window.scrollY); 
     }

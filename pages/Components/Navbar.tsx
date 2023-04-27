@@ -6,8 +6,8 @@ const Navbar = ({ show }: { show: boolean }) => {
     <div
       className="navbar-sticky"
       style={{
-        opacity: show ? "0" : "1",
-        translate: show ? "0px -50px" : "0px 0px",
+        opacity: !show ? "0" : "1",
+        translate: !show ? "0px -50px" : "0px 0px",
       }}
     >
       <div className="wrapper-navbar">

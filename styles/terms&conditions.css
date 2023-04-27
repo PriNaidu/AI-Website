@@ -1,0 +1,42 @@
+.terms-condition-outer{
+    background-color: #FFF5F6;
+    margin: 0 45px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.terms-container h1{
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #282828;
+    line-height: 41px;
+    margin: 0px;
+    margin-bottom: 60px;
+}
+.terms-conditions-para{
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+.terms-conditions-para h2{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #282828;
+    margin: 0px;
+}
+.terms-conditions-para p {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666666CC;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.terms-conditions-para p a{
+    color: #0093EB;
+    font-weight: 500;
+}
