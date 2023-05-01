@@ -46,7 +46,7 @@ export default function Home() {
       rel="stylesheet"
     />
   </Head>
-  <Navbar show={show}/>
+  {/* <Navbar show={show}/> */}
 <BannerSection/>
 <UseChatbot/>
 <ExampleChtabots/>

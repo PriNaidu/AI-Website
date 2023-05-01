@@ -60,7 +60,7 @@ const Pricing = () => {
       <div className="pricing-flex">
         {pricings.map((price) => {
           return (
-            <div className={`pricing-box ${price.recommeded ? `` : ``}` } key={price.id}>
+            <div className={`pricing-box ${price.recommeded ? `box-active` : ``}` } key={price.id}>
               <h3>{price.plan}</h3>
               <div className="per-month-year">
                 <sup>$</sup>
