@@ -14,7 +14,7 @@ const UseChatbot = () => {
                 <img
                   src="https://res.cloudinary.com/dghqyted6/image/upload/v1681988222/Omniengage%20Ai%20Website/Group_14370_aoc1ux.png
 "
-                  alt=""
+                  alt="Supercharge your sales and support team"
                 />
               </picture>
             </div>
@@ -32,7 +32,7 @@ const UseChatbot = () => {
                 <img
                   src="https://res.cloudinary.com/dghqyted6/image/upload/v1681977776/Omniengage%20Ai%20Website/Frame_14531_pwszck.png
 "
-                  alt=""
+                  alt="The chatbot can immediately reply"
                 />
               </picture>
             </div>
@@ -53,7 +53,7 @@ const UseChatbot = () => {
                 <img
                   src="https://res.cloudinary.com/dghqyted6/image/upload/v1681988268/Omniengage%20Ai%20Website/Group_14371_talese.png
 "
-                  alt=""
+                  alt="Chatbot can analyze this data<"
                 />
               </picture>
             </div>
@@ -71,9 +71,7 @@ const UseChatbot = () => {
             <div className="box-image-section">
               <picture>
                 <img
-                  src="https://res.cloudinary.com/dghqyted6/image/upload/v1681988257/Omniengage%20Ai%20Website/Group_14372_iibrwt.png
-"
-                  alt=""
+                  src="https://dlvkyia8i4zmz.cloudfront.net/ETPJJoEiTSaTprjeykFP_Group_14387.png"alt="Provide the best possible support"
                 />
               </picture>
             </div>
