@@ -99,7 +99,7 @@
 }
 .banner-right {
   padding-bottom: 30px;
-  margin-right: -350px;
+  margin-right: -300px;
 }
 .banner-right > img{
   max-width: unset;
@@ -847,9 +847,9 @@ p.rights-reserved {
   color: #fb5f66;
 }
 
-@media (max-width: 1600){
+@media (max-width: 1600px) and (min-width: 1441px){
   .banner-right{
-    margin-right: unset;
+    margin-right: -200px;
   }
   .banner-right > img{
     max-width: 100%;
@@ -877,7 +877,7 @@ p.rights-reserved {
     width: unset;
   }
   .banner-right{
-    margin-right: unset;
+    margin-right: -100px;
   }
   .banner-right > img{
     max-width: 100%;
