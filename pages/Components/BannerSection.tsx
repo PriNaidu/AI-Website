@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useState } from "react";
@@ -20,7 +19,7 @@ const BannerSection = () => {
         <div className="wrapper">
           <div className="navbar">
             <div className="navbar-inner">
-            <Link href="/">
+              <Link href="/">
                 <div className="navbar-left">
                   <svg
                     width={42}
@@ -165,7 +164,12 @@ const BannerSection = () => {
               </div>
             </div>
             <div className="banner-right">
-              <img src="https://dlvkyia8i4zmz.cloudfront.net/XrmMmcRmebCWjZwGXUhA_Group_14383__1.png" alt="Chatbot-builder" />
+              <picture>
+                <img
+                  src="https://res.cloudinary.com/dghqyted6/image/upload/v1683025674/Group_14383_1_e4ruli.png"
+                  alt="Chatbot-builder"
+                />
+              </picture>
             </div>
           </div>
         </div>
