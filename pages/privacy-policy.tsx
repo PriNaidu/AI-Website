@@ -64,13 +64,13 @@ const PrivacyPolicy = () => {
               </Link>
             <div className="navbar-right">
               <a href="https://app.chatbotbuilder.net/login">
-                <button className="login-btn">Login</button>
+                <button className="login-btn">Loginhghg</button>
               </a>
               <a href="https://app.chatbotbuilder.net/register">
                 {" "}
                 <button className="signup-btn">Sign Up</button>
               </a>
-            </div>
+            </div>~
           </div>
         </div>
       </div>
