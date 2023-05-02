@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useState } from "react";
@@ -164,7 +165,7 @@ const BannerSection = () => {
               </div>
             </div>
             <div className="banner-right">
-              <img src="https://dlvkyia8i4zmz.cloudfront.net/oZah35UlSXCHmVFpG1RF_Group_14383.png" alt="Chatbot-builder" />
+              <img src="https://dlvkyia8i4zmz.cloudfront.net/XrmMmcRmebCWjZwGXUhA_Group_14383__1.png" alt="Chatbot-builder" />
             </div>
           </div>
         </div>
