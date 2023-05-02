@@ -167,7 +167,7 @@ const BannerSection = () => {
               <picture>
                 <img
                   src="https://res.cloudinary.com/dghqyted6/image/upload/v1683025674/Group_14383_1_e4ruli.png"
-                  alt="Chatbot-builder"
+                  alt="Chatbot-builderr"
                 />
               </picture>
             </div>
