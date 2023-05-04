@@ -53,7 +53,7 @@ const LiveDemo = () => {
           <div className="chat-response-middle">
             <picture>
               <img
-                src="https://res.cloudinary.com/dghqyted6/image/upload/v1681995904/Omniengage%20Ai%20Website/remote-team-2--Work-remote-team_ix4caw.png"
+                src="	https://dlvkyia8i4zmz.cloudfront.net/he8TGQaST5K7nZC9rwyN_AI_chat_Animation__2_.svg"
                 alt=""
               />
             </picture>
