@@ -74,7 +74,7 @@ const LiveDemo = () => {
 </defs>
 </svg>
 
-             Omniengage</div>
+Chatbot Builder</div>
           </div>
           <div className="chat-response-textarea">
             <input type="text" placeholder="Compose your message...." />
