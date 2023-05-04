@@ -21,8 +21,8 @@ const UseChatbot = () => {
             <div className="chatbot-box-content">
               <h5>Supercharge your sales and support team</h5>
               <p>
-                Supercharge your sales and support team <br /> with a powerful
-                AI bot customized for your <br /> business.
+                Supercharge your sales and support team with a powerful
+                AI bot customized for your business.
               </p>
             </div>
           </div>
@@ -40,10 +40,10 @@ const UseChatbot = () => {
               <h5>The chatbot can immediately reply</h5>
               <p>
                 If a customer asks a question, the chatbot can immediately{" "}
-                <br /> reply, search through your support documents to provide{" "}
-                <br /> the most relevant answer. Similarly, if you can add data
-                from <br /> your CRM, your chatbot can analyze customer data to{" "}
-                <br /> provide personalized sales recommendations.
+                 reply, search through your support documents to provide{" "}
+                 the most relevant answer. Similarly, if you can add data
+                from your CRM, your chatbot can analyze customer data to{" "}
+                 provide personalized sales recommendations.
               </p>
             </div>
           </div>
@@ -61,8 +61,8 @@ const UseChatbot = () => {
               <h5>Chatbot can analyze this data</h5>
               <p>
                 If you have important information stored in a PDF or on a
-                website, <br /> your chatbot can analyze this data to provide
-                more comprehensive <br /> and accurate answers to customer
+                website, your chatbot can analyze this data to provide
+                more comprehensive and accurate answers to customer
                 inquiries.
               </p>
             </div>
@@ -79,9 +79,9 @@ const UseChatbot = () => {
               <h5>Provide the best possible support</h5>
               <p>
                 Overall, our AI chatbot builder is designed to be flexible and
-                able to take <br /> data from a variety of sources, allowing
-                your chatbot to be <br /> personalized to your business needs
-                and provide the best possible <br /> support and sales
+                able to take data from a variety of sources, allowing
+                your chatbot to be personalized to your business needs
+                and provide the best possible support and sales
                 experience for your customers.
               </p>
             </div>
