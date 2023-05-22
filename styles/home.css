@@ -607,6 +607,21 @@ gap: 8px;
   color: #3e9adc;
   margin-top: 10px;
 }
+.pricing-head h2{
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #444444;
+}
+.pricing-head{
+  margin-bottom: 50px;
+}
 .toggle-switch {
   position: absolute;
   cursor: pointer;
@@ -673,6 +688,7 @@ input:checked + .toggle-switch:before {
 .monthly-label.selected,
 .yearly-label.selected {
   font-weight: 500;
+  color: #fb5f67;
 }
 
 /* Launchbot css */
@@ -894,6 +910,163 @@ p.rights-reserved {
 .footer-bottom-menus li:hover{
   color: #fb5f66;
 }
+
+/* Pricing new */    
+.ai-plan-landing{
+  padding: 80px 0;
+}
+.ai-plan-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 100%;
+}
+.aiplan-bx {
+  border: 1px solid #cfcfcf;
+  border-radius: 20px;
+  width: 290px;
+  transition: 0.2s ease-in-out;
+}
+.active-aiplan .aiplan-content-bx button {
+  background: #fb5f66;
+  border: 1px solid #fb5f66;
+  color: #ffffff;
+}
+.active-aiplan, .aiplan-bx:hover {
+  /* outline: 2px solid #fb5f66; */
+  border: 1px solid #fb5f66;
+}
+
+.aiplan-ing-bx {
+  background: rgba(251, 95, 102, 0.1);
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+}
+.aiplan-content-bx {
+  padding: 20px 30px;
+}
+.aiplan-content-bx > h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444444;
+  text-transform: uppercase;
+}
+.ai-recommend {
+  padding: 0px 10px;
+  background: rgba(76, 175, 80, 0.2);
+  border-radius: 20px;
+  color: #27922c;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.ai-current-plan {
+  padding: 6px 10px;
+  background: rgba(251, 95, 102, 0.2);
+  border-radius: 20px;
+  color: #fb5f66;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.aiplan-content-bx > p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #6d6d6d;
+  margin: 5px 0 15px;
+}
+.aiplan-content-bx .ai-plan-price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: #444444;
+  margin-bottom: 25px;
+}
+.aiplan-content-bx .ai-plan-price > span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #fb5f66;
+}
+.aiplan-content-bx button {
+  width: 100%;
+  padding: 12px 0;
+  background: #ffffff;
+  border: 1px solid #fb5f66;
+  border-radius: 4px;
+  color: #fb5f66;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.aiplan-content-bx ul > span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6d6d6d;
+  margin-bottom: 12px;
+}
+.aiplan-content-bx ul > li {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #444444;
+  gap: 10px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.aiplan-content-bx ul > li:last-child {
+  margin-bottom: none;
+}
+.aiplan-content-bx ul li::before {
+  background: url(https://dlvkyia8i4zmz.cloudfront.net/TExqgc9SaWgoZRpf3W62_Group.png) no-repeat;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10%;
+}
+.aiplan-content-bx ul li span {
+  margin-left: 25px;
+}
+
+
+/* Pricing ends */
 
 @media (max-width: 1600px) and (min-width: 1441px){
   .banner-right{
@@ -1135,3 +1308,5 @@ p.rights-reserved {
     right: 2%;
   }
 }
+
+

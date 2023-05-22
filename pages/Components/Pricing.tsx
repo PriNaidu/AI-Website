@@ -1,101 +1,104 @@
-import { useState } from "react";
-const pricings = [
-  {
-    id: 1,
-    plan: "Free",
-    monthly: 0,
-    yearly: 0,
-    features: ["1 bot", "35 messages", "Size of 4MB"],
-    recommeded: false,
-  },
-  {
-    id: 2,
-    plan: "Basic",
-    monthly: 22,
-    yearly: 14,
-    features: ["4 bots", "2500 messages", "Size of 27MB"],
-    recommeded: true,
-  },
-  {
-    id: 3,
-    plan: "Standard",
-    monthly: 55,
-    yearly: 35,
-    features: ["18 bots", "4500 messages", "Size of 45 MB"],
-    recommeded: false,
-  },
-  {
-    id: 4,
-    plan: "Advanced",
-    monthly: 115,
-    yearly: 95,
-    features: ["30 bots", "12500 messages", "Size of 55 MB"],
-    recommeded: false,
-  },
-];
-
+import React, { Fragment, useState } from "react";
+// import "./AIPricing.css"
+import { features } from "process";
+import AIPlan1 from "./Assets/AIPlan1";
+import AIPlan2 from "./Assets/AIPlan2";
+import AIPlan3 from "./Assets/AIPlan3";
+import AIPlan4 from "./Assets/AIPlan4";
 const Pricing = () => {
-  const url = `https://app.chatbotbuilder.net/register`
-  const [isChecked, setIsChecked] = useState<any>();
-
-  const fontStyle = {
-    color: '#FB5F66',
-    fontWeight: 500
-  }
-  const noStyle = {
+  const data = [
+    {
+      image: <AIPlan1 />,
+      title: "Free",
+      desc: "Good superb content for Advanced users  Advanced users",
+      monthly: "$0",
+      yearly: "$0",
+      button: "Free Plan",
+      features:["01 bot", "35 msg per day / 420 msg per month","File upload limit - 04 MB"]
+    },
+    { 
     
-  }
+      image: <AIPlan2 />,
+      title: "Basic",
+      desc: "Good superb content for Advanced users  Advanced users",
+      monthly: "$22",
+      yearly: "$14",
+      button: "Upgrade Plan",
+      features:["04 bots", "2500 messages per month","File upload limit - 27 MB"]
+    },
+    { 
+      image: <AIPlan3 />,
+      title: "Standard",
+      desc: "Good superb content for Advanced users  Advanced users",
+      monthly: "$55",
+      yearly: "$35",
+      button: "Upgrade Plan",
+      features:["18 bot", "4500 messages per month","File upload limit - 45 MB / 3.5M characters","Add your OpenAI key","100 links"]
+    },
+    {
+      image: <AIPlan4 />,
+      title: "Advanced", 
+      desc: "Good superb content for Advanced users  Advanced users",
+      monthly: "$115",
+      yearly: "$95",
+      button: "Upgrade Plan",
+      features:["30 bot", "12500 messages per month","File upload limit - 55 MB / 4.5M characters","Add your OpenAI key","1000 links"]
+    },
+  ];
 
+const[active, SetActive] = useState(3);
+const [checked, setChecked] = useState(false)
   return (
-    <div className="pricing-container">
-      <h3>Pricing Plan</h3>
-      <div className="pricing-toggle">
-        <span className="monthly-label" style={!isChecked ? fontStyle: noStyle}>Monthly</span>
-        <label className="pricing-toggle-wrapper">
-          <input type="checkbox" onChange={() => setIsChecked(!isChecked)} />
-          <span className="toggle-switch round"></span>
-        </label>
-        <span className="yearly-label" style={isChecked ? fontStyle: noStyle}>Annual</span>
-      </div>
-      <div className="pricing-flex">
-        {pricings.map((price) => {
-          return (
-            <div className={`pricing-box ${price.recommeded ? `box-active` : ``}` } key={price.id}>
-              <h3>{price.plan}</h3>
-              <div className="per-month-year">
-                <sup>$</sup>
-                {!isChecked ? price.monthly : price.yearly} <span>/month</span>
+    <Fragment>
+      <div className="ai-plan-landing">
+      <div className="pricing-head">
+               <h2>Choose the best plan for your business </h2>
+
+               <div className="pricing-toggle">
+                 <span className={checked ? "monthly-label" : "monthly-label selected"}>Monthly</span>
+                 <label
+                   className="pricing-toggle-wrapper"
+                   onChange={() => {
+                     setChecked(!checked);
+                   }}
+                 >
+                   <input type="checkbox" checked={checked} />
+                   <span className="toggle-switch round"></span>
+                 </label>
+                 <span className={checked ? "yearly-label selected" : "yearly-label"}>Yearly</span>
+               </div>
+               <p>(Save 2 months with annual billing)</p>
+             </div>
+      <div className="ai-plan-flex">
+        {data.map((plans , i) => (
+          <div className={`aiplan-bx ${active === i ? "active-aiplan" : ""}`} key={i} onClick={()=>SetActive(i)}>
+            <div className="aiplan-ing-bx">{plans.image}</div>
+            <div className="aiplan-content-bx">
+              <h2>{plans.title}{plans.title==="Advanced" && <span className="ai-recommend">Recommended</span>} 
+              {/* {plans.title==="Standard" && <span className="ai-current-plan">Current Plan</span>} */}
+              </h2>
+              <p>{plans.desc}</p>
+              <div className="ai-plan-price fx jst-sp-bt">
+                <span>{checked ? plans.yearly: plans.monthly}</span> per month
               </div>
-              <button onClick={()=>window.location.replace(url)}>Select plan</button>
-              <div className="features-list">
-                <h4>Features</h4>
-                <ul>
-                  {price.features.map((feature, index) => {
-                    return (
-                      <li key={index}>
-                        <svg
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M9.9 0L3.08 7.49833L1.1 5.995H0L3.08 11L11 0H9.9Z"
-                            fill="#4CAF50"
-                          />
-                        </svg>
-                        {feature}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+              <button>{plans.button}</button>
+              <ul>
+                <span>Features</span>
+               {
+                plans.features.map((feature, index) => (
+
+                  <li key={index}> 
+                <span> {feature}</span> </li>
+                )
+                )
+               }
+              </ul>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
-    </div>
+      </div>
+    </Fragment>
   );
 };
 
