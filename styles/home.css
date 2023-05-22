@@ -607,6 +607,21 @@ gap: 8px;
   color: #3e9adc;
   margin-top: 10px;
 }
+.pricing-head h2{
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #444444;
+}
+.pricing-head{
+  margin-bottom: 50px;
+}
 .toggle-switch {
   position: absolute;
   cursor: pointer;
@@ -673,6 +688,7 @@ input:checked + .toggle-switch:before {
 .monthly-label.selected,
 .yearly-label.selected {
   font-weight: 500;
+  color: #fb5f67;
 }
 
 /* Launchbot css */
@@ -896,25 +912,31 @@ p.rights-reserved {
 }
 
 /* Pricing new */    
+.ai-plan-landing{
+  padding: 80px 0;
+}
 .ai-plan-flex {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  width: 82%;
+  gap: 20px;
+  flex-wrap: wrap;
   margin: auto;
   height: 100%;
 }
 .aiplan-bx {
   border: 1px solid #cfcfcf;
   border-radius: 20px;
+  width: 290px;
+  transition: 0.2s ease-in-out;
 }
 .active-aiplan .aiplan-content-bx button {
   background: #fb5f66;
   border: 1px solid #fb5f66;
   color: #ffffff;
 }
-.active-aiplan {
-  outline: 1px solid #fb5f66;
+.active-aiplan, .aiplan-bx:hover {
+  /* outline: 2px solid #fb5f66; */
+  border: 1px solid #fb5f66;
 }
 
 .aiplan-ing-bx {
@@ -941,7 +963,7 @@ p.rights-reserved {
   text-transform: uppercase;
 }
 .ai-recommend {
-  padding: 6px 10px;
+  padding: 0px 10px;
   background: rgba(76, 175, 80, 0.2);
   border-radius: 20px;
   color: #27922c;
