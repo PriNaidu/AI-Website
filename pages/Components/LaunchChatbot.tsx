@@ -8,7 +8,7 @@ const FAQs = [
   {
     id: 2,
     ques: "Can I use my own OpenAI key?",
-    ans: "Yes on the Advanced plan you can use your openAI key and this allows you to override the limits in a plan.",
+    ans: "Yes, as a part of the Advanced plan, you can use your own OpenAI key.",
   },
   {
     id: 3,
