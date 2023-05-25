@@ -3,7 +3,7 @@ const FAQs = [
   {
     id: 1,
     ques: "Where can I embed the chatbot?",
-    ans: "All plans you will be able to embed the chatbot anywhere",
+    ans: "All plans allow you to embed your chatbot anywhere.",
   },
   {
     id: 2,
