@@ -13,7 +13,7 @@ const FAQs = [
   {
     id: 3,
     ques: "Can I get help importing data or setting up the chatbot?",
-    ans: `We try to make it easy to setup and import the data but we would be happy to help you you can reach out to us at questions@chatbotbuilder.net! `,
+    ans: `You can easily set up a chatbot using Chatbot Builder's intuitive interface. In case you still need any help, you can reach out to us at questions@chatbotbuilder.net. `,
   },
   {
     id: 4,
