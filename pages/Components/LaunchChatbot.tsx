@@ -40,7 +40,7 @@ const LaunchChatbot = () => {
             <h3>
               Launch your first chatbot in <span>minutes!</span>
             </h3>
-            <button>Try free</button>
+            <button>Try for free</button>
           </div>
           <div className="launchbot-options">
             <h5>Frequently asked questions</h5>
