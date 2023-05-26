@@ -90,7 +90,7 @@ const BannerSection = () => {
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">
-                Build your own <span>AI bot</span> for your{" "}
+                Build your own <span>AI bot</span> for your
                 <span>business</span>
               </h1>
               <div className="banner-details-cont">
@@ -101,7 +101,7 @@ const BannerSection = () => {
                 </div>
                 <div className="banner-details">
                   We can learn from your support docs, support conversations and
-                  from your sales conversations. You can add a <span>PDF</span>{" "}
+                  from your sales conversations. You can add a <span>PDF</span>
                   or <span>URL.</span>
                 </div>
               </div>

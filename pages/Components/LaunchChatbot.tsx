@@ -40,7 +40,9 @@ const LaunchChatbot = () => {
             <h3>
               Launch your first chatbot in <span>minutes!</span>
             </h3>
+            <a href="https://app.chatbotbuilder.net/register">
             <button>Try for free</button>
+            </a>
           </div>
           <div className="launchbot-options">
             <h5>Frequently asked questions</h5>
