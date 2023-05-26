@@ -64,13 +64,13 @@ const PrivacyPolicy = () => {
               </Link>
             <div className="navbar-right">
               <a href="https://app.chatbotbuilder.net/login">
-                <button className="login-btn">Loginhghg</button>
+                <button className="login-btn">Login</button>
               </a>
               <a href="https://app.chatbotbuilder.net/register">
                 {" "}
                 <button className="signup-btn">Sign Up</button>
               </a>
-            </div>~
+            </div>
           </div>
         </div>
       </div>
@@ -442,7 +442,7 @@ const PrivacyPolicy = () => {
                   questions@chatbotbuilder.net
                 </a>
                 <br /> <br />
-                Please allow up to four weeks for us to reply.
+                We will get back to you as soon as possible.
               </p>
             </div>
           </div>

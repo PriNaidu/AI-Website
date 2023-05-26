@@ -933,12 +933,16 @@ p.rights-reserved {
   background: #fb5f66;
   border: 1px solid #fb5f66;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
 }
 .active-aiplan, .aiplan-bx:hover {
   /* outline: 2px solid #fb5f66; */
   border: 1px solid #fb5f66;
 }
-
+.aiplan-bx:hover .aiplan-content-bx button{
+  background-color: #fb5f66;
+  color: white;
+}
 .aiplan-ing-bx {
   background: rgba(251, 95, 102, 0.1);
   border-radius: 20px 20px 0px 0px;

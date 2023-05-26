@@ -23,7 +23,7 @@ const Pricing = () => {
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$22",
       yearly: "$14",
-      button: "Upgrade Plan",
+      button: "Select Plan",
       features:["04 bots", "2500 messages per month","File upload limit - 27 MB"]
     },
     { 
@@ -32,7 +32,7 @@ const Pricing = () => {
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$55",
       yearly: "$35",
-      button: "Upgrade Plan",
+      button: "Select Plan",
       features:["18 bot", "4500 messages per month","File upload limit - 45 MB / 3.5M characters","Add your OpenAI key","100 links"]
     },
     {
@@ -41,7 +41,7 @@ const Pricing = () => {
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$115",
       yearly: "$95",
-      button: "Upgrade Plan",
+      button: "Select Plan",
       features:["30 bot", "12500 messages per month","File upload limit - 55 MB / 4.5M characters","Add your OpenAI key","1000 links"]
     },
   ];
