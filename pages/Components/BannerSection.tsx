@@ -90,19 +90,18 @@ const BannerSection = () => {
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">
-                Build your own <span>AI bot</span> for your{" "}
+                Build your own <span>AI bot</span> for your
                 <span>business</span>
               </h1>
               <div className="banner-details-cont">
                 <div className="banner-details">
                   Love <span>chatGPT? </span>
                   Want to create a <span>chatGPT</span> equivalent to help your
-                  sales and support team? Use AI chatbot to build your own AI
-                  bot in minutes.
+                  sales and support team? Use Chatbot Builder to build your own AI bot in minutes. Your AI Bot can learn from your Support Docs, Support Conversations, and Sales Conversations. You can add a PDF or URL.
                 </div>
                 <div className="banner-details">
                   We can learn from your support docs, support conversations and
-                  from your sales conversations. You can add a <span>PDF</span>{" "}
+                  from your sales conversations. You can add a <span>PDF</span>
                   or <span>URL.</span>
                 </div>
               </div>

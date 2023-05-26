@@ -3,17 +3,17 @@ const FAQs = [
   {
     id: 1,
     ques: "Where can I embed the chatbot?",
-    ans: "All plans you will be able to embed the chatbot anywhere",
+    ans: "All plans allow you to embed your chatbot anywhere.",
   },
   {
     id: 2,
     ques: "Can I use my own OpenAI key?",
-    ans: "Yes on the Advanced plan you can use your openAI key and this allows you to override the limits in a plan.",
+    ans: "Yes, as a part of the Advanced plan, you can use your own OpenAI key.",
   },
   {
     id: 3,
     ques: "Can I get help importing data or setting up the chatbot?",
-    ans: `We try to make it easy to setup and import the data but we would be happy to help you you can reach out to us at questions@chatbotbuilder.net! `,
+    ans: `You can easily set up a chatbot using Chatbot Builder's intuitive interface. In case you still need any help, you can reach out to us at questions@chatbotbuilder.net. `,
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const LaunchChatbot = () => {
             <h3>
               Launch your first chatbot in <span>minutes!</span>
             </h3>
-            <button>Try free</button>
+            <button>Try for free</button>
           </div>
           <div className="launchbot-options">
             <h5>Frequently asked questions</h5>
