@@ -90,8 +90,7 @@ const BannerSection = () => {
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">
-                Build your own <span>AI bot</span> for your
-                <span>business</span>
+                Build your own <span>AI bot</span> for your <span>business</span>
               </h1>
               <div className="banner-details-cont">
                 <div className="banner-details">

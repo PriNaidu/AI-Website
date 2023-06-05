@@ -46,7 +46,7 @@ const Pricing = () => {
     },
   ];
 
-const[active, SetActive] = useState(3);
+const[active, SetActive] = useState(4);
 const [checked, setChecked] = useState(false)
   return (
     <Fragment>
