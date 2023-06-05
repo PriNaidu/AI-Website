@@ -240,7 +240,7 @@
   border-radius: 8px;
 }
 .chatbot_builder-box .box-image-section {
-  padding: 20px 30px;
+  padding: 20px;
   background: #ffeff0;
   border-radius: 8px;
   display: flex;
@@ -777,6 +777,7 @@ input:checked + .toggle-switch:before {
   color: #FB5F66!important;
   transition: color 0.3s ease-in-out;
 }
+
 .faq-ques p {
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -942,6 +943,7 @@ p.rights-reserved {
 .aiplan-bx:hover .aiplan-content-bx button{
   background-color: #fb5f66;
   color: white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
 }
 .aiplan-ing-bx {
   background: rgba(251, 95, 102, 0.1);
@@ -1091,13 +1093,18 @@ p.rights-reserved {
     width: 90%;
   }
 }
-
-@media (max-width: 1360px) and (min-width: 1024px) {
-  .banner-container {
-    padding: 0 20px;
+@media screen and (max-width: 1024px){
+  .banner-left{
+    width: 65%;
   }
+}
+
+@media (max-width: 1360px) and (min-width: 1023px) {
+  /* .banner-container {
+    padding: 0 20px;
+  } */
   .chatbox_builder_container {
-    width: 80%;
+    width: 90%;
   }
   .launchbot-options{
     width: unset;
@@ -1109,6 +1116,7 @@ p.rights-reserved {
     max-width: 100%;
   }
 }
+
 @media screen and (max-width: 1240px){
   .banner-container{
     gap: 0px;
@@ -1120,6 +1128,7 @@ p.rights-reserved {
     justify-content: flex-end;
   }
 }
+
 @media (max-width: 1023px) and (min-width: 660px) {
   .banner-container {
     flex-direction: column;
@@ -1164,7 +1173,24 @@ p.rights-reserved {
   .banner-right > img{
     max-width: 100%;
   }
-  
+  .active-faq{
+    height: auto;
+  }
+  .active-faq p{
+    padding-bottom: 15px;
+  }
+  .footer-container{
+    gap: 0;
+  }
+  .footer-right {
+    width: 60%;
+  }
+  .footer-right input{
+    width: 100%;
+  }
+  .footer-right .sign-up-email button{
+    right: 6px;
+  }
   
 }
 /* @media (max-width: 800px){
@@ -1172,8 +1198,13 @@ p.rights-reserved {
     height: 155px;
   }
 } */
+@media screen and (max-width: 900px) and (min-width: 660px){
+  .chatbot_builder-box .box-image-section{
+    height: 240px;
+  }
+}
 
-@media (max-width: 659px) and (min-width: 350px){
+@media (max-width: 659px) and (min-width: 250px){
   .navbar{
     padding: 18px 10px;
   }
