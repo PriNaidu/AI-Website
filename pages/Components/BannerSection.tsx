@@ -8,9 +8,9 @@ const BannerSection = () => {
 
   const handleSignup = (e: any) => {
     e.preventDefault();
-    if (!userEmail) {
-      return;
-    }
+    // if (!userEmail) {
+    //   return;
+    // }
     window.location.replace(url);
   };
   return (
