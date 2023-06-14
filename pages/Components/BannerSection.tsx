@@ -8,9 +8,10 @@ const BannerSection = () => {
 
   const handleSignup = (e: any) => {
     e.preventDefault();
-    // if (!userEmail) {
-    //   return;
-    // }
+    if (!userEmail) {
+      window.location.replace(`https://app.chatbotbuilder.net/register`);
+      return;
+    }
     window.location.replace(url);
   };
   return (
