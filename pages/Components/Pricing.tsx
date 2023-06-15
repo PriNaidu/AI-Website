@@ -1,12 +1,10 @@
 import React, { Fragment, useState } from "react";
 // import "./AIPricing.css"
 import { features } from "process";
-import {AIPlan1, AIAnimateFreePlan} from "./Assets/AIPlan1";
+import { AIPlan1, AIAnimateFreePlan } from "./Assets/AIPlan1";
 import AIPlan2 from "./Assets/AIPlan2";
 import AIPlan3 from "./Assets/AIPlan3";
 import AIPlan4 from "./Assets/AIPlan4";
-
-
 
 const Pricing = () => {
   const data = [
@@ -126,7 +124,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button onClick={()=>window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
+                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
