@@ -939,6 +939,7 @@ p.rights-reserved {
 .active-aiplan, .aiplan-bx:hover {
   /* outline: 2px solid #fb5f66; */
   border: 1px solid #fb5f66;
+  box-shadow: 0 4px 12px rgba(251,95,102,.4);
 }
 .aiplan-bx:hover .aiplan-content-bx button{
   background-color: #fb5f66;
