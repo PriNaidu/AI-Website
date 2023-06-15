@@ -9,6 +9,7 @@ const Footer = () => {
   const handleSignup = (e: any) => {
     e.preventDefault();
     if (!userEmail) {
+      window.location.replace(`https://app.chatbotbuilder.net/register`);
       return;
     }
     window.location.replace(url);

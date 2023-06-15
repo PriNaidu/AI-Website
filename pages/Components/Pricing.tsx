@@ -18,9 +18,11 @@ const Pricing = () => {
       yearly: "$0",
       button: "Free Plan",
       features: [
-        "01 bot",
-        "420 msg per month",
-        "Training limit - 500k characters/bot",
+        "1 Chatbot",
+        "500 Message Credits/Month",
+        "1,000,000 Characters/Bot",
+        "Upload Multiple Files Up To 10 MB",
+        "Embed On Multiple Websites"
       ],
     },
     {
@@ -31,9 +33,11 @@ const Pricing = () => {
       yearly: "$14",
       button: "Select Plan",
       features: [
-        "04 bots",
-        "2500 messages per month",
-        "Training limit - 1.5M characters/bot",
+        "5 Chatbots",
+        "3000 Message Credits/Month",
+        "4,000,000 Characters/Bot",
+        "Upload Multiple Files Up To 27 MB",
+        "Embed On Multiple Websites"
       ],
     },
     {
@@ -44,10 +48,12 @@ const Pricing = () => {
       yearly: "$35",
       button: "Select Plan",
       features: [
-        "18 bot",
-        "4500 messages per month",
-        "Training limit - 3M characters/bot",
-        "Add your OpenAI key",
+        "20 Chatbots",
+        "7000 Message Credits/Month",
+        "6,000,000 Characters/Bot",
+        "Upload Multiple Files Up To 45 MB",
+        "Embed On Multiple Websites",
+        "Ability to connect your OpenAI API Key"
       ],
     },
     {
@@ -58,10 +64,12 @@ const Pricing = () => {
       yearly: "$95",
       button: "Select Plan",
       features: [
-        "30 bot",
-        "12500 messages per month",
-        "Training limit - 5M characters/bot",
-        "Add your OpenAI key",
+        "35 Chatbots",
+        "14000 Message Credits/Month",
+        "11,000,000 Characters/Bot",
+        "Upload Multiple Files Up To 70 MB",
+        "Embed On Multiple Websites",
+        "Ability to connect your OpenAI API Key"
       ],
     },
   ];
@@ -118,7 +126,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button>{plans.button}</button>
+                <button onClick={()=>window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
