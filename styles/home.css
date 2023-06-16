@@ -165,6 +165,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   position: relative;
+  font-size: var(--font-size-16);
   height: 60px;
   padding: 23px 181px 23px 44px;
   width: 100%;
@@ -1084,6 +1085,83 @@ p.rights-reserved {
   }
 }
 @media screen and (max-width: 1440px){
+  /* Font-sizes */
+  
+  .banner-heading{
+    font-size: calc( var(--font-size-42) - 2px);
+  }
+  .chatbot-box-content h5,
+  .aiplan-content-bx > h2,
+  .footer-left .logo-name{
+    font-size: calc(var(--font-size-20px) - 2px);
+  }
+  .navbar-left .logo-txt h3,
+  .example-chatbot-box .img-card .img-details .img-details-left h3{
+    font-size: calc( var(--font-size-24) - 2px);
+  }
+  .pricing-head h2{
+    font-size: calc(var(--font-size-22) - 2px);
+  }
+  .faq-ques span,
+  .footer-right h6{
+    font-size: calc(var(--font-size-18) - 2px);
+  }
+  .chat-response-box .chat-response-head{
+    padding: 12px
+  }
+  .banner-details,
+  .sign-up-email input,
+  .example-chatbot-box .img-card .img-details .img-details-left span,
+  .live-demo-container p,
+  .monthly-label, .yearly-label,
+  .aiplan-content-bx .ai-plan-price,
+  .footer-bottom .contact-us span
+  {
+    font-size:  calc(var(--font-size-16) - 2px);
+  }
+  .chatbot-box-content p,
+  .chat-response-box .chat-response-head .head-details h3,
+  .chat-response-middle .no-data,
+  .chat-response-box .chat-response-textarea input,
+  .pricing-head p,
+  .aiplan-content-bx > p,
+  .aiplan-content-bx button,
+  .aiplan-content-bx ul > span,
+  .aiplan-content-bx ul > li,
+  .footer-right span,
+  .footer-bottom-menus li,
+  p.rights-reserved
+  {
+    font-size:  calc(var(--font-size-14) - 2px);
+  }
+  .signup-btn, 
+  .login-btn,
+  .credit-free-trial p,
+  .chat-response-box .chat-response-head .head-details span,
+  .branding,
+  .launchbot-head button,
+  .footer-bottom .contact-us p {
+    font-size:  calc(var(--font-size-12) - 2px);
+  }
+  .sign-up-email button{
+    font-size: calc(13px - 1px);
+  }
+  .chatbot_builder h2,
+  .heading > h4,
+  .launchbot-head h3,
+  .launchbot-options h5{
+    font-size: calc(35px - 2px);
+  }
+ 
+  /* Font-sizes */
+  .chat-response-box .chat-response-textarea button{
+    width: 42px;
+    height: 40px;
+  }
+  .navbar-left svg{
+    width: 40px;
+    height: 40px;
+  }
   .banner-right{
     margin-right: -100px;
   }
