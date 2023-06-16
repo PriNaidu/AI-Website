@@ -1,8 +1,8 @@
-import "@/styles/globals.css";
-import "@/styles/home.css";
-import "@/styles/terms&conditions.css";
-import "@/styles/media-query.css";
-import "@/styles/svg.css"
+import "../styles/globals.css";
+import "../styles/home.css";
+import "../styles/terms&conditions.css";
+import "../styles/media-query.css";
+import "../styles/svg.css"
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
