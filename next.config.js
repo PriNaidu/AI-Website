@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+    assetPrefix: '',
+  //  basePath: '/ai-bot-website',
+   trailingSlash: true
 }
 
 module.exports = nextConfig

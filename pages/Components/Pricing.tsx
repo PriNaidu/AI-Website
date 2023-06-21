@@ -6,8 +6,6 @@ import {AIPlan2, AIAnimateBasic} from "./Assets/AIPlan2";
 import {AIPlan3, AiAnimatestandard} from "./Assets/AIPlan3";
 import {AIPlan4, AiAnimateAdvance} from "./Assets/AIPlan4";
 
-
-
 const Pricing = () => {
   const data = [
     {
@@ -126,7 +124,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button onClick={()=>window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
+                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
