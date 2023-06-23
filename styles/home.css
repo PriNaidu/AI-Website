@@ -955,6 +955,9 @@ p.rights-reserved {
   justify-content: center;
   height: 220px;
 }
+.aiplan-ing-bx svg{
+  width: 185px;
+}
 .aiplan-content-bx {
   padding: 20px 30px;
 }
