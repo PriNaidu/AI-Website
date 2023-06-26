@@ -85,13 +85,16 @@
   color: #444444;
   margin-right: 10px;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
   .terms-condition-outer {
     background-color: #fff5f6;
     border-radius: 8px;
-    margin: 0 17px 40px;
+    margin: 0 0 40px;
   }
   .privacy-policy-container{
     padding: 15px;
+  }
+  .p-10{
+    padding: 20px;
   }
 }

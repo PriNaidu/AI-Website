@@ -6,7 +6,7 @@ import Link from "next/link";
 const terms_conditions = () => {
   return (
     <>
-      <div className="wrapper">
+      <div className="wrapper p-10">
         <div className="navbar" style={{ background: "white" }}>
           <div className="navbar-inner">
           <Link href="/">

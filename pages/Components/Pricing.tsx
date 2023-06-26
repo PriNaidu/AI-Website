@@ -1,15 +1,15 @@
 import React, { Fragment, useState } from "react";
 // import "./AIPricing.css"
 import { features } from "process";
-import {AIPlan1, AIAnimateFreePlan} from "./Assets/AIPlan1";
-import {AIPlan2, AIAnimateBasic} from "./Assets/AIPlan2";
-import {AIPlan3, AiAnimatestandard} from "./Assets/AIPlan3";
-import {AIPlan4, AiAnimateAdvance} from "./Assets/AIPlan4";
+import AIPlan1 from "./Assets/AIPlan1";
+import AIPlan2 from "./Assets/AIPlan2";
+import AIPlan3 from "./Assets/AIPlan3";
+import AIPlan4 from "./Assets/AIPlan4";
 
 const Pricing = () => {
   const data = [
     {
-      image: <AIAnimateFreePlan />,
+      image: <AIPlan1 />,
       title: "Free",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$0",
@@ -24,7 +24,7 @@ const Pricing = () => {
       ],
     },
     {
-      image: <AIAnimateBasic />,
+      image: <AIPlan2 />,
       title: "Basic",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$22",
@@ -39,7 +39,7 @@ const Pricing = () => {
       ],
     },
     {
-      image: <AiAnimatestandard />,
+      image: <AIPlan3 />,
       title: "Standard",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$55",
@@ -55,7 +55,7 @@ const Pricing = () => {
       ],
     },
     {
-      image: <AiAnimateAdvance/>,
+      image: <AIPlan4/>,
       title: "Advanced",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$115",
