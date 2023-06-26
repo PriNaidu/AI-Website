@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 // import "./AIPricing.css"
 import { features } from "process";
-import { AIPlan1, AIAnimateFreePlan } from "./Assets/AIPlan1";
+import AIPlan1 from "./Assets/AIPlan1";
 import AIPlan2 from "./Assets/AIPlan2";
 import AIPlan3 from "./Assets/AIPlan3";
 import AIPlan4 from "./Assets/AIPlan4";
@@ -55,7 +55,7 @@ const Pricing = () => {
       ],
     },
     {
-      image: <AIPlan4 />,
+      image: <AIPlan4/>,
       title: "Advanced",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$115",
