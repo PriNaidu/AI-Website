@@ -85,7 +85,9 @@ const Footer = () => {
             </div>
             <div className="contact-us">
               <p>Contact us at</p>
-              <span>questions@chatbotbuilder.net</span>
+              <a href="mailto:questions@chatbotbuilder.net">
+                  questions@chatbotbuilder.net
+                </a>
             </div>
           </div>
         </div>

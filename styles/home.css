@@ -873,13 +873,14 @@ footer {
   align-items: center;
   color: rgba(102, 102, 102, 0.8);
 }
-.footer-bottom .contact-us span {
+.footer-bottom .contact-us a {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   display: flex;
   align-items: center;
   color: #666666;
+  cursor: pointer;
 }
 p.rights-reserved {
   font-family: "Rubik";
