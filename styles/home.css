@@ -167,7 +167,7 @@
   position: relative;
   font-size: var(--font-size-16);
   height: 60px;
-  padding: 23px 181px 23px 44px;
+  padding: 23px 44px 23px 44px;
   width: 100%;
 }
 .sign-up-email input::placeholder {
@@ -881,6 +881,7 @@ footer {
   align-items: center;
   color: #666666;
   cursor: pointer;
+  word-break: break-word;
 }
 p.rights-reserved {
   font-family: "Rubik";
@@ -943,7 +944,7 @@ p.rights-reserved {
   border: 1px solid #fb5f66;
   box-shadow: 0 4px 12px rgba(251,95,102,.4);
 }
-.aiplan-bx:hover .aiplan-content-bx button{
+.aiplan-bx .aiplan-content-bx button:hover{
   background-color: #fb5f66;
   color: white;
   box-shadow: 0px 4px 12px rgb(251 95 102 / 40%);
@@ -1263,7 +1264,7 @@ p.rights-reserved {
     padding-bottom: 15px;
   }
   .footer-container{
-    gap: 0;
+    gap: 10px;
   }
   .footer-right {
     width: 60%;
@@ -1291,12 +1292,12 @@ p.rights-reserved {
   .privacy-policy-heading{
     margin-top: 30px;
   }
-  .terms-condition-outer {
-    padding: 0 45px;
+  /* .terms-condition-outer {
+    padding: 0 20px;
     margin: 0;
-  }
+  } */
   .navbar{
-    padding: 18px 10px;
+    padding: 18px 0;
   }
   .active-faq{
     height: 100%
@@ -1304,14 +1305,13 @@ p.rights-reserved {
   .active-faq p{
     padding-bottom: 10px;
   }
-  .wrapper{
-    padding: 0px;
+
+  .wrapper .terms-container h1{
+    margin-bottom: 40px;
   }
+  
   .terms-condition-outer .wrapper{
     padding-top: 10px;
-  }
-  .privacy-policy-heading h1{
-    text-align: center;
   }
   .privacy-policy-heading span{
   display: none;
