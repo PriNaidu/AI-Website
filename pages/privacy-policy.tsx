@@ -177,48 +177,25 @@ const PrivacyPolicy = () => {
                 applicable law:
               </p>
               <ul className="privacy-pointers">
-                <li>
-                  Processing the PII that the user might collect through or
-                  upload on the Website with the only purpose of operating and
-                  managing the platform and being able to provide the services
-                  requested by the user, not using the PII for any other purpose
-                  except when expressly authorized by the user.
-                </li>
-                <li>Not disclosing the PII to any third party except:</li>
-                <li>
-                  a. In those cases in which Chatbot Builder collaborates with
-                  third parties, who process PII on behalf of Chatbot Builder,
-                  in order to provide the services and, in particular, for the
-                  operation of the platform, as well as for the storing of the
-                  PII, in which case those third parties are required to
-                  maintain at least the same level of confidentiality that we
-                  maintain for such PII, and to implement other adequate
-                  technical and organisational measures to prevent the
-                  unauthorized or illegal processing of the information and the
-                  accidental loss, destruction or impairment of the same; or{" "}
-                  <br />
-                  b. When it is required by a competent authority in the
-                  exercise of its duties (for example in order to investigate,
-                  prevent or take action regarding illegal activities); or{" "}
-                  <br />
-                  c. As otherwise required by law.
-                </li>
-                <li>
-                  Destroying the PII or returning it to the user once the
-                  provision has been fulfilled.
-                </li>
-                <li>
-                  Implementing and maintaining the adequate technical and
-                  organisational measures to prevent the unauthorized or illegal
-                  processing of the PII and, in particular, of the data, as well
-                  as the accidental loss, destruction or impairment.
-                </li>
-                <li>
-                  All users have the option to notify their visitors of the data
-                  that would be gathered during their interaction and the
-                  visitor can choose to accept or reject this.
-                </li>
-              </ul>
+                    <li>
+                    Processing the PII that the user might collect through or upload on the Website with the only purpose of operating and managing the platform and being able to provide the services requested by the user, not using the PII for any other purpose except when expressly authorized by the user.
+                    </li>
+                    <li> 
+                        Not disclosing the PII to any third party except:
+                        
+                    </li>
+                    </ul>
+                    <ul className="nested-list privacy-pointers">
+                        <li> In those cases in which Omniengage collaborates with third parties, who process PII on behalf of Omniengage, in order to provide the services and, in particular, for the operation of the platform, as well as for the storing of the PII, in which case those third parties are required to maintain at least the same level of confidentiality that we maintain for such PII, and to implement other adequate technical and organisational measures to prevent the unauthorized or illegal processing of the information and the accidental loss, destruction or impairment of the same</li>
+                        <li> When it is required by a competent authority in the exercise of its duties (for example in order to investigate, prevent or take action regarding illegal activities</li>
+                        <li> As otherwise required by law</li>
+                    </ul>
+                    <ul className="privacy-pointers">
+                    <li>  Destroying the PII or returning it to the user once the provision has been fulfilled.</li>
+                    <li>  Implementing and maintaining the adequate technical and organisational measures to prevent the unauthorized or illegal processing of the PII and, in particular, of the data, as well as the accidental loss, destruction or impairment.</li>
+                    <li>  All users have the option to notify their visitors of the data that would be gathered during their interaction and the visitor can choose to accept or reject this.
+                    </li>
+                </ul>
             </div>
             <div className="terms-conditions-para">
               <h2>USE, RETENTION AND DISPOSAL </h2>

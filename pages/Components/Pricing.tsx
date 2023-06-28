@@ -106,9 +106,8 @@ const Pricing = () => {
         <div className="ai-plan-flex">
           {data.map((plans, i) => (
             <div
-              className={`aiplan-bx ${active === i ? "active-aiplan" : ""}`}
+              className={`aiplan-bx`}
               key={i}
-              onClick={() => SetActive(i)}
             >
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">

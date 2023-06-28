@@ -26,6 +26,7 @@
   line-height: 29px;
   color: #282828;
   margin: 0px;
+  word-wrap: break-word;
 }
 .terms-conditions-para p{
   font-family: Rubik,sans-serif;
@@ -81,14 +82,37 @@
     list-style: none;
     font-size: 20px;
 } */
+.privacy-pointers{
+margin-top: 15px;
+} 
 .privacy-pointers li {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #666666cc;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  /* margin-top: 10px; */
+  margin-bottom: 12px;
+  width: 100%;
+  display: inline-flex;
+}
+
+ul.nested-list{
+  padding-left: 32px;
+  margin: 0px;
+}
+
+ul.nested-list li{
+  position: relative;
+  padding-left: 20px;
+}
+ul.nested-list li:before{
+  content: '_';
+  font-size: 24px;
+  color: #626262;
+  position: absolute;
+    top: -8px;
+    left: -8px;
 }
 
 .privacy-pointers li:before {
