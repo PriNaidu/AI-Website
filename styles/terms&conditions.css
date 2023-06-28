@@ -27,7 +27,15 @@
   color: #282828;
   margin: 0px;
 }
-.terms-conditions-para p {
+.terms-conditions-para p{
+  font-family: Rubik,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666cc;
+  margin-top: 10px;
+}
+.privacy-policy-container .terms-conditions-para p {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -36,9 +44,15 @@
   margin-top: 10px;
   margin-bottom: 0px;
 }
+
+.terms-conditions-para ul:last-child li:last-child{
+  margin-bottom: 0;
+}
+
 .terms-conditions-para p a {
   color: #0093eb;
   font-weight: 500;
+  word-wrap: break-word;
 }
 .privacy-policy-container p {
   font-family: Rubik, sans-serif;
@@ -86,15 +100,17 @@
   margin-right: 10px;
 }
 @media screen and (max-width: 480px) {
-  .terms-condition-outer {
-    background-color: #fff5f6;
-    border-radius: 8px;
-    margin: 0 0 40px;
+ 
+}
+
+@media screen and (max-width: 1366px){
+  .terms-condition-outer{
+    margin-inline: 20px;
   }
-  .privacy-policy-container{
-    padding: 15px;
-  }
-  .p-10{
-    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .terms-conditions-para{
+    padding-inline: 20px;
   }
 }
