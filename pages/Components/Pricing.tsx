@@ -106,8 +106,9 @@ const Pricing = () => {
         <div className="ai-plan-flex">
           {data.map((plans, i) => (
             <div
-              className={`aiplan-bx`}
+              className={`aiplan-bx ${active === i ? "active-aiplan" : ""}`}
               key={i}
+              onClick={() => SetActive(i)}
             >
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">
@@ -123,7 +124,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/register"}>{plans.button}</button>
+                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
