@@ -1,88 +1,140 @@
-.terms-condition-outer{
-    background-color: #FFF5F6;
-    margin: 0 45px;
-    border-radius: 8px;
-    margin-bottom: 40px;
+.terms-condition-outer {
+  background-color: #fff5f6;
+  margin: 0 45px;
+  border-radius: 8px;
+  margin-bottom: 40px;
 }
-.terms-container h1{
-    font-family: Rubik, sans-serif;
-    font-weight: 500;
-    font-size: 35px;
-    color: #282828;
-    line-height: 41px;
-    margin: 0px;
-    margin-bottom: 60px;
+.terms-container h1 {
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: #282828;
+  line-height: 41px;
+  margin: 0px;
+  margin-bottom: 60px;
 }
-.terms-conditions-para{
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
+.terms-conditions-para {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
 }
-.terms-conditions-para h2{
-    font-family: Rubik, sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    color: #282828;
-    margin: 0px;
+.terms-conditions-para h2 {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #282828;
+  margin: 0px;
+  word-wrap: break-word;
 }
-.terms-conditions-para p {
-    font-family: Rubik, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #666666CC;
-    margin-top: 10px;
-    margin-bottom: 0px;
+.terms-conditions-para p{
+  font-family: Rubik,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666cc;
+  margin-top: 10px;
 }
-.terms-conditions-para p a{
-    color: #0093EB;
-    font-weight: 500;
+.privacy-policy-container .terms-conditions-para p {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666cc;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.terms-conditions-para ul:last-child li:last-child{
+  margin-bottom: 0;
+}
+
+.terms-conditions-para p a {
+  color: #0093eb;
+  font-weight: 500;
+  word-wrap: break-word;
 }
 .privacy-policy-container p {
-    font-family: Rubik, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #666666CC;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666cc;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-.privacy-policy-heading{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.privacy-policy-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.privacy-policy-heading h1{
-    font-family: Rubik, sans-serif;
-    font-weight: 500;
-    font-size: 35px;
-    color: #282828;
-    line-height: 41px;
-    margin: 0px;
-    display: flex;
-
+.privacy-policy-heading h1 {
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: #282828;
+  line-height: 41px;
+  margin: 0px;
+  display: flex;
 }
 /* li {
     list-style: none;
     font-size: 20px;
 } */
-.privacy-pointers li{
-    font-family: Rubik, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #666666CC;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.privacy-pointers{
+margin-top: 15px;
+} 
+.privacy-pointers li {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666cc;
+  /* margin-top: 10px; */
+  margin-bottom: 12px;
+  width: 100%;
+  display: inline-flex;
+}
+
+ul.nested-list{
+  padding-left: 32px;
+  margin: 0px;
+}
+
+ul.nested-list li{
+  position: relative;
+  padding-left: 20px;
+}
+ul.nested-list li:before{
+  content: '_';
+  font-size: 24px;
+  color: #626262;
+  position: absolute;
+    top: -8px;
+    left: -8px;
 }
 
 .privacy-pointers li:before {
-    content:"·";
-    font-size:40px;
-    vertical-align:middle;
-    line-height:20px;
-    color: #444444;
-    margin-right: 10px;
+  content: "·";
+  font-size: 40px;
+  vertical-align: middle;
+  line-height: 20px;
+  color: #444444;
+  margin-right: 10px;
+}
+@media screen and (max-width: 480px) {
+ 
+}
+
+@media screen and (max-width: 1366px){
+  .terms-condition-outer{
+    margin-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .terms-conditions-para{
+    padding-inline: 20px;
+  }
 }

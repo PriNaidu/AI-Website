@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 // import "./AIPricing.css"
 import { features } from "process";
-import { AIPlan1, AIAnimateFreePlan } from "./Assets/AIPlan1";
+import AIPlan1 from "./Assets/AIPlan1";
 import AIPlan2 from "./Assets/AIPlan2";
 import AIPlan3 from "./Assets/AIPlan3";
 import AIPlan4 from "./Assets/AIPlan4";
@@ -55,7 +55,7 @@ const Pricing = () => {
       ],
     },
     {
-      image: <AIPlan4 />,
+      image: <AIPlan4/>,
       title: "Advanced",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$115",
@@ -106,9 +106,8 @@ const Pricing = () => {
         <div className="ai-plan-flex">
           {data.map((plans, i) => (
             <div
-              className={`aiplan-bx ${active === i ? "active-aiplan" : ""}`}
+              className={`aiplan-bx`}
               key={i}
-              onClick={() => SetActive(i)}
             >
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">
@@ -124,7 +123,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
+                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/register"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
