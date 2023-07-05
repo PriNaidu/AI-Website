@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Components/Footer";
 
 import Link from "next/link";
 
 const PrivacyPolicy = () => {
+  const [token, setToken] = useState('');
+
+  useEffect( () => {  
+    const cookies = document.cookie.split(';')
+    let token;
+    for(let i = 0; i< cookies.length; i++){
+      const cookie = cookies[i].trim();
+      if( cookie.startsWith('token=')){
+        token = cookie;
+        setToken(token)
+        break;
+      }
+    }
+    
+  }, [] )
+
   return (
     <>
       <div className="wrapper">

@@ -28,7 +28,7 @@ const Pricing = () => {
       title: "Basic",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$22",
-      yearly: "$14",
+      yearly: "$220",
       button: "Select Plan",
       features: [
         "5 Chatbots",
@@ -43,7 +43,7 @@ const Pricing = () => {
       title: "Standard",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$55",
-      yearly: "$35",
+      yearly: "$550",
       button: "Select Plan",
       features: [
         "20 Chatbots",
@@ -59,7 +59,7 @@ const Pricing = () => {
       title: "Advanced",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$115",
-      yearly: "$95",
+      yearly: "$1150",
       button: "Select Plan",
       features: [
         "35 Chatbots",
@@ -106,14 +106,15 @@ const Pricing = () => {
         <div className="ai-plan-flex">
           {data.map((plans, i) => (
             <div
-              className={`aiplan-bx`}
+              className={`aiplan-bx ${active === i ? "active-aiplan" : ""}`}
               key={i}
+              onClick={() => SetActive(i)}
             >
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">
                 <h2>
                   {plans.title}
-                  {plans.title === "Advanced" && (
+                  {plans.title === "Standard" && (
                     <span className="ai-recommend">Recommended</span>
                   )}
                   {/* {plans.title==="Standard" && <span className="ai-current-plan">Current Plan</span>} */}
@@ -123,7 +124,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button onClick={() => window.location.href = "https://app.chatbotbuilder.net/register"}>{plans.button}</button>
+                <button disabled={plans.title === 'Free'} onClick={() => window.location.href = "https://app.chatbotbuilder.net/settings"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
