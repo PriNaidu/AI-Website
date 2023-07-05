@@ -124,7 +124,7 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button disabled={plans.title === 'Free'} onClick={() => window.location.href = "http://app.chatbotbuilder.ailocal:3001/settings?plan"}>{plans.button}</button>
+                <button disabled={plans.title === 'Free'} onClick={() => window.location.href = "http://app.chatbotbuilder.net/settings?plan"}>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
