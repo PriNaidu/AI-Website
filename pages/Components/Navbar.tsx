@@ -59,6 +59,9 @@ const Navbar = ({ show }: { show: boolean }) => {
               {" "}
               <button className="signup-btn">Sign Up</button>
             </a>
+            <a href="https://app.chatbotbuilder.net/dashboard">
+              <button className="signup-btn">DashBoard</button>
+            </a>
           </div>
         </div>
       </div>
