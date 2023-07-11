@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 // import "./AIPricing.css"
 import { features } from "process";
 import AIPlan1 from "./Assets/AIPlan1";
@@ -74,6 +74,25 @@ const Pricing = () => {
 
   const [active, SetActive] = useState(4);
   const [checked, setChecked] = useState(false);
+
+  useEffect(() => {
+    const svgs = [
+      "https://dlvkyia8i4zmz.cloudfront.net/laOOO58rTEqLIunp3y8Q_free_plan_pricing.svg",
+      "https://dlvkyia8i4zmz.cloudfront.net/xvu3hijDRuqJXkQX0vYS_Basic_plan_pricing.svg",
+      "https://dlvkyia8i4zmz.cloudfront.net/DvxuWTfbQkhvfzUhTHmd_Standard_plan_pricing.svg",
+      "https://dlvkyia8i4zmz.cloudfront.net/ln7AutUUT6KMHYqlqeuS_Advanced_plan_pricing.svg"
+    ];
+    const main = document.querySelectorAll(".aiplan-bx");
+    const imgBox = document.querySelectorAll(".aiplan-ing-bx");
+    const temp: any =[]
+    Array.from(imgBox).forEach(ele => temp.push(ele.innerHTML))
+    Array.from(main).forEach((element, index) => {
+      element.addEventListener("mouseenter", () => {
+        imgBox[index].innerHTML = `<object type="image/svg+xml" data=${svgs[index]}><img src=${svgs[index]} alt="" /></object>`;
+      });
+    });
+  }, []);
+  
   return (
     <Fragment>
       <div className="ai-plan-landing">

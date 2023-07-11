@@ -960,6 +960,15 @@ p.rights-reserved {
 .aiplan-ing-bx svg{
   width: 185px;
 }
+
+.aiplan-ing-bx object {
+  object-fit: contain;
+  width: 185px;
+}
+.aiplan-bx:last-child object {
+  width: 150px;
+}
+
 .aiplan-content-bx {
   padding: 20px 30px;
 }
