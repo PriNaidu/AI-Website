@@ -119,7 +119,7 @@ const Pricing = () => {
                   )}
                   {/* {plans.title==="Standard" && <span className="ai-current-plan">Current Plan</span>} */}
                 </h2>
-                <p>{plans.desc}</p>
+                {/* <p>{plans.desc}</p> */}
                 <div className="ai-plan-price fx jst-sp-bt">
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
