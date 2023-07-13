@@ -1,29 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useEffect, useState } from "react";
-const BannerSection = () => {
+const BannerSection = ({token}:any) => {
   const [userEmail, setUserEmail] = useState<any>();
-  const [token, setToken] = useState<any>();
-
-  useEffect(() => {
-    const cookies = document.cookie.split(';')
-    let token;
-    for (let i = 0; i < cookies.length; i++) {
-      const cookie = cookies[i].trim();
-      if (cookie.startsWith('token=')) {
-        token = cookie;
-        setToken(token)
-        break;
-      }
-    }
-
-  }, [])
-  const url = `https://app.chatbotbuilder.net/register?email=${userEmail}`;
+  const url = `http://app.chatbotbuilder.net/register?email=${userEmail}`;
 
   const handleSignup = (e: any) => {
     e.preventDefault();
     if (!userEmail) {
-      window.location.replace(`https://app.chatbotbuilder.net/register`);
+      window.location.replace(`http://app.chatbotbuilder.net/register`);
       return;
     }
     window.location.replace(url);
@@ -94,16 +79,16 @@ const BannerSection = () => {
               <div className="navbar-right">
                 {token ? (
                   <>
-                    <a href="https://app.chatbotbuilder.net/dashboard">
+                    <a href="http://app.chatbotbuilder.net/dashboard">
                       <button className="signup-btn">DashBoard</button>
                     </a>
                   </>
                 ) : (
                   <>
-                    <a href="https://app.chatbotbuilder.net/login">
+                    <a href="http://app.chatbotbuilder.net/login">
                       <button className="login-btn">Login</button>
                     </a>
-                    <a href="https://app.chatbotbuilder.net/register">
+                    <a href="http://app.chatbotbuilder.net/register">
                       {" "}
                       <button className="signup-btn">Sign Up</button>
                     </a>

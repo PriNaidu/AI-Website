@@ -17,7 +17,21 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [token, setToken] = useState<any>();
 
+  useEffect(() => {
+    const cookies = document.cookie.split(';')
+    let token;
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.startsWith('token=')) {
+        token = cookie;
+        setToken(token)
+        break;
+      }
+    }
+
+  }, [])
   const controlNavbar = () => {
     if (typeof window !== 'undefined') { 
       if (window.scrollY > 100) {
@@ -47,11 +61,11 @@ export default function Home() {
     />
   </Head>
   {/* <Navbar show={show}/> */}
-<BannerSection/>
+<BannerSection token={token}/>
 <UseChatbot/>
 <ExampleChtabots/>
 <LiveDemo/>
-<Pricing/>
+<Pricing token={token}/>
 <LaunchChatbot/>
 <Footer/>
     </main>

@@ -1,13 +1,14 @@
 import React, { Fragment, useState, useEffect } from "react";
 // import "./AIPricing.css"
-import { features } from "process";
 import AIPlan1 from "./Assets/AIPlan1";
 import AIPlan2 from "./Assets/AIPlan2";
 import AIPlan3 from "./Assets/AIPlan3";
 import AIPlan4 from "./Assets/AIPlan4";
 
-const Pricing = () => {
-  const data = [
+const Pricing = ({token}:any) => {
+  const [active, SetActive] = useState(4);
+  const [checked, setChecked] = useState(false);
+  const [data, setData] = useState([
     {
       image: <AIPlan1 />,
       title: "Free",
@@ -15,6 +16,7 @@ const Pricing = () => {
       monthly: "$0",
       yearly: "$0",
       button: "Free Plan",
+      planCode: "free_01",
       features: [
         "1 Chatbot",
         "500 Message Credits/Month",
@@ -30,6 +32,7 @@ const Pricing = () => {
       monthly: "$22",
       yearly: "$220",
       button: "Select Plan",
+      planCode: "basic_01",
       features: [
         "5 Chatbots",
         "3000 Message Credits/Month",
@@ -45,6 +48,7 @@ const Pricing = () => {
       monthly: "$55",
       yearly: "$550",
       button: "Select Plan",
+      planCode: "standard_01",
       features: [
         "20 Chatbots",
         "7000 Message Credits/Month",
@@ -61,6 +65,7 @@ const Pricing = () => {
       monthly: "$115",
       yearly: "$1150",
       button: "Select Plan",
+      planCode: "advanced_01",
       features: [
         "35 Chatbots",
         "14000 Message Credits/Month",
@@ -70,11 +75,9 @@ const Pricing = () => {
         "Ability to connect your OpenAI API Key"
       ],
     },
-  ];
-
-  const [active, SetActive] = useState(4);
-  const [checked, setChecked] = useState(false);
-
+  ])
+  
+  
   useEffect(() => {
     const svgs = [
       "https://dlvkyia8i4zmz.cloudfront.net/laOOO58rTEqLIunp3y8Q_free_plan_pricing.svg",
@@ -91,7 +94,16 @@ const Pricing = () => {
         imgBox[index].innerHTML = `<object type="image/svg+xml" data=${svgs[index]}><img src=${svgs[index]} alt="" /></object>`;
       });
     });
-  }, []);
+
+    const updatedData = data.map((item) => {
+      if (checked) {
+        return { ...item, planCode: `${item.planCode.slice(0, item.planCode.length - 2)}02` };
+      } else {
+        return { ...item,  planCode: `${item.planCode.slice(0, item.planCode.length - 2)}01` };
+      }
+    });
+    setData(updatedData);
+  }, [checked]);
   
   return (
     <Fragment>
@@ -143,7 +155,8 @@ const Pricing = () => {
                   <span>{checked ? plans.yearly : plans.monthly}</span> per
                   month
                 </div>
-                <button disabled={plans.title === 'Free'} onClick={() => window.location.href = "http://app.chatbotbuilder.ailocal:3001/settings?plan"}>{plans.button}</button>
+                <button disabled={plans.title === 'Free'} onClick={() => window.location.href = token ? "http://app.chatbotbuilder.net/settings?plan" :
+                 `http://app.chatbotbuilder.net/register?plan_code=${plans.planCode}` }>{plans.button}</button>
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
