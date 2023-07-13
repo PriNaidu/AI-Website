@@ -24,3 +24,16 @@ pages:
       - public
   only:
     - master
+
+pages_develop:
+  extends: pages
+  script:
+    # Build application and move content to a separate directory within public folder
+    - npm run publish
+    - rm -rf public/develop
+    - mv out/* public/develop
+  artifacts:
+    paths:
+      - public/develop
+  only:
+    - develop
