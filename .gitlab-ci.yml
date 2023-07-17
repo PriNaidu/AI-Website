@@ -41,11 +41,11 @@ deploy:
     - develop
 
 variables:
-  FIREBASE_API_KEY: "your_firebase_api_key"
-  FIREBASE_AUTH_DOMAIN: "your_firebase_auth_domain"
-  FIREBASE_PROJECT_ID: "your_firebase_project_id"
-  FIREBASE_STORAGE_BUCKET: "your_firebase_storage_bucket"
-  FIREBASE_MESSAGING_SENDER_ID: "your_firebase_messaging_sender_id"
-  FIREBASE_APP_ID: "your_firebase_app_id"
-  FIREBASE_MEASUREMENT_ID: "your_firebase_measurement_id"
-  FIREBASE_TOKEN: "your_firebase_token"
+  FIREBASE_API_KEY: "AIzaSyCn1CWvspgbK17Y-x4A3PCguTEi4jKDIH0"
+  FIREBASE_AUTH_DOMAIN: "ai-chat-bot-4163b.firebaseapp.com"
+  FIREBASE_PROJECT_ID: "ai-chat-bot-4163b"
+  FIREBASE_STORAGE_BUCKET: "ai-chat-bot-4163b.appspot.com"
+  FIREBASE_MESSAGING_SENDER_ID: "943974249469"
+  FIREBASE_APP_ID: "1:943974249469:web:43eca5e731d81f3c781f94"
+  FIREBASE_MEASUREMENT_ID: "G-CVN8539YHK"
+  FIREBASE_TOKEN: "1//0gN-VPnFCA6GeCgYIARAAGBASNwF-L9Ir6yGDzzoqmuL71rnB7jbFO5ldJn-vPoXmr9_RSBDS8DhOvdSU9yB76FfMrRTx846eUD8"
