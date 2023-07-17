@@ -1002,6 +1002,10 @@ p.rights-reserved {
   font-size: 12px;
   text-transform: capitalize;
 }
+.aiplan-content-bx button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .aiplan-content-bx > p {
   font-family: "Rubik";
   font-style: normal;
