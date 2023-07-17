@@ -27,6 +27,7 @@ cache:
 
 before_script:
   - npm install -g firebase-tools
+  - echo '{}' > firebase.json
 
 deploy:
   stage: deploy
@@ -34,6 +35,7 @@ deploy:
     - echo "Deploying to Firebase"
     - npm install
     - npm run publish  # Modify this command based on your build process
+    - mv build public  # Move the build output to the public directory
     - cd public
     - firebase deploy --only hosting --project $FIREBASE_PROJECT_ID --token $FIREBASE_TOKEN
   only:
