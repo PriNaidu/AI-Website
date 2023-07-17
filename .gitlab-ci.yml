@@ -27,7 +27,6 @@ cache:
 
 before_script:
   - npm install -g firebase-tools
-  - firebase init hosting --non-interactive
 
 deploy:
   stage: deploy
@@ -41,10 +40,10 @@ deploy:
     - develop
 
 variables:
-  FIREBASE_API_KEY: "AIzaSyCn1CWvspgbK17Y-x4A3PCguTEi4jKDIH0"
-  FIREBASE_AUTH_DOMAIN: "ai-chat-bot-4163b.firebaseapp.com"
-  FIREBASE_PROJECT_ID: "ai-chat-bot-4163b"
-  FIREBASE_STORAGE_BUCKET: "ai-chat-bot-4163b.appspot.com"
+  FIREBASE_API_KEY: "AIzaSyC1rKFG85X9A1Q_0n_3aKZoy8MkfHdEBHw"
+  FIREBASE_AUTH_DOMAIN: "chat-bot-1a3ba.firebaseapp.com"
+  FIREBASE_PROJECT_ID: "chat-bot-1a3ba"
+  FIREBASE_STORAGE_BUCKET: "chat-bot-1a3ba.appspot.com"
   FIREBASE_MESSAGING_SENDER_ID: "943974249469"
   FIREBASE_APP_ID: "1:943974249469:web:43eca5e731d81f3c781f94"
   FIREBASE_MEASUREMENT_ID: "G-CVN8539YHK"
