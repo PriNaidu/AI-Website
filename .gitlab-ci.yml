@@ -34,7 +34,6 @@ deploy:
     - echo "Deploying to Firebase"
     - npm install
     - npm run publish  # Modify this command based on your build process
-    - cd public
     - firebase deploy --only hosting --project $FIREBASE_PROJECT_ID --token $FIREBASE_TOKEN
   only:
     - develop
