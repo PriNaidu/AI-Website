@@ -32,7 +32,7 @@ deploy_firebase:
     - npm install
     - npm run build  # Modify this command based on your build process
     - firebase use --clear
-    - firebase use --add $FIREBASE_PROJECT_ID --token "$FIREBASE_TOKEN"
-    - firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+    - firebase use --add ai-chat-bot-4163b --token "1//0gN-VPnFCA6GeCgYIARAAGBASNwF-L9Ir6yGDzzoqmuL71rnB7jbFO5ldJn-vPoXmr9_RSBDS8DhOvdSU9yB76FfMrRTx846eUD8"
+    - firebase deploy --only hosting --token "1//0gN-VPnFCA6GeCgYIARAAGBASNwF-L9Ir6yGDzzoqmuL71rnB7jbFO5ldJn-vPoXmr9_RSBDS8DhOvdSU9yB76FfMrRTx846eUD8"
   only:
     - develop
