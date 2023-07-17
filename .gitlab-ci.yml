@@ -27,7 +27,6 @@ cache:
 
 before_script:
   - npm install -g firebase-tools
-  - echo '{}' > firebase.json
 
 deploy:
   stage: deploy
@@ -35,8 +34,7 @@ deploy:
     - echo "Deploying to Firebase"
     - npm install
     - npm run publish  # Modify this command based on your build process
-    - rm -rf public/*
-    - mv out/* public
+    - cd public
     - firebase deploy --only hosting --project $FIREBASE_PROJECT_ID --token $FIREBASE_TOKEN
   only:
     - develop
@@ -50,3 +48,4 @@ variables:
   FIREBASE_APP_ID: "1:943974249469:web:43eca5e731d81f3c781f94"
   FIREBASE_MEASUREMENT_ID: "G-CVN8539YHK"
   FIREBASE_TOKEN: "1//0gN-VPnFCA6GeCgYIARAAGBASNwF-L9Ir6yGDzzoqmuL71rnB7jbFO5ldJn-vPoXmr9_RSBDS8DhOvdSU9yB76FfMrRTx846eUD8"
+
