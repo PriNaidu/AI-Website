@@ -30,10 +30,17 @@ before_script:
 
 deploy:
   stage: deploy
-  script:
-    - echo "Deploying to Firebase"
+  before_script:
+    # Clean public folder
+    - find public -mindepth 1 -maxdepth 1 -type d | xargs rm -rf
+    - find public -type f -name "*.html" | xargs rm -rf
+    # Install packages
     - npm install
-    - npm run publish  # Modify this command based on your build process
+  script:
+    # Build application and move content to public folder
+    - npm run publish
+    - rm -rf public/*
+    - mv out/* public # Modify this command based on your build process
     - firebase deploy --only hosting --project $FIREBASE_PROJECT_ID --token $FIREBASE_TOKEN
   only:
     - develop
