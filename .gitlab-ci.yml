@@ -35,13 +35,13 @@ deploy_firebase:
     - echo "import { initializeApp } from 'firebase/app';" > src/firebase.js
     - echo "import { getAnalytics } from 'firebase/analytics';" >> src/firebase.js
     - echo "const firebaseConfig = {" >> src/firebase.js
-    - echo "  apiKey: 'AIzaSyCn1CWvspgbK17Y-x4A3PCguTEi4jKDIH0'," >> src/firebase.js
-    - echo "  authDomain: 'ai-chat-bot-4163b.firebaseapp.com'," >> src/firebase.js
-    - echo "  projectId: 'ai-chat-bot-4163b'," >> src/firebase.js
-    - echo "  storageBucket: 'ai-chat-bot-4163b.appspot.com'," >> src/firebase.js
-    - echo "  messagingSenderId: '943974249469'," >> src/firebase.js
-    - echo "  appId: '1:943974249469:web:43eca5e731d81f3c781f94'," >> src/firebase.js
-    - echo "  measurementId: 'G-CVN8539YHK'" >> src/firebase.js
+    - echo "  apiKey: '$FIREBASE_API_KEY'," >> src/firebase.js
+    - echo "  authDomain: '$FIREBASE_AUTH_DOMAIN'," >> src/firebase.js
+    - echo "  projectId: '$FIREBASE_PROJECT_ID'," >> src/firebase.js
+    - echo "  storageBucket: '$FIREBASE_STORAGE_BUCKET'," >> src/firebase.js
+    - echo "  messagingSenderId: '$FIREBASE_MESSAGING_SENDER_ID'," >> src/firebase.js
+    - echo "  appId: '$FIREBASE_APP_ID'," >> src/firebase.js
+    - echo "  measurementId: '$FIREBASE_MEASUREMENT_ID'" >> src/firebase.js
     - echo "};" >> src/firebase.js
     - echo "const app = initializeApp(firebaseConfig);" >> src/firebase.js
     - echo "const analytics = getAnalytics(app);" >> src/firebase.js
@@ -54,5 +54,11 @@ deploy_firebase:
     - develop
 
 variables:
+  FIREBASE_API_KEY: "AIzaSyCn1CWvspgbK17Y-x4A3PCguTEi4jKDIH0"
+  FIREBASE_AUTH_DOMAIN: "ai-chat-bot-4163b.firebaseapp.com"
   FIREBASE_PROJECT_ID: "ai-chat-bot-4163b"
+  FIREBASE_STORAGE_BUCKET: "ai-chat-bot-4163b.appspot.com"
+  FIREBASE_MESSAGING_SENDER_ID: "943974249469"
+  FIREBASE_APP_ID: "1:943974249469:web:43eca5e731d81f3c781f94"
+  FIREBASE_MEASUREMENT_ID: "G-CVN8539YHK"
   FIREBASE_TOKEN: "1//0gN-VPnFCA6GeCgYIARAAGBASNwF-L9Ir6yGDzzoqmuL71rnB7jbFO5ldJn-vPoXmr9_RSBDS8DhOvdSU9yB76FfMrRTx846eUD8"
