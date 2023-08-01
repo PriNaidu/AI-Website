@@ -143,7 +143,7 @@ const Pricing = ({token}:any) => {
             >
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">
-                <h2>
+                <h2 style={ {marginBottom:'5px'}} >
                   {plans.title}
                   {plans.title === "Standard" && (
                     <span className="ai-recommend">Recommended</span>
@@ -151,9 +151,10 @@ const Pricing = ({token}:any) => {
                   {/* {plans.title==="Standard" && <span className="ai-current-plan">Current Plan</span>} */}
                 </h2>
                 {/* <p>{plans.desc}</p> */}
+                {" "}
                 <div className="ai-plan-price fx jst-sp-bt">
-                  <span>{checked ? plans.yearly : plans.monthly}</span> per
-                  month
+                  <span>{checked ? plans.yearly : plans.monthly}</span> per 
+                  {checked ? " year" : " month"}
                 </div>
                 <button disabled={plans.title === 'Free'} onClick={() => window.location.href = token ? "http://app.chatbotbuilder.net/settings?plan" :
                  `http://app.chatbotbuilder.net/register?plan_code=${plans.planCode}` }>{plans.button}</button>
