@@ -106,11 +106,11 @@ const BannerSection = ({token}:any) => {
                 <div className="banner-details">
                   Love <span>chatGPT? </span>
                   Want to create a <span>chatGPT</span> equivalent to help your
-                  sales and support team? Use Chatbot Builder to build your own AI bot in minutes. Your AI Bot can learn from your Support Docs, Support Conversations, and Sales Conversations. You can add a PDF or URL.
+                  sales and support team? Use Chatbot Builder to build your own AI bot in minutes. Your AI Bot can learn from your Support Docs, Support Conversations, and Sales Conversations. You can add PDF, .docx, .text and URL.
                 </div>
                 <div className="banner-details">
                   We can learn from your support docs, support conversations and
-                  from your sales conversations. You can add a <span>PDF</span>
+                  from your sales conversations. You can add a <span>PDF, .docx, .text </span>
                   or <span>URL.</span>
                 </div>
               </div>
