@@ -1542,3 +1542,7 @@ p.rights-reserved {
   background-color: #ffffff;
   cursor: pointer;
 }
+
+.overflow-hd {
+  overflow: hidden;
+}

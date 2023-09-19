@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const ChatIcon = () => (
   <svg
@@ -28,6 +28,11 @@ export const ChatIcon = () => (
 );
 const ExampleChtabots = () => {
   const [exampleBot, setExampleBot] = useState(0)
+
+  useEffect(() => {
+    if(exampleBot) document.getElementsByTagName("body")[0].classList.add("overflow-hd")
+    else document.getElementsByTagName("body")[0].classList.remove("overflow-hd")
+  }, [exampleBot])
 
   return (
     <>
