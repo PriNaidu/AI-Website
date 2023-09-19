@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export const ChatIcon = () => (
   <svg
     width="24"
@@ -25,6 +27,8 @@ export const ChatIcon = () => (
   </svg>
 );
 const ExampleChtabots = () => {
+  const [exampleBot, setExampleBot] = useState(0)
+
   return (
     <>
       <div className="example_chatbots-container">
@@ -46,7 +50,7 @@ const ExampleChtabots = () => {
                   <div className="img-details-left">
                     <h3>Professor Discovery</h3>
                   </div>
-                  <div className="img-details-right">
+                  <div className="img-details-right" onClick={() => setExampleBot(1)}>
                   <ChatIcon />
                   </div>
                 </div>
@@ -63,7 +67,7 @@ const ExampleChtabots = () => {
                   <div className="img-details-left">
                     <h3>Serenity </h3>
                   </div>
-                  <div className="img-details-right">
+                  <div className="img-details-right" onClick={() => setExampleBot(2)}>
                     <ChatIcon />
                   </div>
                 </div>
@@ -80,12 +84,30 @@ const ExampleChtabots = () => {
                   <div className="img-details-left">
                     <h3>EntrepreXplorer</h3>
                   </div>
-                  <div className="img-details-right">
+                  <div className="img-details-right" onClick={() => setExampleBot(3)}>
                     <ChatIcon />
                   </div>
                 </div>
               </div>
             </div>
+            {exampleBot ? <div className="outer-chat-preview-modal">
+              <div className="inner-chat-preview-modal">
+                { exampleBot === 1 && <iframe src="https://live.chatbotbuilder.net/demobots-293"></iframe> }
+                { exampleBot === 2 && <iframe src="https://live.chatbotbuilder.net/demobots-346"></iframe> }
+                { exampleBot === 3 && <iframe src="https://live.chatbotbuilder.net/demobots-307"></iframe> }
+                <svg onClick={() => setExampleBot(0)} className="close-chat-preview-modal" width="22"   height="22"     viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="11" fill="white"/>
+                  <g clip-path="url(#clip0_4668_11556)">
+                    <path d="M16 7.00714L14.9929 6L11 9.99286L7.00714 6L6 7.00714L9.99286 11L6 14.9929L7.00714 16L11 12.0071L14.9929 16L16 14.9929L12.0071 11L16 7.00714Z" fill="#6D6D6D"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4668_11556">
+                      <rect width="10" height="10" fill="white" transform="translate(6 6)"/>
+                    </clipPath>
+                  </defs>
+                </svg>  
+              </div>
+            </div> : null}
           </div>
         </div>
       </div>

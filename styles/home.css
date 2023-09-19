@@ -1509,3 +1509,36 @@ p.rights-reserved {
   filter: grayscale(0) !important;
   animation: fadeout .5s ease-in-out;
 }
+
+.outer-chat-preview-modal{
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(7.5px);
+  background: rgba(0, 0, 0, 0.70);
+  display: grid;
+  place-items: center;
+  z-index: 3;
+}
+
+.inner-chat-preview-modal{
+  width: 82%;
+  height: 80%;
+  position: relative;
+}
+
+.inner-chat-preview-modal > iframe{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close-chat-preview-modal{
+  position: absolute;
+  right: -40px;
+  top: -22px;
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
