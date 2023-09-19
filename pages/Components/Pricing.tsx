@@ -136,15 +136,11 @@ const Pricing = ({ token }: any) => {
                 )}
                 <ul>
                   <span>Features</span>
-                  {plans?.features.map((feature: any, index) => (
-                  <li key={index}>
-                    <span> {checked && feature.slice(feature.length - 4) === 'bots' || checked && feature.slice(feature.length - 4) === 'bots' ? (
-                      `Access to create up to ${feature.slice(23, 25) * 12} bots `
-                    ) : (
-                      feature
-                    )}</span>
-                  </li>
-                ))}
+                  {plans.features.map((feature, index) => (
+                    <li key={index}>
+                      <span> {feature}</span>{" "}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
