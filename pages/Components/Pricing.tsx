@@ -132,7 +132,7 @@ const Pricing = ({ token }: any) => {
                   {checked ? " year" : " month"}
                 </div>
                 {!checked && plans.title === 'Basic' && !token && (
-                  <button onClick={() => window.location.href = `http://app.chatbotbuilder.net/register?plan_code=${plans.planCode}`}>{plans.button}  </button>
+                  <button onClick={() => window.location.href = `http://app.chatbotbuilder.net/register`}>{plans.button}  </button>
                 )}
                 <ul>
                   <span>Features</span>
