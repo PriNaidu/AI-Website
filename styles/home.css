@@ -321,12 +321,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 30px 30px 30px;
+  padding: 0 20px 25px;
   z-index: 2;
 }
 .example-chatbot-box .img-card .img-details .img-details-left h3 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -1314,7 +1314,7 @@ p.rights-reserved {
   }
 }
 
-@media (max-width: 659px) and (min-width: 250px){
+@media (max-width: 768px) and (min-width: 250px){
   .privacy-policy-heading{
     margin-top: 30px;
   }
@@ -1545,4 +1545,10 @@ p.rights-reserved {
 
 .overflow-hd {
   overflow: hidden;
+}
+
+@media screen and (max-width: 900px) and (min-width: 768px){
+  .example-chatbot-box .img-card .img-details{
+    padding: 0 10px 20px;
+  }
 }
