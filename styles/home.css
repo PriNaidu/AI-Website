@@ -301,9 +301,14 @@
   transition: 0.5s ease;
   cursor: pointer;
 }
-.example-chatbot-box .img-card > picture > img:hover{
-  transform: scale(1.05);
+.example-chatbot-box .img-card:hover > picture > img{
   filter: grayscale(0%);
+  transform: scale(1.05);
+  animation: fadeout .5s ease-in-out;
+}
+
+.example-chatbot-box .img-card:hover > picture > .overlay-gradient{
+  transform: scale(1.05);
   animation: fadeout .5s ease-in-out;
 }
 .example-chatbot-box .img-card {
@@ -317,6 +322,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 30px 30px 30px;
+  z-index: 2;
 }
 .example-chatbot-box .img-card .img-details .img-details-left h3 {
   font-weight: 500;
@@ -1484,4 +1490,59 @@ p.rights-reserved {
   }
 }
 
+.overlay-gradient{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0, #000 0%, rgba(0, 0, 0, 0.00) 50%);
+  mix-blend-mode: luminosity;
+  z-index: 1;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
 
+.example-chatbot-box .img-card > picture{
+  position: relative;
+}
+
+.overlay-gradient:hover ~ img{
+  transform: scale(1.05);
+  filter: grayscale(0) !important;
+  animation: fadeout .5s ease-in-out;
+}
+
+.outer-chat-preview-modal{
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(7.5px);
+  background: rgba(0, 0, 0, 0.70);
+  display: grid;
+  place-items: center;
+  z-index: 3;
+}
+
+.inner-chat-preview-modal{
+  width: 82%;
+  height: 80%;
+  position: relative;
+}
+
+.inner-chat-preview-modal > iframe{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close-chat-preview-modal{
+  position: absolute;
+  right: -40px;
+  top: -22px;
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.overflow-hd {
+  overflow: hidden;
+}

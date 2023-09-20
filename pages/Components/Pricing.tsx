@@ -5,7 +5,7 @@ import AIPlan2 from "./Assets/AIPlan2";
 import AIPlan3 from "./Assets/AIPlan3";
 import AIPlan4 from "./Assets/AIPlan4";
 
-const Pricing = ({token}:any) => {
+const Pricing = ({ token }: any) => {
   const [active, SetActive] = useState(4);
   const [checked, setChecked] = useState(false);
   const [data, setData] = useState([
@@ -15,69 +15,44 @@ const Pricing = ({token}:any) => {
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$0",
       yearly: "$0",
-      button: "Free Plan",
+      button: "Start your 14-day free trial",
       planCode: "free_01",
-      features: [
-        "1 Chatbot",
-        "500 Message Credits/Month",
-        "1,000,000 Characters/Bot",
-        "Upload Multiple Files Up To 10 MB",
-        "Embed On Multiple Websites"
-      ],
+      features: ["Access to create 1 bot", "Access to send up to 100 messages per month", "Access to use up to 400K characters for training a bot", "Access to train a bot using up to 500 links"],
     },
     {
       image: <AIPlan2 />,
       title: "Basic",
       desc: "Good superb content for Advanced users  Advanced users",
-      monthly: "$22",
-      yearly: "$220",
-      button: "Select Plan",
+      monthly: "$18",
+      yearly: "$180",
+      button: "Start your 14-day free trial",
       planCode: "basic_01",
-      features: [
-        "5 Chatbots",
-        "3000 Message Credits/Month",
-        "4,000,000 Characters/Bot",
-        "Upload Multiple Files Up To 27 MB",
-        "Embed On Multiple Websites"
-      ],
+      features: ["Access to create up to 2 bots", "Access to send up to 3,000 messages per month", "Access to use up to 11M characters for training a bot", "Access to train a bot using up to 3,000 links", "Access to upload multiple files for bot training", "Access to configure Zapier Integration", "Access to view Conversation History", "Access to Capture Leads"],
     },
     {
       image: <AIPlan3 />,
-      title: "Standard",
+      title: "Professional",
       desc: "Good superb content for Advanced users  Advanced users",
-      monthly: "$55",
-      yearly: "$550",
-      button: "Select Plan",
+      monthly: "$95",
+      yearly: "$950",
+      button: "Start your 14-day free trial",
       planCode: "standard_01",
-      features: [
-        "20 Chatbots",
-        "7000 Message Credits/Month",
-        "6,000,000 Characters/Bot",
-        "Upload Multiple Files Up To 45 MB",
-        "Embed On Multiple Websites",
-        "Ability to connect your OpenAI API Key"
-      ],
+      features: ["Access to create up to 5 bots", "Access to send up to 15,000 messages per month", "Access to use up to 11M characters for training a bot", "Access to train a bot using up to 5,000 links", "Access to upload multiple files for bot training", "Access to configure Zapier Integration", "Access to view Conversation History", "Access to Capture Leads", "Ability to connect your OpenAI API Key"],
     },
     {
-      image: <AIPlan4/>,
+      image: <AIPlan4 />,
       title: "Advanced",
       desc: "Good superb content for Advanced users  Advanced users",
-      monthly: "$115",
-      yearly: "$1150",
-      button: "Select Plan",
+      monthly: "$375",
+      yearly: "$3750",
+      button: "Start your 14-day free trial",
       planCode: "advanced_01",
-      features: [
-        "35 Chatbots",
-        "14000 Message Credits/Month",
-        "11,000,000 Characters/Bot",
-        "Upload Multiple Files Up To 70 MB",
-        "Embed On Multiple Websites",
-        "Ability to connect your OpenAI API Key"
-      ],
+      features: ["Access to create up to 10 bots", "Access to send up to 42,000 messages per month", "Access to use up to 11M characters for training a bot", " Access to train a bot using Unlimited links", "Access to upload multiple files for bot training", "Access to configure Zapier Integration", "Access to view Conversation History", "Access to Capture Leads", "Ability to connect your OpenAI API Key", "Ability to Remove Chatbotbuilder branding"],
+
     },
   ])
-  
-  
+
+
   useEffect(() => {
     const svgs = [
       "https://dlvkyia8i4zmz.cloudfront.net/laOOO58rTEqLIunp3y8Q_free_plan_pricing.svg",
@@ -87,7 +62,7 @@ const Pricing = ({token}:any) => {
     ];
     const main = document.querySelectorAll(".aiplan-bx");
     const imgBox = document.querySelectorAll(".aiplan-ing-bx");
-    const temp: any =[]
+    const temp: any = []
     Array.from(imgBox).forEach(ele => temp.push(ele.innerHTML))
     Array.from(main).forEach((element, index) => {
       element.addEventListener("mouseenter", () => {
@@ -99,12 +74,12 @@ const Pricing = ({token}:any) => {
       if (checked) {
         return { ...item, planCode: `${item.planCode.slice(0, item.planCode.length - 2)}02` };
       } else {
-        return { ...item,  planCode: `${item.planCode.slice(0, item.planCode.length - 2)}01` };
+        return { ...item, planCode: `${item.planCode.slice(0, item.planCode.length - 2)}01` };
       }
     });
     setData(updatedData);
   }, [checked]);
-  
+
   return (
     <Fragment>
       <div className="ai-plan-landing">
@@ -143,21 +118,22 @@ const Pricing = ({token}:any) => {
             >
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">
-                <h2 style={ {marginBottom:'5px'}} >
+                <h2 style={{ marginBottom: '5px' }} >
                   {plans.title}
-                  {plans.title === "Standard" && (
+                  {/* {plans.title === "Professional" && (
                     <span className="ai-recommend">Recommended</span>
-                  )}
+                  )} */}
                   {/* {plans.title==="Standard" && <span className="ai-current-plan">Current Plan</span>} */}
                 </h2>
                 {/* <p>{plans.desc}</p> */}
                 {" "}
                 <div className="ai-plan-price fx jst-sp-bt">
-                  <span>{checked ? plans.yearly : plans.monthly}</span> per 
+                  <span>{checked ? plans.yearly : plans.monthly}</span> per
                   {checked ? " year" : " month"}
                 </div>
-                <button disabled={plans.title === 'Free'} onClick={() => window.location.href = token ? "http://app.chatbotbuilder.net/settings?plan" :
-                 `http://app.chatbotbuilder.net/register?plan_code=${plans.planCode}` }>{plans.button}</button>
+                {!checked && plans.title === 'Basic' && !token && (
+                  <button onClick={() => window.location.href = `http://app.chatbotbuilder.net/register`}>{plans.button}  </button>
+                )}
                 <ul>
                   <span>Features</span>
                   {plans.features.map((feature, index) => (
