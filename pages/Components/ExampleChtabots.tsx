@@ -39,7 +39,7 @@ const ExampleChtabots = () => {
       <div className="example_chatbots-container">
         <div className="wrapper">
           <div className="heading">
-            <h4>Examples Chatbots</h4>
+            <h4>Chatbots Examples</h4>
           </div>
           <div className="example-chatbot-wrap">
             <div className="example-chatbot-box">
@@ -53,7 +53,7 @@ const ExampleChtabots = () => {
                 </picture>
                 <div className="img-details">
                   <div className="img-details-left">
-                    <h3>Professor Discovery</h3>
+                    <h3>Scientific History Guide</h3>
                   </div>
                   <div className="img-details-right" onClick={() => setExampleBot(1)}>
                   <ChatIcon />
@@ -70,7 +70,7 @@ const ExampleChtabots = () => {
                 </picture>
                 <div className="img-details">
                   <div className="img-details-left">
-                    <h3>Serenity </h3>
+                    <h3> Mental Health Guide </h3>
                   </div>
                   <div className="img-details-right" onClick={() => setExampleBot(2)}>
                     <ChatIcon />
@@ -87,7 +87,7 @@ const ExampleChtabots = () => {
                 </picture>
                 <div className="img-details">
                   <div className="img-details-left">
-                    <h3>EntrepreXplorer</h3>
+                    <h3> Entrepreneurial Journey Guide</h3>
                   </div>
                   <div className="img-details-right" onClick={() => setExampleBot(3)}>
                     <ChatIcon />

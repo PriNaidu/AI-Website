@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1170px;
-  padding: 20px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .banner-section {
@@ -198,7 +198,7 @@
 
 /* UseChatbot */
 .chatbot_builder {
-  padding-top: 90px;
+  padding-top: 80px;
   padding-bottom: 90px;
   background: linear-gradient(
     256.88deg,
@@ -269,7 +269,7 @@
   padding: 80px 20px;
 }
 .heading {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .heading > h4 {
   font-family: "Rubik";
@@ -326,7 +326,7 @@
 }
 .example-chatbot-box .img-card .img-details .img-details-left h3 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -634,7 +634,7 @@ text-align: center;
 color: #444444;
 }
 .pricing-head{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .toggle-switch {
   position: absolute;
@@ -708,7 +708,7 @@ input:checked + .toggle-switch:before {
 /* Launchbot css */
 .launchbot-container {
   width: 65%;
-  margin: 0 auto 100px;
+  margin: 0 auto 80px;
 }
 .launchbot-head {
   border-radius: 10px;
@@ -757,7 +757,7 @@ input:checked + .toggle-switch:before {
   text-align: center;
   letter-spacing: 0.01em;
   color: #282828;
-  margin: 80px 0 60px;
+  margin: 80px 0 40px;
 }
 .launchbot-list {
   width: 100%;
@@ -1128,7 +1128,7 @@ p.rights-reserved {
   }
   .navbar-left .logo-txt h3,
   .example-chatbot-box .img-card .img-details .img-details-left h3{
-    font-size: calc( var(--font-size-24) - 2px);
+    font-size: 18px;
   }
   .pricing-head h2{
     font-size: calc(var(--font-size-22) - 2px);
@@ -1405,9 +1405,12 @@ p.rights-reserved {
     width: 100%;
     padding: 15px;
   }
+  .example-chatbot-box .img-card .img-details{
+    padding: 0 15px 25px;
+  }
   .example-chatbot-box .img-card .img-details .img-details-left h3 {
     font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 2px;
   padding: 0px;
   }
