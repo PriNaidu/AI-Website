@@ -39,7 +39,7 @@ const ExampleChtabots = () => {
       <div className="example_chatbots-container">
         <div className="wrapper">
           <div className="heading">
-            <h4>Chatbots Examples</h4>
+            <h4>Chatbot Examples</h4>
           </div>
           <div className="example-chatbot-wrap">
             <div className="example-chatbot-box">
