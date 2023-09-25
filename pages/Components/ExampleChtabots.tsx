@@ -43,7 +43,9 @@ const ExampleChtabots = () => {
           </div>
           <div className="example-chatbot-wrap">
             <div className="example-chatbot-box">
-              <div className="img-card">
+            <div className="img-chat-card">
+         <div className="flip-card">
+         <div className="img-card">
                 <picture>
                   <div className="overlay-gradient"></div>
                   <img
@@ -60,7 +62,14 @@ const ExampleChtabots = () => {
                   </div>
                 </div>
               </div>
-              <div className="img-card">
+              <div className="chat-card">
+                back
+              </div>
+         </div>
+            </div>
+            <div className="img-chat-card">
+          <div className="flip-card">
+          <div className="img-card">
                 <picture>
                   <div className="overlay-gradient"></div>
                   <img
@@ -77,7 +86,14 @@ const ExampleChtabots = () => {
                   </div>
                 </div>
               </div>
-              <div className="img-card">
+              <div className="chat-card">
+                back
+              </div>
+          </div>
+            </div>         
+             <div className="img-chat-card">
+           <div className="flip-card">
+           <div className="img-card">
                 <picture>
                   <div className="overlay-gradient"></div>
                   <img
@@ -94,6 +110,11 @@ const ExampleChtabots = () => {
                   </div>
                 </div>
               </div>
+              <div className="chat-card">
+                back
+              </div>
+           </div>
+             </div>
             </div>
             {exampleBot ? <div className="outer-chat-preview-modal">
               <div className="inner-chat-preview-modal">
