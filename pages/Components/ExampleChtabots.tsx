@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export const ChatIcon = () => (
   <svg
@@ -36,12 +36,23 @@ export const ChatIcon = () => (
   </svg>
 );
 const ExampleChtabots = () => {
-  const [exampleBot, setExampleBot] = useState(0)
+  const [activeBot, setactiveBot] = useState<Number>(0);
 
-  useEffect(() => {
-    if(exampleBot) document.getElementsByTagName("body")[0].classList.add("overflow-hd")
-    else document.getElementsByTagName("body")[0].classList.remove("overflow-hd")
-  }, [exampleBot])
+
+  const imgRef = useRef<HTMLDivElement | null>(null);
+
+  // useEffect(()=>{
+  //   setTimeout(()=>{
+  //     const elment = imgRef.current
+  //     if(elment) elment.className = "hide";
+  //   },1000)
+  // },[exampleBot])
+  // const [isOpen, setIsOpen] = useState([false, false, false]);
+  // const toggleDiv = (index: any) => {
+  //   const updatedState = [...isOpen];
+  //   updatedState[index] = !updatedState[index];
+  //   setIsOpen(updatedState);
+  // };
 
   return (
     <>
@@ -52,76 +63,140 @@ const ExampleChtabots = () => {
           </div>
           <div className="example-chatbot-wrap">
             <div className="example-chatbot-box">
-              <div className="img-card">
-                <picture>
-                  <div className="overlay-gradient"></div>
-                  <img
-                    src="https://dlvkyia8i4zmz.cloudfront.net/1SKPOMyPQWzDKRk0sSeh_example1.png"
-                    alt="chatbotbuilder.net"
-                  />
-                </picture>
-                <div className="img-details">
-                  <div className="img-details-left">
-                    <h3>Scientific History Guide</h3>
+              <div
+                className="img-chat-card"
+                onClick={() => setactiveBot(1)}
+              >
+                <div
+                  className={`flip-card ${
+                    activeBot===1 ? " flipped" : ""
+                  }`}
+                >
+                  <div ref={imgRef} className="img-card">
+                    <div className="overlay-gradient"></div>
+                    <picture>
+                      <img
+                        src="https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4689.png"
+                        alt="chatbotbuilder.net"
+                      />
+                    </picture>
+                    <div className="img-details">
+                      <div className="img-details-left">
+                        <h3>Scientific History Guide</h3>
+                      </div>
+                      <div className="img-details-right">
+                        <ChatIcon />
+                      </div>
+                    </div>
                   </div>
-                  <div className="img-details-right" onClick={() => setExampleBot(1)}>
-                  <ChatIcon />
+
+                  <div className="chat-card">
+                    <div className="outer-chat-preview-modal">
+                      <div className="inner-chat-preview-modal">
+                        <div
+                          className="small-cross-icon dd"
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            setactiveBot(0);
+                          }}
+                        />
+                        <iframe src="https://live.chatbotbuilder.net/demobots-293?embed=true"></iframe>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="img-card">
-                <picture>
-                  <div className="overlay-gradient"></div>
-                  <img
-                    src="https://dlvkyia8i4zmz.cloudfront.net/3Q9HGgylQlWm1YTaRezQ_example2.png"
-                    alt="chatbotbuilder.net"
-                  />
-                </picture>
-                <div className="img-details">
-                  <div className="img-details-left">
-                    <h3> Mental Health Guide </h3>
+              <div
+                className="img-chat-card"
+                onClick={() => setactiveBot(2)}
+              >
+                 <div
+                  className={`flip-card ${
+                    activeBot==2 ? " flipped" : ""
+                  } `}
+                >
+                  <div className="img-card">
+                    <div className="overlay-gradient"></div>
+
+                    <picture>
+                      <img
+                        src="https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4688.png"
+                        alt="chatbotbuilder.net"
+                      />
+                    </picture>
+                    <div className="img-details">
+                      <div className="img-details-left">
+                        <h3> Mental Health Guide </h3>
+                      </div>
+                      <div className="img-details-right">
+                        <ChatIcon />
+                      </div>
+                    </div>
                   </div>
-                  <div className="img-details-right" onClick={() => setExampleBot(2)}>
-                    <ChatIcon />
+                  <div className="chat-card">
+                    {activeBot && (
+                      <div className="outer-chat-preview-modal">
+                        <div className="inner-chat-preview-modal">
+                          <div
+                            className="small-cross-icon"
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              setactiveBot(0);
+                            }}
+                          ></div>
+                          <iframe src="https://live.chatbotbuilder.net/demobots-346?embed=true"></iframe>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
-              <div className="img-card">
-                <picture>
-                  <div className="overlay-gradient"></div>
-                  <img
-                    src="https://dlvkyia8i4zmz.cloudfront.net/0vmvRtXRKSgWqNCz1Jrg_example3.png"
-                    alt="chatbotbuilder.net"
-                  />
-                </picture>
-                <div className="img-details">
-                  <div className="img-details-left">
-                    <h3> Entrepreneurial Journey Guide</h3>
+              <div
+                className="img-chat-card"
+                onClick={() => setactiveBot(3)}
+              >
+                  <div
+                  className={`flip-card ${
+                    activeBot==3 ? " flipped" : ""
+                  } ${activeBot}`}
+                >
+                  <div className="img-card">
+                    <div className="overlay-gradient"></div>
+
+                    <picture>
+                      <img
+                        src="https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4687.png"
+                        alt="chatbotbuilder.net"
+                      />
+                    </picture>
+                    <div className="img-details">
+                      <div className="img-details-left">
+                        <h3>Entrepreneurial Companion</h3>
+                      </div>
+                      <div className="img-details-right">
+                        <ChatIcon />
+                      </div>
+                    </div>
                   </div>
-                  <div className="img-details-right" onClick={() => setExampleBot(3)}>
-                    <ChatIcon />
+                  <div className="chat-card">
+                    {activeBot ? (
+                      <div className="outer-chat-preview-modal">
+                        <div className="inner-chat-preview-modal">
+                          <div className="small-cross-icon" 
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              setactiveBot(0);
+                            }}>
+                                </div>
+                          <iframe src="https://live.chatbotbuilder.net/demobots-307?embed=true"></iframe>
+                          </div>
+                      
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               </div>
             </div>
-            {exampleBot ? <div className="outer-chat-preview-modal">
-              <div className="inner-chat-preview-modal">
-                { exampleBot === 1 && <iframe src="https://live.chatbotbuilder.net/demobots-293"></iframe> }
-                { exampleBot === 2 && <iframe src="https://live.chatbotbuilder.net/demobots-346"></iframe> }
-                { exampleBot === 3 && <iframe src="https://live.chatbotbuilder.net/demobots-307"></iframe> }
-                <svg onClick={() => setExampleBot(0)} className="close-chat-preview-modal" width="22"   height="22"     viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="11" cy="11" r="11" fill="white"/>
-                  <g clip-path="url(#clip0_4668_11556)">
-                    <path d="M16 7.00714L14.9929 6L11 9.99286L7.00714 6L6 7.00714L9.99286 11L6 14.9929L7.00714 16L11 12.0071L14.9929 16L16 14.9929L12.0071 11L16 7.00714Z" fill="#6D6D6D"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_4668_11556">
-                      <rect width="10" height="10" fill="white" transform="translate(6 6)"/>
-                    </clipPath>
-                  </defs>
-                </svg>  
-              </div>
-            </div> : null}
           </div>
         </div>
       </div>
