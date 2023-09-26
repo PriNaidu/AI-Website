@@ -4,7 +4,7 @@ const UseChatbot = () => {
       <div className="chatbot_builder">
         <div className="wrapper">
         <div className="heading">
-        <h2>Why use Chatbot builder?</h2>
+        <h2>Why use ChatBot Builder?</h2>
         
         </div>
         <div className="chatbox_builder_container">
