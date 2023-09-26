@@ -303,6 +303,7 @@
   filter: grayscale(100%);
   transition: 0.5s ease;
   cursor: pointer;
+  height: 100%;
 }
 .example-chatbot-box .img-card:hover > picture > img {
   filter: grayscale(0%);
@@ -310,7 +311,7 @@
   animation: fadeout 0.5s ease-in-out;
 }
 
-.example-chatbot-box .img-card:hover > picture > .overlay-gradient {
+.example-chatbot-box .img-card:hover  > .overlay-gradient {
   transform: scale(1.05);
   animation: fadeout 0.5s ease-in-out;
 }
@@ -322,7 +323,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 20px 25px;
+  padding: 0 30px 40px;
   z-index: 2;
 }
 .example-chatbot-box .img-card .img-details .img-details-left h3 {
@@ -345,6 +346,12 @@
   padding: 10px;
   border-radius: 100%;
   cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+.example-chatbot-box .img-card .img-details .img-details-right > svg{
+  width: 24px;
+  height: 24px;
 }
 /* Flip-card */
 .img-chat-card {
@@ -352,38 +359,43 @@
   height: 624px;
   perspective: 800px;
 }
-.img-chat-card:hover > .flip-card {
+  .flipped {
   cursor: pointer;
   transform: rotateY(180deg);
 }
+.flipped .chat-card{
+  z-index: 9999;
+}
+
+ 
 .flip-card {
   height: 100%;
   width: 100%;
   position: relative;
-  transition: transform 1000ms;
+  transition: transform 600ms;
   transform-style: preserve-3d;
+
 }
+/* .img-chat-card:hover > .flip-card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+} */
+
 .img-card,
 .chat-card {
   height: 100%;
   width: 100%;
-  border-radius: 2rem;
-  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  border-radius: 15px;
   position: absolute;
   backface-visibility: hidden;
 }
 .chat-card{
-  background-color: #3a3a3a;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-}
-
-.img-card{
-  background: red;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
 }
 /* Flip-card */
 
@@ -1545,7 +1557,7 @@ p.rights-reserved {
   position: relative;
 }
 
-.overlay-gradient:hover ~ img {
+.overlay-gradient:hover ~ img{
   transform: scale(1.05);
   filter: grayscale(0) !important;
   animation: fadeout 0.5s ease-in-out;
@@ -1559,11 +1571,12 @@ p.rights-reserved {
   display: grid;
   place-items: center;
   z-index: 3;
+  border-radius: 15px;
 }
 
 .inner-chat-preview-modal {
-  width: 82%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -1571,6 +1584,14 @@ p.rights-reserved {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+}
+.inner-chat-preview-modal > .small-cross-icon{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 14px;
+  border-radius: 50px;
+  right: 16px;
 }
 
 .close-chat-preview-modal {
