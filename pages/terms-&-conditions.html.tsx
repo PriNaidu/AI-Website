@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Link from "next/link";
+import Newsletter from "./Components/Newsletter";
+import SubFooter from "./Components/Assets/SubFooter";
 
 const terms_conditions = () => {
   return (
@@ -343,7 +345,9 @@ const terms_conditions = () => {
           </div>
         </div>
       </div>
+      <Newsletter />
       <Footer />
+      <SubFooter />
     </>
   );
 };

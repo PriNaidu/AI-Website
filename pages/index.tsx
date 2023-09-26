@@ -12,6 +12,8 @@ import Footer from "./Components/Footer";
 import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
 import Script from "next/script";
+import Newsletter from "./Components/Newsletter";
+import SubFooter from "./Components/Assets/SubFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -93,7 +95,9 @@ export default function Home() {
       <LiveDemo />
       <Pricing token={token} />
       <LaunchChatbot />
+      <Newsletter />
       <Footer />
+      <SubFooter/>
     </main>
   );
 }
