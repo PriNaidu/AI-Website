@@ -36,9 +36,7 @@ export const ChatIcon = () => (
   </svg>
 );
 const ExampleChtabots = () => {
-  const [exampleBot1, setExampleBot1] = useState<Boolean>(false);
-  const [exampleBot2, setExampleBot2] = useState<Boolean>(false);
-  const [exampleBot3, setExampleBot3] = useState<Boolean>(false);
+  const [activeBot, setactiveBot] = useState<Number>(0);
 
 
   const imgRef = useRef<HTMLDivElement | null>(null);
@@ -56,13 +54,6 @@ const ExampleChtabots = () => {
   //   setIsOpen(updatedState);
   // };
 
-  // useEffect(() => {
-  //   if (exampleBot)
-  //     document.getElementsByTagName("body")[0].classList.add("overflow-hd");
-  //   else
-  //     document.getElementsByTagName("body")[0].classList.remove("overflow-hd");
-  // }, [exampleBot]);
-
   return (
     <>
       <div className="example_chatbots-container">
@@ -74,12 +65,12 @@ const ExampleChtabots = () => {
             <div className="example-chatbot-box">
               <div
                 className="img-chat-card"
-                onClick={() => setExampleBot1(true)}
+                onClick={() => setactiveBot(1)}
               >
                 <div
                   className={`flip-card ${
-                    exampleBot1 ? " flipped" : ""
-                  } ${exampleBot1}`}
+                    activeBot===1 ? " flipped" : ""
+                  }`}
                 >
                   <div ref={imgRef} className="img-card">
                     <div className="overlay-gradient"></div>
@@ -106,7 +97,7 @@ const ExampleChtabots = () => {
                           className="small-cross-icon dd"
                           onClick={(event) => {
                             event.stopPropagation();
-                            setExampleBot1(false);
+                            setactiveBot(0);
                           }}
                         />
                         <iframe src="https://live.chatbotbuilder.net/demobots-293?embed=true"></iframe>
@@ -117,12 +108,12 @@ const ExampleChtabots = () => {
               </div>
               <div
                 className="img-chat-card"
-                onClick={() => setExampleBot2(true)}
+                onClick={() => setactiveBot(2)}
               >
                  <div
                   className={`flip-card ${
-                    exampleBot2 ? " flipped" : ""
-                  } ${exampleBot2}`}
+                    activeBot==2 ? " flipped" : ""
+                  } `}
                 >
                   <div className="img-card">
                     <div className="overlay-gradient"></div>
@@ -143,14 +134,14 @@ const ExampleChtabots = () => {
                     </div>
                   </div>
                   <div className="chat-card">
-                    {exampleBot2 && (
+                    {activeBot && (
                       <div className="outer-chat-preview-modal">
                         <div className="inner-chat-preview-modal">
                           <div
                             className="small-cross-icon"
                             onClick={(event) => {
                               event.stopPropagation();
-                              setExampleBot2(false);
+                              setactiveBot(0);
                             }}
                           ></div>
                           <iframe src="https://live.chatbotbuilder.net/demobots-346?embed=true"></iframe>
@@ -162,12 +153,12 @@ const ExampleChtabots = () => {
               </div>
               <div
                 className="img-chat-card"
-                onClick={() => setExampleBot3(true)}
+                onClick={() => setactiveBot(3)}
               >
                   <div
                   className={`flip-card ${
-                    exampleBot3 ? " flipped" : ""
-                  } ${exampleBot3}`}
+                    activeBot==3 ? " flipped" : ""
+                  } ${activeBot}`}
                 >
                   <div className="img-card">
                     <div className="overlay-gradient"></div>
@@ -188,13 +179,13 @@ const ExampleChtabots = () => {
                     </div>
                   </div>
                   <div className="chat-card">
-                    {exampleBot3 ? (
+                    {activeBot ? (
                       <div className="outer-chat-preview-modal">
                         <div className="inner-chat-preview-modal">
                           <div className="small-cross-icon" 
                             onClick={(event) => {
                               event.stopPropagation();
-                              setExampleBot3(false);
+                              setactiveBot(0);
                             }}>
                                 </div>
                           <iframe src="https://live.chatbotbuilder.net/demobots-307?embed=true"></iframe>
