@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Components/Footer";
 
 import Link from "next/link";
+import Newsletter from "./Components/Newsletter";
+import SubFooter from "./Components/Assets/SubFooter";
 
 const PrivacyPolicy = () => {
   const [token, setToken] = useState('');
@@ -441,7 +443,9 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
+      <Newsletter />
       <Footer />
+      <SubFooter />
     </>
   );
 };
