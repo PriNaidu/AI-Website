@@ -23,11 +23,11 @@ const Pricing = ({ token }: any) => {
       image: <AIPlan2 />,
       title: "Basic",
       desc: "Good superb content for Advanced users  Advanced users",
-      monthly: "$18",
-      yearly: "$180",
+      monthly: "$25",
+      yearly: "$250",
       button: "Start your 14-day free trial",
       planCode: "basic_01",
-      features: ["Create up to 2 bots", "Send up to 3,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 3,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data"],
+      features: ["Create up to 5 bots", "Send up to 3,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 3,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data"],
     },
     {
       image: <AIPlan3 />,
@@ -37,17 +37,17 @@ const Pricing = ({ token }: any) => {
       yearly: "$950",
       button: "Start your 14-day free trial",
       planCode: "standard_01",
-      features: ["Create up to 5 bots", "Send up to 15,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 5,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data", "Ability to connect your OpenAI API Key"],
+      features: ["Create up to 10 bots", "Send up to 30,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 5,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data", "Ability to connect your OpenAI API Key", "Remove Chatbot Builder Branding"],
     },
     {
       image: <AIPlan4 />,
-      title: "Advanced",
+      title: "Enterprise",
       desc: "Good superb content for Advanced users  Advanced users",
       monthly: "$375",
       yearly: "$3750",
-      button: "Start your 14-day free trial",
+      button: "Contact Us",
       planCode: "advanced_01",
-      features: ["Create up to 10 bots", "Send up to 42,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using Unlimited links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data", "Ability to connect your OpenAI API Key", "Ability to Remove Chatbotbuilder branding"],
+      features: ["Personalized SLA", "Custom limits", "Team training", "More messages per month", "Unlimited bots", "Unlimited links"],
     },
   ])
 
@@ -133,7 +133,7 @@ const Pricing = ({ token }: any) => {
                   <button onClick={() => window.location.href = `http://app.chatbotbuilder.net/register`}>{plans.button}  </button>
                 )}
                 <ul>
-                  <span>Features</span>
+                  {plans?.title === "Enterprise" ? <span>Looking For: </span> : <span>Features</span>}
                   {plans.features.map((feature, index) => (
                     <li key={index}>
                       <span> {feature}</span>{" "}
