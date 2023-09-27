@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Image from "next/image";
 import Head from "next/head";
-import {NextScript } from "next/document"
 import { Inter } from "next/font/google";
 import BannerSection from "./Components/BannerSection";
 import UseChatbot from "./Components/UseChatbot";
