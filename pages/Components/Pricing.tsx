@@ -4,6 +4,7 @@ import AIPlan1 from "./Assets/AIPlan1";
 import AIPlan2 from "./Assets/AIPlan2";
 import AIPlan3 from "./Assets/AIPlan3";
 import AIPlan4 from "./Assets/AIPlan4";
+declare var $crisp:any;
 
 const Pricing = ({ token }: any) => {
   const [active, SetActive] = useState(4);
@@ -51,6 +52,10 @@ const Pricing = ({ token }: any) => {
     },
   ])
 
+  const  crispbotcontact = () => {
+    $crisp.push(['do', "chat:open"]);
+    $crisp.push(['do', "message:send", ['text', "We'll get back to you shortly"]])
+  }
 
   useEffect(() => {
     const svgs = [
@@ -68,6 +73,8 @@ const Pricing = ({ token }: any) => {
         imgBox[index].innerHTML = `<object type="image/svg+xml" data=${svgs[index]}><img src=${svgs[index]} alt="" /></object>`;
       });
     });
+
+   
 
     const updatedData = data.map((item) => {
       if (checked) {
@@ -126,11 +133,18 @@ const Pricing = ({ token }: any) => {
                 </h2>
                 {/* <p>{plans.desc}</p> */}
                 <div className="ai-plan-price fx jst-sp-bt">
-                  <span>{checked ? plans.yearly : plans.monthly}</span> per
-                  {checked ? " year" : " month"}
+                  {plans.title === 'Enterprise' ? (
+                    <span>Custom</span>
+                  ) : (
+                    <>
+                      <span>{checked ? plans.yearly : plans.monthly}</span> per
+                      {checked ? " year" : " month"}
+                    </>
+                  )}
+
                 </div>
-                { !token && (
-                  <button onClick={() => window.location.href = `http://app.chatbotbuilder.net/register`}>{plans.button}  </button>
+                {!token && (
+                  <button onClick={() => crispbotcontact() }>{plans.button}  </button>
                 )}
                 <ul>
                   {plans?.title === "Enterprise" ? <span>Looking For: </span> : <span>Features</span>}
