@@ -15,6 +15,7 @@ import Script from "next/script";
 import Newsletter from "./Components/Newsletter";
 import SubFooter from "./Components/Assets/SubFooter";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -53,6 +54,9 @@ export default function Home() {
     }
   }, [lastScrollY]);
 
+  
+
+
   return (
     <main>
       <Head>
@@ -79,6 +83,20 @@ export default function Home() {
         })(window, document, "script", "dataLayer", "GTM-PS96TMC8");
       `}
       </Script>
+
+      <Script id="crisp">
+        {`
+          window.$crisp = [];
+          window.CRISP_WEBSITE_ID = "d46c1117-1192-4647-bfe4-c3a2eea872a3";
+          (function () {
+            d = document;
+          s = d.createElement("script");
+          s.src = "https://client.crisp.chat/l.js";
+          s.async = 1;
+          d.getElementsByTagName("head")[0].appendChild(s);
+          })();
+        `}
+      </Script>
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-PS96TMC8"
@@ -97,7 +115,7 @@ export default function Home() {
       <LaunchChatbot />
       <Newsletter />
       <Footer />
-      <SubFooter/>
+      <SubFooter />
     </main>
   );
 }
