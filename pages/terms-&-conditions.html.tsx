@@ -13,7 +13,6 @@ const terms_conditions = () => {
           <div className="navbar-inner">
           <Link href="/">
             <div className="navbar-left">
-              
                 <svg
                   width={42}
                   height={42}

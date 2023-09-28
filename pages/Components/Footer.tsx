@@ -98,19 +98,27 @@ const Footer = () => {
     
           </div>
           <div className="footer-center">
+      <div>
+      <h3>
+    Navigation
+       </h3>
             <ul className="quick-links">
-              <li>Navigation</li>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/terms-&-conditions.html">Terms & Conditions</Link></li>
             </ul>
-            <ul className="quick-links opacity-4">
-              <li>Compare</li>
+      </div>
+           <div className="opacity-6">
+           <h3>
+    Compare
+       </h3>
+            <ul className="quick-links">
               <li>Chatbase?</li>
               <li>Botsify</li>
               <li>TARS</li>
               <li>ChatFuel</li>
             </ul>
+           </div>
           </div>
           <div className="right-footer">
             <h3>Recent Post</h3>
