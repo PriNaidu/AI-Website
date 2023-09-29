@@ -1978,18 +1978,23 @@ a{
   }
 }
 
-  @media screen and  (-webkit-min-device-pixel-ratio:0) { 
-    .flipped .img-card{
-         transform: rotateY(-180deg);
-          transition: 0;
-          display: none;
-        }
-        .flipped  .img-card:hover > .overlay-gradient{
-          transform: scale(1);
-        }
-        .flipped .img-card:hover > picture > img{
-        transform: scale(1);
-        } 
-    }
+@media screen and  (-webkit-min-device-pixel-ratio:0) { 
+.flipped .img-card{
+  transform: rotateY(-180deg);
+  transition: 0;
+  display: none;
+  }
+  .flipped  .img-card:hover > .overlay-gradient{
+  transform: scale(1);
+  }
+  .flipped .img-card:hover > picture > img{
+  transform: scale(1);
+  }
+  .flipped .outer-chat-preview-modal{
+  background: none !important ;
+  }
+}
+
+
 
       
