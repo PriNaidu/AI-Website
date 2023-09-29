@@ -70,10 +70,12 @@ const Pricing = ({ token }: any) => {
     Array.from(imgBox).forEach(ele => temp.push(ele.innerHTML))
     Array.from(main).forEach((element, index) => {
       element.addEventListener("mouseenter", () => {
+        if (window.innerWidth < 520) return;
         imgBox[index].innerHTML = `<object type="image/svg+xml" data=${svgs[index]}><img src=${svgs[index]} alt="" /></object>`;
       });
+  
     });
-
+ 
    
 
     const updatedData = data.map((item) => {
