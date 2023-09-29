@@ -3,12 +3,12 @@ const FAQs = [
   {
     id: 1,
     ques: "Where can I embed the chatbot?",
-    ans: "The Enterprise and professional plan allow you to embed your chatbot anywhere.",
+    ans: "All plans allow you to embed your chatbot anywhere.",
   },
   {
     id: 2,
     ques: "Can I use my own OpenAI key?",
-    ans: "Yes, as a part of the Advanced plan, you can use your own OpenAI key.",
+    ans: "Yes, as a part of the Enterprise and Professional plan, you can use your own OpenAI key.",
   },
   {
     id: 3,
