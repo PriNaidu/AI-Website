@@ -1867,7 +1867,7 @@ p.rights-reserved {
   margin: 0 auto;
   padding-block: 36px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .sub-footer .sub-footer-container span{

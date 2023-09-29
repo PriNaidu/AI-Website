@@ -94,22 +94,19 @@ const Pricing = ({ token }: any) => {
 
           <div className="pricing-toggle">
             <span
-              className={checked ? "monthly-label" : "monthly-label selected"}
-            >
+              className={checked ? "monthly-label" : "monthly-label selected"}>
               Monthly
             </span>
             <label
               className="pricing-toggle-wrapper"
               onChange={() => {
                 setChecked(!checked);
-              }}
-            >
+              }}>
               <input type="checkbox" checked={checked} />
               <span className="toggle-switch round"></span>
             </label>
             <span
-              className={checked ? "yearly-label selected" : "yearly-label"}
-            >
+              className={checked ? "yearly-label selected" : "yearly-label"}>
               Yearly
             </span>
           </div>
@@ -120,11 +117,10 @@ const Pricing = ({ token }: any) => {
             <div
               className={`aiplan-bx ${active === i ? "active-aiplan" : ""}`}
               key={i}
-              onClick={() => SetActive(i)}
-            >
+              onClick={() => SetActive(i)}>
               <div className="aiplan-ing-bx">{plans.image}</div>
               <div className="aiplan-content-bx">
-                <h2 style={{ marginBottom: '5px' }} >
+                <h2 style={{ marginBottom: "5px" }}>
                   {plans.title}
                   {/* {plans.title === "Professional" && (
                     <span className="ai-recommend">Recommended</span>
@@ -133,7 +129,7 @@ const Pricing = ({ token }: any) => {
                 </h2>
                 {/* <p>{plans.desc}</p> */}
                 <div className="ai-plan-price fx jst-sp-bt">
-                  {plans.title === 'Enterprise' ? (
+                  {plans.title === "Enterprise" ? (
                     <span>Custom</span>
                   ) : (
                     <>
@@ -141,13 +137,20 @@ const Pricing = ({ token }: any) => {
                       {checked ? " year" : " month"}
                     </>
                   )}
-
                 </div>
                 {!token && (
-                  <button onClick={() => crispbotcontact() }>{plans.button}  </button>
+                  <button onClick={() =>plans.title === "Enterprise" ? crispbotcontact() : 
+                  (window.location.href ="http://app.chatbotbuilder.net/register")}>
+                    {plans.button}
+                  </button>
                 )}
+
                 <ul>
-                  {plans?.title === "Enterprise" ? <span>Looking For: </span> : <span>Features</span>}
+                  {plans?.title === "Enterprise" ? (
+                    <span>Looking For: </span>
+                  ) : (
+                    <span>Features</span>
+                  )}
                   {plans.features.map((feature, index) => (
                     <li key={index}>
                       <span> {feature}</span>{" "}
