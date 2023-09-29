@@ -1004,17 +1004,6 @@ p.rights-reserved {
   color: #ffffff;
   transition: 0.3s ease-in-out;
 }
-.active-aiplan,
-.aiplan-bx:hover {
-  /* outline: 2px solid #fb5f66; */
-  border: 1px solid #fb5f66;
-  box-shadow: 0 4px 12px rgba(251, 95, 102, 0.4);
-}
-.aiplan-bx .aiplan-content-bx button:hover {
-  background-color: #fb5f66;
-  color: white;
-  box-shadow: 0px 4px 12px rgb(251 95 102 / 40%);
-}
 .aiplan-ing-bx {
   background: rgba(251, 95, 102, 0.1);
   border-radius: 20px 20px 0px 0px;
@@ -1867,7 +1856,7 @@ p.rights-reserved {
   margin: 0 auto;
   padding-block: 36px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .sub-footer .sub-footer-container span{
@@ -1963,3 +1952,52 @@ p.rights-reserved {
 a{
   cursor: pointer;
 }
+
+@-moz-document url-prefix() {
+  iframe{
+   z-index: 99999;
+  }
+  .flipped .img-card{
+    -moz-transform: rotateY(-180deg);
+    transition: 0;
+    display: none;
+  }
+  .flipped  .img-card:hover > .overlay-gradient{
+    -moz-transform: scale(1);
+  }
+  .flipped .img-card:hover > picture > img{
+    -moz-transform: scale(1);
+  }
+}
+
+@media screen and  (-webkit-min-device-pixel-ratio:0) { 
+.flipped .img-card{
+  transform: rotateY(-180deg);
+  transition: 0;
+  display: none;
+  }
+  .flipped  .img-card:hover > .overlay-gradient{
+  transform: scale(1);
+  }
+  .flipped .img-card:hover > picture > img{
+  transform: scale(1);
+  }
+  .flipped .outer-chat-preview-modal{
+  background: none !important ;
+  }
+  @media screen and (min-width: 800px){
+    .active-aiplan,
+    .aiplan-bx:hover {
+     /* outline: 2px solid #fb5f66; */
+     border: 1px solid #fb5f66;
+     box-shadow: 0 4px 12px rgba(251, 95, 102, 0.4);
+    }
+    .aiplan-bx .aiplan-content-bx button:hover {
+     background-color: #fb5f66;
+     color: white;
+     box-shadow: 0px 4px 12px rgb(251 95 102 / 40%);
+    }
+    }
+}
+
+  
