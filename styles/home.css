@@ -1965,6 +1965,9 @@ a{
 }
 
 @-moz-document url-prefix() {
+  iframe{
+   z-index: 99999;
+  }
   .flipped .img-card{
     -moz-transform: rotateY(-180deg);
     transition: 0;
