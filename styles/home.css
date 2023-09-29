@@ -1996,7 +1996,21 @@ a{
   .flipped .outer-chat-preview-modal{
   background: none !important ;
   }
+  @media screen and (min-width: 520px){
+    .active-aiplan,
+    .aiplan-bx:hover {
+     /* outline: 2px solid #fb5f66; */
+     border: 1px solid #fb5f66;
+     box-shadow: 0 4px 12px rgba(251, 95, 102, 0.4);
+    }
+    .aiplan-bx .aiplan-content-bx button:hover {
+     background-color: #fb5f66;
+     color: white;
+     box-shadow: 0px 4px 12px rgb(251 95 102 / 40%);
+    }
+    }
 }
+
 
 
 
