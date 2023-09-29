@@ -1998,6 +1998,10 @@ a{
   }
 }
 
+@media screen  and (max-width: 520px){
+  .aiplan-bx .aiplan-content-bx button:hover, .aiplan-bx:hover{
+    transform: none;
+  }
 
-
-      
+   
+}
