@@ -1985,7 +1985,7 @@ a{
   .flipped .outer-chat-preview-modal{
   background: none !important ;
   }
-  @media screen and (min-width: 520px){
+  @media screen and (min-width: 800px){
     .active-aiplan,
     .aiplan-bx:hover {
      /* outline: 2px solid #fb5f66; */
