@@ -1,17 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useEffect, useState } from "react";
-const BannerSection = ({token}:any) => {
+const BannerSection = ({ token }: any) => {
   const [userEmail, setUserEmail] = useState<any>();
   const url = `http://app.chatbotbuilder.net/register?email=${userEmail}`;
 
   const handleSignup = (e: any) => {
     e.preventDefault();
     if (!userEmail) {
-      window.location.replace(`http://app.chatbotbuilder.net/register`);
+      window.location.href = "http://app.chatbotbuilder.net/register";
       return;
     }
-    window.location.replace(url);
+    window.location.href = url;
   };
   return (
     <Fragment>
@@ -100,17 +100,22 @@ const BannerSection = ({token}:any) => {
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">
-                Build your own <span>AI bot</span> for your <span>business</span>
+                Build your own <span>AI bot</span> for your{" "}
+                <span>business</span>
               </h1>
               <div className="banner-details-cont">
                 <div className="banner-details">
                   Love <span>chatGPT? </span>
                   Want to create a <span>chatGPT</span> equivalent to help your
-                  sales and support team? Use ChatBot Builder to build your own AI bot in minutes. Your AI Bot can learn from your Support Docs, Support Conversations, and Sales Conversations. You can add PDF, .docx, .text and URL.
+                  sales and support team? Use ChatBot Builder to build your own
+                  AI bot in minutes. Your AI Bot can learn from your Support
+                  Docs, Support Conversations, and Sales Conversations. You can
+                  add PDF, .docx, .text and URL.
                 </div>
                 <div className="banner-details">
                   We can learn from your support docs, support conversations and
-                  from your sales conversations. You can add a <span>PDF, .docx, .text </span>
+                  from your sales conversations. You can add a{" "}
+                  <span>PDF, .docx, .text </span>
                   or <span>URL.</span>
                 </div>
               </div>
