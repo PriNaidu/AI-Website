@@ -1978,17 +1978,21 @@ a{
   }
 }
 
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-    @media screen{
-      .flipped .img-card{
-        -moz-transform: rotateY(-180deg);
-        transition: 0;
-        display: none;
-      }
-      .flipped  .img-card:hover > .overlay-gradient{
-        -moz-transform: scale(1);
-      }
-      .flipped .img-card:hover > picture > img{
-        -moz-transform: scale(1);
-      }
-    }}
+  @media screen and  (-webkit-min-device-pixel-ratio:0) { 
+   
+    }
+
+    @media not all and (min-resolution:.001dpcm) { 
+      @media screen{
+        .flipped .img-card{
+          -moz-transform: rotateY(-180deg);
+          transition: 0;
+          display: none;
+        }
+        .flipped  .img-card:hover > .overlay-gradient{
+          -moz-transform: scale(1);
+        }
+        .flipped .img-card:hover > picture > img{
+          -moz-transform: scale(1);
+        }
+      }}
