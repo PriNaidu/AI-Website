@@ -362,7 +362,7 @@
 }
 .img-chat-card.active .img-card,
 .img-chat-card.active .chat-card {
-  transform: rotateY(180deg) scaleX(-1, 1);
+  transform: rotateY(180deg) scaleX(-1);
 }
 .img-chat-card.active .img-card {
   z-index: 1;
