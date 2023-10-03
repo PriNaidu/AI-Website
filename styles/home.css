@@ -307,12 +307,12 @@
 }
 .example-chatbot-box .img-card:hover > picture > img {
   filter: grayscale(0%);
-  /* transform: scale(1.05); */
+  transform: scale(1.05);
   animation: fadeout 0.5s ease-in-out;
 }
 
 .example-chatbot-box .img-card:hover > .overlay-gradient {
-  /* transform: scale(1.05); */
+  transform: scale(1.05);
   animation: fadeout 0.5s ease-in-out;
 }
 

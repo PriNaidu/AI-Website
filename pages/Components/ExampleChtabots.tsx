@@ -39,7 +39,7 @@ export default function ExampleChtabots() {
                 onClick={() => setactiveBot(index)}
               >
                 <div className="img-card">
-                  <div className="overlay-gradient"></div>
+                  {/* <div className="overlay-gradient"></div> */}
                   <picture>
                     <img src={data.banner} alt="chatbotbuilder.net" />
                   </picture>
@@ -53,7 +53,7 @@ export default function ExampleChtabots() {
                   </div>
                 </div>
                 <div className="chat-card">
-                  <div className="outer-chat-preview-modal">
+                  {/* <div className="outer-chat-preview-modal"> */}
                     <div className="inner-chat-preview-modal">
                       <div
                         className="small-cross-icon dd"
@@ -64,7 +64,7 @@ export default function ExampleChtabots() {
                       />
                       <iframe src={data.url}></iframe>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
               </div>
             ))}
