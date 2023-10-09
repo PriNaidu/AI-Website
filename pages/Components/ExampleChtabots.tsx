@@ -22,7 +22,7 @@ const EXAMPLE_BOTS = [
 ] as const;
 
 export default function ExampleChtabots() {
-  const [activeBot, setactiveBot] = useState<Number>(-1);
+  const [activeBot, setActiveBot] = useState<Number>(-1);
 
   return (
     <div className="example_chatbots-container">
@@ -36,7 +36,7 @@ export default function ExampleChtabots() {
               <div
                 className={activeBot === index ? "img-chat-card active": "img-chat-card"}
                 key={index}
-                onClick={() => setactiveBot(index)}
+                onClick={() => setActiveBot(index)}
               >
                 <div className="img-card">
                   {/* <div className="overlay-gradient"></div> */}
@@ -59,7 +59,7 @@ export default function ExampleChtabots() {
                         className="small-cross-icon dd"
                         onClick={(event) => {
                           event.stopPropagation();
-                          setactiveBot(-1);
+                          setActiveBot(-1);
                         }}
                       />
                       <iframe src={data.url}></iframe>
