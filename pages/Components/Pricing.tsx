@@ -10,16 +10,16 @@ const Pricing = ({ token }: any) => {
   const [active, SetActive] = useState(4);
   const [checked, setChecked] = useState(false);
   const [data, setData] = useState([
-    {
-      image: <AIPlan1 />,
-      title: "Free",
-      desc: "Good superb content for Advanced users  Advanced users",
-      monthly: "$0",
-      yearly: "$0",
-      button: "Start your 14-day free trial",
-      planCode: "free_01",
-      features: ["Create 1 bot", "Send up to 100 messages per month", "Use up to 400K characters for training a bot", "Train a bot using up to 500 links"],
-    },
+    // {
+    //   image: <AIPlan1 />,
+    //   title: "Free",
+    //   desc: "Good superb content for Advanced users  Advanced users",
+    //   monthly: "$0",
+    //   yearly: "$0",
+    //   button: "Start your 14-day free trial",
+    //   planCode: "free_01",
+    //   features: ["Create 1 bot", "Send up to 100 messages per month", "Use up to 400K characters for training a bot", "Train a bot using up to 500 links"],
+    // },
     {
       image: <AIPlan2 />,
       title: "Basic",
