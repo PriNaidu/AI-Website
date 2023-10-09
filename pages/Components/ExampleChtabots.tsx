@@ -39,7 +39,7 @@ export default function ExampleChtabots() {
                 onClick={() => setActiveBot(index)}
               >
                 <div className="img-card">
-                  {/* <div className="overlay-gradient"></div> */}
+                  <div className="overlay-gradient"></div>
                   <picture>
                     <img src={data.banner} alt="chatbotbuilder.net" />
                   </picture>
