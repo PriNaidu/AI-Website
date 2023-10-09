@@ -2030,7 +2030,7 @@ a {
   }
 } */
 
-/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   .img-chat-card.active .img-card img {
     transform: scale(0.9) !important;
   }
@@ -2038,4 +2038,4 @@ a {
   .img-chat-card.active .img-card .overlay-gradient {
     transform: scale(0.9) !important;
   }
-} */
+}
