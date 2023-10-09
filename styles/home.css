@@ -314,11 +314,11 @@
   scale: 1.05;
   animation: fadeout 0.6s ease-in-out;
 }
-
+/* 
 .example-chatbot-box .img-card:hover > .overlay-gradient {
   transform: scale(1.05);
   animation: fadeout 0.5s ease-in-out;
-}
+} */
 
 .example-chatbot-box .img-card .img-details {
   position: absolute;
@@ -2030,17 +2030,12 @@ a {
   }
 } */
 
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .img-chat-card.active .img-card img {
+    transform: scale(0.9) !important;
+  }
 
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-
-.img-chat-card.active .img-card img{
-  transform: scale(0.9) !important;
-}
-
-.img-chat-card.active .img-card .overlay-gradient{
-  transform: scale(0.9) !important;
-  
-}
-
-}
+  .img-chat-card.active .img-card .overlay-gradient {
+    transform: scale(0.9) !important;
+  }
+} */
