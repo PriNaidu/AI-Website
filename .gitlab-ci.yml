@@ -44,8 +44,7 @@ deploy:
     - mv out/* public
     - firebase deploy --only hosting --project $FIREBASE_PROJECT_ID --token $FIREBASE_TOKEN
   only:
-    #- develop
-    - patch__safari-flip-issue
+    - develop
 
 
 variables:
