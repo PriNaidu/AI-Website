@@ -299,21 +299,25 @@
   justify-content: center;
   gap: 20px;
 }
-.example-chatbot-box .img-card img {
+.example-chatbot-box .img-card {
   filter: grayscale(100%);
-  transition: 0.5s ease;
   cursor: pointer;
   height: 100%;
 }
-.example-chatbot-box .img-card:hover img {
+
+.example-chatbot-box .img-card img {
+  height: 100%;
+}
+
+.example-chatbot-box .img-card:hover {
   filter: grayscale(0%);
-  transform: scale(1.05);
-  animation: fadeout 0.5s ease-in-out;
+  scale: 1.05;
+  animation: fadeout 0.6s ease-in-out;
 }
 
 .example-chatbot-box .img-card:hover > .overlay-gradient {
   /* transform: scale(1.05); */
-  animation: fadeout 0.5s ease-in-out;
+  animation: fadeout 0.6s ease-in-out;
 }
 
 .example-chatbot-box .img-card .img-details {
@@ -362,8 +366,13 @@
 }
 .img-chat-card.active .img-card,
 .img-chat-card.active .chat-card {
-  transform: rotateY(180deg) scaleX(-1);
+  rotate: y 180deg;
+  scale: -1 1;
+  /* transform: rotateY(180deg) scale(-1, 1); */
 }
+/* .img-chat-card.active .img-card img {
+  scale: -1 1;
+} */
 .img-chat-card.active .img-card {
   z-index: 1;
   cursor: pointer;
@@ -390,7 +399,7 @@
   width: 100%;
   border-radius: 15px;
   position: absolute;
-  transition: transform 0.6s;
+  transition: rotate 0.6s, scale 0.6s;
   /* backface-visibility: hidden; */
 }
 .chat-card {
