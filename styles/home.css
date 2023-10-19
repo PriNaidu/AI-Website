@@ -375,9 +375,11 @@
 .img-chat-card.active .img-card {
   z-index: 1;
   cursor: pointer;
+  opacity: 0;
 }
 .img-chat-card.active .chat-card {
   z-index: 2;
+  opacity: 1;
 }
 
 /* .flip-card {
