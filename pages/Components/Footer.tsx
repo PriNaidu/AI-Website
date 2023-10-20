@@ -23,7 +23,7 @@ const Footer = () => {
                 loading="lazy" alt="omniengage-logo" className="img-footer" />
             </a>
             <p>
-            Leverage each touchpoint across web, mobile, sms, email, facebook messenger and whatsapp intelligently with omniengage.  
+            ChatBot Builder makes it easy to build and train AI chatbots that promptly answer user queries - supercharging your sales and support conversations.  
             </p>
     
             <div className="footer-socials">
