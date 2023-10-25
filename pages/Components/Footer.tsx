@@ -107,18 +107,16 @@ const Footer = () => {
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/terms-&-conditions.html">Terms & Conditions</Link></li>
             </ul>
-      </div>
-           <div className="opacity-6">
-           <h3>
-    Compare
-       </h3>
+          </div>
+           {/* <div className="opacity-6">
+            <h3>Compare</h3>
             <ul className="quick-links">
               <li>Chatbase?</li>
               <li>Botsify</li>
               <li>TARS</li>
               <li>ChatFuel</li>
             </ul>
-           </div>
+           </div> */}
           </div>
           <div className="right-footer">
             <h3>Recent Post</h3>
