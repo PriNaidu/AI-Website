@@ -1694,8 +1694,8 @@ p.rights-reserved {
 }
 
 .main-footer .left-footer {
-  max-width: 31%;
-  width: 31%;
+  max-width: 33.33%;
+  width: 33.33%;
 }
 
 .main-footer .left-footer p {
@@ -1758,8 +1758,8 @@ p.rights-reserved {
   /* flex-direction: column; */
   /* gap: 20px; */
   justify-content: space-between;
-  width: 26%;
-  max-width: 26%;
+  width: 13.33%;
+  max-width: 13.33%;
 }
 
 .main-footer .footer-center ul {
@@ -1798,8 +1798,8 @@ p.rights-reserved {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 25%;
-  max-width: 25%;
+  width: 28.33%;
+  max-width: 28.33%;
   margin-top: 3px;
 }
 
