@@ -4,14 +4,15 @@ const LiveDemo = () => {
       <div className="wrapper">
         <div className="heading">
           <h4>Live Demo</h4>
-          <p>
+          {/* <p>
             This chatbot was trained on a document explaining ChatBot Builder
-          </p>
+          </p> */}
         </div>
-        <div className="chat-response-box">
+          <video src="./liveDemoVideo.mp4" controls autoPlay muted></video>
+        {/* <div className="chat-response-box">
 
         <iframe src={`https://live.chatbotbuilder.net/demobots-275?embed=true`} height={700} width={560} />
-        </div>
+        </div> */}
        
         {/* <div className="chat-response-box">
           <div className="chat-response-head">
