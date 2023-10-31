@@ -2142,4 +2142,8 @@ a {
     height: 50px;
     width: 50px;
   }
+
+  .live-demo-container .wrapper{
+    padding-inline: 0;
+  }
 }
