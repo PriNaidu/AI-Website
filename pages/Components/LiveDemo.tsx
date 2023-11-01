@@ -24,7 +24,7 @@ const LiveDemo = () => {
               <img src="https://dlvkyia8i4zmz.cloudfront.net/5yzFuJS6QR24Ub8ppP81_thb.png" alt="" />
             </div>
           ) : (
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tEjPe_JU4AE?si=N21pugsW6US9ocz5&autoplay=1&mute=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tEjPe_JU4AE?si=N21pugsW6US9ocz5&playlist=tEjPe_JU4AE&loop=1&autoplay=1&mute=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           )}
         
         </div>
