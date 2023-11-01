@@ -6,10 +6,7 @@ const LiveDemo = () => {
     <div className="live-demo-container">
       <div className="wrapper">
         <div className="heading">
-          <h4>Live Demo</h4>
-          <p>
-            This chatbot was trained on a document explaining ChatBot Builder
-          </p>
+          <h4>Power Up your business with AI: Watch Overview</h4>
         </div>
         <div className="live-demo-video">
 

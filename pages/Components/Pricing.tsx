@@ -92,7 +92,7 @@ const Pricing = ({ token }: any) => {
     <Fragment>
       <div className="ai-plan-landing">
         <div className="pricing-head">
-          <h2>Choose the best plan for your business </h2>
+          <h2>Take your business to the next level with Chatbot Builder</h2>
 
           <div className="pricing-toggle">
             <span
