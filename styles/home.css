@@ -2057,6 +2057,7 @@ a {
 .live-demo-container .live-demo-video{
   display: flex;
   justify-content: center;
+  aspect-ratio: 3.2 / 1.8;
 }
 
 .live-demo-container .demo-video-outer{
