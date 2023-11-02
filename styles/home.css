@@ -706,6 +706,7 @@
 } */
 .pricing-head {
   margin-bottom: 40px;
+  padding-inline: 15px;
 }
 .toggle-switch {
   position: absolute;

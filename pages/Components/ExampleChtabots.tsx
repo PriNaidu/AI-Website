@@ -28,8 +28,7 @@ export default function ExampleChtabots() {
     <div className="example_chatbots-container">
       <div className="wrapper">
         <div className="heading">
-          <h4>Live Demo</h4>
-          <p>Experience our bots in action</p>
+          <h4>Experience our bots in action</h4>
         </div>
         <div className="example-chatbot-wrap">
           <div className="example-chatbot-box">
