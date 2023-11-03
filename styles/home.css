@@ -420,7 +420,7 @@
 
 /* Live Demo css */
 .live-demo-container {
-  padding: 80px;
+  padding: 80px 40px;
   background: linear-gradient(
     256.88deg,
     #fff3f4 1.94%,
@@ -706,7 +706,6 @@
 } */
 .pricing-head {
   margin-bottom: 40px;
-  padding-inline: 15px;
 }
 .toggle-switch {
   position: absolute;
@@ -1002,11 +1001,11 @@ p.rights-reserved {
 
 /* Pricing new */
 .ai-plan-landing {
-  padding: 80px 0;
+  padding: 80px 40px;
 }
 .ai-plan-flex {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 20px;
   flex-wrap: wrap;
   margin: auto;
@@ -1015,7 +1014,6 @@ p.rights-reserved {
 .aiplan-bx {
   border: 1px solid #cfcfcf;
   border-radius: 20px;
-  width: 290px;
   transition: 0.2s ease-in-out;
 }
 .active-aiplan .aiplan-content-bx button {
@@ -1264,9 +1262,16 @@ p.rights-reserved {
     width: 90%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1029px) {
   .banner-left {
     width: 65%;
+  }
+  .ai-plan-flex{
+    display: flex;
+    justify-content: center;
+  }
+  .aiplan-bx{
+    width: 310px; 
   }
 }
 
@@ -1437,7 +1442,7 @@ p.rights-reserved {
   .example-chatbot-box {
     flex-wrap: wrap;
   }
-  .live-demo-container {
+  .live-demo-container, .ai-plan-landing {
     padding: 15px;
     padding-block: 60px;
   }
@@ -1950,6 +1955,18 @@ p.rights-reserved {
     gap: 40px;
   }
 
+  .main-footer .right-footer .footer-post .post-desc h4, .main-footer .right-footer .footer-post{
+    max-width: unset;
+  }
+
+  .right-footer .post-img{
+    height: 62px;
+  }
+
+  .main-footer .right-footer .footer-post{
+    align-items: center;
+  }
+
   .main-footer .footer-center {
     width: 40%;
     max-width: 40%;
@@ -2145,7 +2162,7 @@ a {
     width: 50px;
   }
 
-  .live-demo-container .wrapper{
+  .live-demo-container .wrapper, .ai-plan-landing .wrapper{
     padding-inline: 0;
   }
 }

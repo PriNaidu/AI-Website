@@ -91,9 +91,9 @@ const Pricing = ({ token }: any) => {
   return (
     <Fragment>
       <div className="ai-plan-landing">
+        <div className="wrapper">
         <div className="pricing-head">
           <h2>Take your business to the next level with Chatbot Builder</h2>
-
           <div className="pricing-toggle">
             <span
               className={checked ? "monthly-label" : "monthly-label selected"}>
@@ -113,6 +113,7 @@ const Pricing = ({ token }: any) => {
             </span>
           </div>
           <p>(Save 2 months with annual billing)</p>
+        
         </div>
         <div className="ai-plan-flex">
           {data.map((plans, i) => (
@@ -162,6 +163,7 @@ const Pricing = ({ token }: any) => {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </Fragment>
