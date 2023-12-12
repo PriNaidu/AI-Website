@@ -3,19 +3,19 @@ import { useState } from "react";
 const EXAMPLE_BOTS = [
   {
     name: "Scientific History Guide",
-    url: "https://live.chatbotbuilder.net/demobots-293?embed=true",
+    url: "https://demobots.chatbotbuilder.net/demobots-293?embed=true",
     banner:
       "https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4689.png",
   },
   {
     name: "Mental Health Guide",
-    url: "https://live.chatbotbuilder.net/demobots-346?embed=true",
+    url: "https://demobots.chatbotbuilder.net/demobots-346?embed=true",
     banner:
       "https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4688.png",
   },
   {
     name: "Entrepreneurial Companion",
-    url: "https://live.chatbotbuilder.net/demobots-307?embed=true",
+    url: "https://demobots.chatbotbuilder.net/demobots-307?embed=true",
     banner:
       "https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4687.png",
   },
