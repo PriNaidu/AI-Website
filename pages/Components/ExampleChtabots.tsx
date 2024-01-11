@@ -2,22 +2,25 @@ import { useState } from "react";
 
 const EXAMPLE_BOTS = [
   {
-    name: "Scientific History Guide",
-    url: "https://demobots.chatbotbuilder.net/demobots-293?embed=true",
+    name: "Lead gen mastery",
+    content: "Create your first bot with chatbot builder for your leads",
+     url: "https://outgrowventurepact.chatbotbuilder.net/leadgeneration?embed=true",
     banner:
-      "https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4689.png",
+      "https://cdn.filestackcontent.com/Nmd2HU2rQP68GTOi7eEG",
   },
   {
-    name: "Mental Health Guide",
-    url: "https://demobots.chatbotbuilder.net/demobots-346?embed=true",
+    name: "Customer Support",
+    content: "Create your first bot with chatbot builder for your customer support",
+    url: "https://outgrowventurepact.chatbotbuilder.net/customerservicebot?embed=true",
     banner:
-      "https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4688.png",
+      "https://cdn.filestackcontent.com/vsvNC31URjqcgQ48h7Da",
   },
   {
-    name: "Entrepreneurial Companion",
-    url: "https://demobots.chatbotbuilder.net/demobots-307?embed=true",
+    name: "Chatbot importance",
+    content: "Create your first bot with chatbot builder for your chatbot importance",
+    url: "https://outgrowventurepact.chatbotbuilder.net/chatbotimportance?embed=true",
     banner:
-      "https://dzvexx2x036l1.cloudfront.net/calc_images/Rectangle 4687.png",
+      "https://cdn.filestackcontent.com/ndr70SCNQQiTzZXtKBnJ",
   },
 ] as const;
 
@@ -44,12 +47,9 @@ export default function ExampleChtabots() {
                     <img src={data.banner} alt="chatbotbuilder.net" />
                   </picture>
                   <div className="img-details">
-                    <div className="img-details-left">
                       <h3>{data.name}</h3>
-                    </div>
-                    <div className="img-details-right">
-                      <ChatIcon />
-                    </div>
+                      <p>{data.content}</p>
+                      <button style={{marginTop: `${index === 0 && "52px"}`}}>Try Now</button>
                   </div>
                 </div>
                 <div className="chat-card">
