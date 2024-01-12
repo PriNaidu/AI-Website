@@ -71,7 +71,7 @@ const Pricing = ({ token }: any) => {
     Array.from(main).forEach((element, index) => {
       element.addEventListener("mouseenter", () => {
         if (window.innerWidth < 520) return;
-        imgBox[index].innerHTML = `<object type="image/svg+xml" data=${svgs[index]}><img src=${svgs[index]} alt="" /></object>`;
+        imgBox[index].innerHTML = `<object type="image/svg+xml" data=${svgs[index]}><img src=${svgs[index]} alt="Chatbot Builder pricing images" /></object>`;
       });
   
     });
@@ -90,7 +90,7 @@ const Pricing = ({ token }: any) => {
 
   return (
     <Fragment>
-      <div className="ai-plan-landing">
+      <div className="ai-plan-landing" id="ai-plan-pricing">
         <div className="wrapper">
         <div className="pricing-head">
           <h2>Take your business to the next level with Chatbot Builder</h2>

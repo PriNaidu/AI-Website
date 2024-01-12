@@ -15,7 +15,7 @@ const Newsletter = () => {
   };
 
     return (
-        <div className="newsletter-section">
+        <div className="newsletter-section" id="contact-us">
         <div className="newsletter-container">
           <div className="newsletter-inner">
             <h3 className="nws-heading text-center">Subscribe our Newsletter</h3>

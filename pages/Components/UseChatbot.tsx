@@ -53,7 +53,7 @@ const UseChatbot = () => {
                 <img
                   src="https://res.cloudinary.com/dghqyted6/image/upload/v1681988268/Omniengage%20Ai%20Website/Group_14371_talese.png
 "
-                  alt="Chatbot can analyze this data<"
+                  alt="Chatbot can analyze this data"
                 />
               </picture>
             </div>

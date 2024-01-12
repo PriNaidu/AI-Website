@@ -76,6 +76,12 @@ const BannerSection = ({ token }: any) => {
                   </div>
                 </div>
               </Link>
+              <ul className="nav-links">
+                <li className="active"><a href="#">Home</a></li>
+                <li><a href="#ai-plan-pricing">Pricing</a></li>
+                <li><a href="https://chatbotbuilder.net/blog/" target="_blank">Blogs</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+              </ul>
               <div className="navbar-right">
                 {token ? (
                   <>
@@ -180,7 +186,7 @@ const BannerSection = ({ token }: any) => {
               <picture>
                 <img
                   src="https://res.cloudinary.com/dghqyted6/image/upload/v1683025674/Group_14383_1_e4ruli.png"
-                  alt="Chatbot-builderr"
+                  alt="Chatbot Builder demo"
                 />
               </picture>
             </div>

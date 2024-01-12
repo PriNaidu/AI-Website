@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="left-footer">
             <a href="https://chatbotbuilder.net/">
               <img src="https://dlvkyia8i4zmz.cloudfront.net/5eJMWyTJOMq6ze3P2ymw_cbb.svg"
-                loading="lazy" alt="omniengage-logo" className="img-footer" />
+                loading="lazy" alt="Chatbot Builder Logo" className="img-footer" />
             </a>
             <p>
             ChatBot Builder makes it easy to build and train AI chatbots that promptly answer user queries - supercharging your sales and support conversations.  
@@ -122,21 +122,21 @@ const Footer = () => {
             <h3>Recent Post</h3>
             <div className="footer-posts">
               <a className="footer-post" href="https://chatbotbuilder.net/blog/ai-chatbots-consulting/" target="_blank">
-                <img className="post-img" src="https://chatbotbuilder.net/blog/wp-content/uploads/2023/08/AI-Chatbots-in-Services-1024x375.png" alt=""/>
+                <img className="post-img" src="https://chatbotbuilder.net/blog/wp-content/uploads/2023/08/AI-Chatbots-in-Services-1024x375.png" alt="Chatbot Builder post image"/>
                 <div className="post-desc">
                   <h4>Consulting: How AI Chatbots in Consulting Are Transforming Professional Services </h4>
                   <span>31 August, 2023</span>
                 </div>
               </a>
               <a className="footer-post" href="https://chatbotbuilder.net/blog/ai-chatbots-saas/" target="_blank">
-                <img className="post-img" src="https://chatbotbuilder.net/blog/wp-content/uploads/2023/08/AI-Chatbots-in-SaaS-1024x375.png" alt=""/>
+                <img className="post-img" src="https://chatbotbuilder.net/blog/wp-content/uploads/2023/08/AI-Chatbots-in-SaaS-1024x375.png" alt="Chatbot Builder post image"/>
                 <div className="post-desc">
                   <h4>SaaS: How AI Chatbots in SaaS Are Redefining the Industry</h4>
                   <span>31 August, 2023</span>
                 </div>
               </a>
               <a className="footer-post" href="https://chatbotbuilder.net/blog/ai-chatbots-healthcare/" target="_blank">
-                <img className="post-img" src="https://chatbotbuilder.net/blog/wp-content/uploads/2023/08/AI-Chatbots-in-Healthcare-1024x375.png" alt=""/>
+                <img className="post-img" src="https://chatbotbuilder.net/blog/wp-content/uploads/2023/08/AI-Chatbots-in-Healthcare-1024x375.png" alt="Chatbot Builder post image"/>
                 <div className="post-desc">
                   <h4>Healthcare: Top 5 Uses of AI Chatbots in Healthcare </h4>
                   <span>30 August, 2023</span>

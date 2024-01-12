@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1170px;
   padding: 0 20px;
@@ -37,6 +41,35 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.nav-links{
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li{
+  width: 84px;
+  padding-block: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.nav-links li a{
+  color: #444;
+  font-size: 16px;
+}
+
+.nav-links li a:hover{
+  color: #fb5f66;
+}
+
+.nav-links li.active{
+  border-bottom: 2px solid #fb5f66;
+}
+
+.nav-links li.active a{
+  color: #fb5f66;
 }
 
 .navbar-left {
