@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setShow(true);
       } else {
         setShow(false);
@@ -107,7 +107,7 @@ export default function Home() {
       </noscript>
 
       {/* <Navbar show={show}/> */}
-      <BannerSection token={token} />
+      <BannerSection token={token} show={show}/>
       <UseChatbot />
       <ExampleChtabots />
       <LiveDemo />

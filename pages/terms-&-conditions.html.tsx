@@ -9,8 +9,8 @@ const terms_conditions = () => {
   return (
     <>
       <div className="wrapper p-10">
-        <div className="navbar" style={{ background: "white" }}>
-          <div className="navbar-inner">
+        <div className="navbar" style={{ background: "white", paddingBlock: "20px" }}>
+          <div className="navbar-inner" style={{ paddingInline: "0"}}>
           <Link href="/">
             <div className="navbar-left">
                 <svg

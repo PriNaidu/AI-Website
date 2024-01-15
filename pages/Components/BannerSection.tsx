@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useEffect, useState } from "react";
-const BannerSection = ({ token }: any) => {
+const BannerSection = ({ token, show }: any) => {
   const [userEmail, setUserEmail] = useState<any>();
+  const [activeTab, setActiveTab] = useState<number>(0);
   const url = `http://app.chatbotbuilder.net/register?email=${userEmail}`;
 
   const handleSignup = (e: any) => {
@@ -13,11 +14,38 @@ const BannerSection = ({ token }: any) => {
     }
     window.location.href = url;
   };
+
+  useEffect(() => {
+    
+    const handleScroll = () => {
+
+      const scrollPosition = window.scrollY;
+
+      const pricingSection = document.getElementById('ai-plan-pricing') as HTMLElement;
+      const contactSection = document.getElementById('faq-accordion') as HTMLElement;
+
+      if (  scrollPosition >= (pricingSection.offsetTop - 80) && scrollPosition < contactSection.offsetTop)
+      {
+        setActiveTab(1);
+      } 
+      else if (scrollPosition >= contactSection.offsetTop) 
+      {
+        setActiveTab(2);
+      } else 
+      {
+        setActiveTab(0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+  }, [activeTab]);
+  
   return (
     <Fragment>
       <div className="banner-section">
-        <div className="wrapper">
-          <div className="navbar">
+        <div className={`navbar-wrapper ${show ? "sticky" : ""}`}>
+        <div className="navbar">
             <div className="navbar-inner">
               <Link href="/">
                 <div className="navbar-left">
@@ -77,10 +105,10 @@ const BannerSection = ({ token }: any) => {
                 </div>
               </Link>
               <ul className="nav-links">
-                <li className="active"><a href="#">Home</a></li>
-                <li><a href="#ai-plan-pricing">Pricing</a></li>
+                <li className={activeTab === 0 ? "active":""}><a href="#" >Home</a></li>
+                <li className={activeTab === 1 ? "active":""}><a href="#ai-plan-pricing" >Pricing</a></li>
                 <li><a href="https://chatbotbuilder.net/blog/" target="_blank">Blogs</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li className={activeTab === 2 ? "active":""}><a href="#contact-us" >Contact Us</a></li>
               </ul>
               <div className="navbar-right">
                 {token ? (
@@ -103,6 +131,8 @@ const BannerSection = ({ token }: any) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="wrapper">
           <div className="banner-container">
             <div className="banner-left">
               <h1 className="banner-heading">

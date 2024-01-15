@@ -8,19 +8,35 @@
   margin: 0 auto;
 }
 
+.navbar-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-wrapper.sticky{
+  background-color: white;
+  transition: 0.2s ease-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .banner-section {
   background-image: url(https://res.cloudinary.com/dghqyted6/image/upload/v1682071537/Group_14373_1_jfhoaw.svg);
   background-size: cover;
+  padding-top: 90px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+  max-width: 1170px;
+  margin-inline: auto;
 }
 
-.navbar-sticky {
+/* .navbar-sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -33,14 +49,15 @@
 .wrapper-navbar {
   max-width: 1170px;
   padding: 15px;
-  margin: 0 auto;
-}
+  margin: 0 auto; 
+}*/
 
 .navbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding-inline: 20px;
 }
 
 .nav-links{
@@ -49,8 +66,8 @@
 }
 
 .nav-links li{
-  width: 84px;
-  padding-block: 15px;
+  width: 86px;
+  padding-block: 25px;
   display: grid;
   place-items: center;
 }
@@ -58,6 +75,8 @@
 .nav-links li a{
   color: #444;
   font-size: 16px;
+  transition: 0.2s ease-in-out;
+
 }
 
 .nav-links li a:hover{
@@ -70,6 +89,7 @@
 
 .nav-links li.active a{
   color: #fb5f66;
+  font-weight: 500;
 }
 
 .navbar-left {

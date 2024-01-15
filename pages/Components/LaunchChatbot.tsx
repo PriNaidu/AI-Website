@@ -44,7 +44,7 @@ const LaunchChatbot = () => {
             <button>Try for free</button>
             </a>
           </div>
-          <div className="launchbot-options">
+          <div className="launchbot-options" id="faq-accordion">
             <h5>Frequently asked questions</h5>
             <ul className="launchbot-list">
               {FAQs.map((faq, index) => {
