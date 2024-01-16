@@ -30,7 +30,7 @@ const BannerSection = ({ token, show }: any) => {
       } 
       else if (scrollPosition >= contactSection.offsetTop) 
       {
-        setActiveTab(2);
+        setActiveTab(3);
       } else 
       {
         setActiveTab(0);
@@ -107,8 +107,8 @@ const BannerSection = ({ token, show }: any) => {
               <ul className="nav-links">
                 <li className={activeTab === 0 ? "active":""}><a href="#" >Home</a></li>
                 <li className={activeTab === 1 ? "active":""}><a href="#ai-plan-pricing" >Pricing</a></li>
-                <li><a href="https://chatbotbuilder.net/blog/" target="_blank">Blogs</a></li>
-                <li className={activeTab === 2 ? "active":""}><a href="#contact-us" >Contact Us</a></li>
+                <li className={activeTab === 2 ? "active":""}><a href="https://chatbotbuilder.net/blog/" onClick={()=>(setActiveTab(2))}>Blogs</a></li>
+                <li className={activeTab === 3 ? "active":""}><a href="#contact-us" >Contact Us</a></li>
               </ul>
               <div className="navbar-right">
                 {token ? (
