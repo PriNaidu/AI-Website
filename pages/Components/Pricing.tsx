@@ -28,7 +28,7 @@ const Pricing = ({ token }: any) => {
       yearly: "$250",
       button: "Start your 14-day free trial",
       planCode: "basic_01",
-      features: ["Create up to 5 bots", "Send up to 3,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 3,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data"],
+      features: ["Create up to 5 workflows", "Send up to 3,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 3,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data"],
     },
     {
       image: <AIPlan3 />,
@@ -38,7 +38,7 @@ const Pricing = ({ token }: any) => {
       yearly: "$950",
       button: "Start your 14-day free trial",
       planCode: "standard_01",
-      features: ["Create up to 10 bots", "Send up to 30,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 5,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data", "Ability to connect your OpenAI API Key", "Remove Chatbot Builder Branding"],
+      features: ["Create up to 10 workflows", "Send up to 30,000 messages per month", "Use up to 11M characters for training a bot", "Train a bot using up to 5,000 links", "Upload multiple files for bot training", "Configure Zapier Integration", "View Conversation History", "Capture Leads Data", "Ability to connect your OpenAI API Key", "Remove Chatbot Builder Branding"],
     },
     {
       image: <AIPlan4 />,
